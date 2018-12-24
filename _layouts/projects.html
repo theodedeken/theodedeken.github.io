@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="ui two stackable cards">
+    {%- for project in site.projects -%}
+    <a class="card" href="{{ project.url | relative_url }}">
+        <div class="image">
+            <img src="{{ project.thumb }}">
+        </div>
+        <div class="content">
+            <div class="header">{{ project.title }}</div>
+            <div class="meta">
+                <span class="date">{{ project.started}} - {{project.ended}}</span>
+            </div>
+            <div class="description">
+                {{ project.description }}
+            </div>
+        </div>
+        <!---
+        <div class="extra content">
+            <span class="right floated">
+                TODO
+            </span>
+            <span>
+                <i class="user icon"></i>
+                TODO
+            </span>
+        </div>
+        -->
+    </a>
+    {% endfor %}
+</div>
