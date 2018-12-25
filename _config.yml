@@ -24,7 +24,7 @@ github_username:  TheOZoneBE
 linkedin_username: theo-dedeken-920341147
 
 # Build settings
-markdown: kramdown
+markdown: SemanticRender
 theme: minima
 plugins:
   - jekyll-feed
