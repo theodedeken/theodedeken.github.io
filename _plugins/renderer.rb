@@ -4,6 +4,7 @@ require "rouge/plugins/redcarpet"
 
 class SemanticRender < Redcarpet::Render::HTML
     include Rouge::Plugins::Redcarpet
+
     def image(link, title, alt)
         name = File.basename(link, ".*")
         img = "<img class=\"ui bordered rounded image\" src=\"#{link}\" alt=\"#{alt}\" title=\"#{title}\">"
@@ -22,7 +23,13 @@ class SemanticRender < Redcarpet::Render::HTML
     end
 
     def header(text, header_level)
-        return "<h#{header_level} class='ui header'>#{text}</h#{header_level}>"
+        if not @header_list
+            @header_list = []
+        end
+
+        fragment = text.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+        @header_list.push([header_level, text, fragment])
+        return "<h#{header_level} class='ui header' id=\"#{fragment}\">#{text}</h#{header_level}>"
     end
 
     def hrule()
@@ -44,6 +51,39 @@ class SemanticRender < Redcarpet::Render::HTML
     def block_code(code, language)
         "<div class=\"ui black inverted highlight segment\"><pre><code>#{Rouge.highlight(code, language || 'text', 'html') }</code></pre></div>"
     end
+
+    def doc_footer()
+        if @header_list.count == 0
+            return nil
+        end
+        toc = "<div class=\"ui left rail\"><div class=\"ui sticky\"><div class=\"ui raised segment\"><h3 class=\"ui header\">Table of contents</h3><div class=\"ui small list\">"
+        header_level = 2
+        for header in @header_list
+            lvl = header[0]
+            text = header[1]
+            link = header[2]
+            toc += "<div class=\"item\">"
+            if lvl > header_level
+                for i in 1..lvl - header_level
+                    toc += "<div class=\"list\">"
+                end
+            elsif lvl < header_level
+                for i in 1..header_level - lvl
+                    toc += "</div></div>"
+                end
+            else
+                toc += "</div>"
+            end
+            toc += "<a href=\"\##{link}\">#{text}</a>"
+            header_level = lvl
+        end
+        for i in 0..header_level + 1
+            toc += "</div>"
+        end
+        @header_list = []
+        return toc
+    end
+    
 end
 
 class Jekyll::Converters::Markdown::SemanticRender

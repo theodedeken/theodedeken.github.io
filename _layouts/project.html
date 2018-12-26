@@ -1,5 +1,17 @@
 ---
 layout: default
 ---
-
+<div class="ui segment">
+    <div class="ui grid">
+        <div class="six wide column">
+            <div class="ui large image">
+                <img src="{{ page.thumb }}">
+            </div>
+        </div>
+        <div class="ten wide column">
+            <h1 class="ui header">{{ page.title }}</h1>
+            <p>{{page.description}}</p>
+        </div>
+    </div>
+</div>
 {{ content }}
