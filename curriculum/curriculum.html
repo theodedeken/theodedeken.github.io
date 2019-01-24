@@ -3,7 +3,7 @@ layout: page
 title: Curriculum
 permalink: /curriculum/
 ---
-<div class="ui main text segment">
+<div class="ui text segment">
     <h1 class="ui header">Curriculum</h1>
     <div class="ui divider"></div>
     <h2 class="ui header">Education</h2>
@@ -53,5 +53,41 @@ permalink: /curriculum/
         </div>
         {% endfor %}
     </div>
-    <h2 class="ui header">Skills</h2>
+
+    <h2 class="ui header">Programming Languages</h2>
+    <div class="ui four cards">
+        {% for skill in site.data.skills %}
+        <div class="card">
+            <div class="content">
+                <span class="right floated"><i style="font-size: 2rem" class="{{ skill.icon }}"></i></span>
+                <div class="header">
+                    {{ skill.language }}
+                </div>
+                <div class="ui divider"> </div>
+                {% if skill.frameworks %}
+                <div class="ui sub header">Frameworks</div>
+                <ul class="ui list">
+                    {% for framework in skill.frameworks %}
+                    <li>
+                        {{ framework }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if skill.projects %}
+                <div class="ui sub header">Projects</div>
+                <div class="ui horizontal selection list">
+                    {% for project in skill.projects %}
+                    <div class="item">
+                        <div class="content">
+                            <a class="header">{{ project }}</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>

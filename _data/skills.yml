@@ -1,0 +1,58 @@
+- language: Java
+  icon: devicon-java-plain
+  frameworks:
+    - Spring
+    - LWJGL
+    - Jackson
+    - Android Studio
+  projects:
+    - spaxel
+    - perlin-noise
+- language: Rust
+  frameworks:
+    - wasm_bindgen
+    - pest
+  projects:
+    - lambda
+    - webgl-rs
+    - warp-engine
+- language: Python
+  icon: devicon-python-plain
+  frameworks:
+    - keras
+    - numpy
+    - matplotlib
+    - pandas
+    - seaborn
+    - django
+  projects:
+    - thesis
+- language: Javascript
+  icon: devicon-javascript-plain
+  frameworks:
+    - Vue
+    - Angular
+    - Electron
+    - Webpack
+    - Phaser
+  projects:
+    - steampicker
+    - sprout
+    - traffic-troubles
+- language: C#
+  icon: devicon-csharp-plain
+  frameworks:
+    - ASP.NET
+  projects:
+    - rideaway
+- language: Ruby
+  icon: devicon-ruby-plain
+  frameworks:
+    - Jekyll
+    - Ruby on Rails
+  projects:
+    - site
+- language: C, C++
+  icon: devicon-c-plain
+  projects:
+    - huffman-coding
