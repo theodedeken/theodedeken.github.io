@@ -7,51 +7,53 @@ permalink: /curriculum/
     <h1 class="ui header">Curriculum</h1>
     <div class="ui divider"></div>
     <h2 class="ui header">Education</h2>
-    <div class="ui relaxed divided list">
-        {% for edu in site.data.education %}
-        <div class="item">
-            <div class="right floated content">{{ edu.institution }}</div>
-            <div class="header">{{ edu.degree }}</div>
-            {{ edu.started }} - {{ edu.ended }}
+    <div class="ui segment">
+        <div class="ui relaxed divided list">
+            {% for edu in site.data.education %}
+            <div class="item">
+                <div class="right floated content">{{ edu.institution }}</div>
+                <div class="header">{{ edu.degree }}</div>
+                {{ edu.started }} - {{ edu.ended }}
 
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
     <h2 class="ui header">Work Experience</h2>
-    <div class="ui divided items">
-        {% for exp in site.data.work_experience %}
-        <div class="item">
-            <div class="content">
-                <div class="right floated content">{{ exp.company }}</div>
-                <div class="header">{{ exp.jobtitle }}</div>
-                <div class="meta">
-                    {{ exp.started }} - {{ exp.ended }}
-                </div>
-                <div class="description">
-                    <p>{{ exp.description | markdownify}}</p>
+    <div class="ui segment">
+        <div class="ui divided items">
+            {% for exp in site.data.work_experience %}
+            <div class="item">
+                <div class="content">
+                    <div class="right floated content">{{ exp.company }}</div>
+                    <div class="header">{{ exp.jobtitle }}</div>
+                    <div class="meta">
+                        {{ exp.started }} - {{ exp.ended }}
+                    </div>
+                    <div class="description">
+                        <p>{{ exp.description | markdownify}}</p>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
     <h2 class="ui header">Other Experience</h2>
-    <div class="ui divided items">
-        {% for exp in site.data.other_experience %}
-        <div class="item">
-            <div class="content">
-                <div class="right floated content">{{ exp.company }}</div>
-                <div class="header">{{ exp.jobtitle }}</div>
-                <div class="meta">
-                    {{ exp.started }} - {{ exp.ended }}
-                </div>
-                <div class="description">
-                    <p>{{ exp.description }}</p>
+    <div class="ui segment">
+        <div class="ui divided items">
+            {% for exp in site.data.other_experience %}
+            <div class="item">
+                <div class="content">
+                    <div class="header">{{ exp.title }}</div>
+                    <div class="description">
+                        <p>{{ exp.description | markdownify}}</p>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 
     <h2 class="ui header">Programming Languages</h2>
