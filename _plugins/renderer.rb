@@ -66,9 +66,9 @@ class SemanticRender < Redcarpet::Render::HTML
   end
 
   def table_of_contents()
-    "<div class=\"ui left rail\">
+    "<div class=\"ui left rail\" style=\"width:300px\">
       <div class=\"ui sticky\">
-        <div class=\"ui raised segment\">
+        <div class=\"ui segment\">
           <h3 class=\"ui header\">Table of contents</h3>
           <div class=\"ui list\">
             #{generate_toc_list}
