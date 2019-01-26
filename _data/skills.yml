@@ -13,7 +13,7 @@
     - wasm_bindgen
     - pest
   projects:
-    - lambda
+    - lambda-rs
     - webgl-rs
     - warp-engine
 - language: Python

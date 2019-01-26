@@ -80,10 +80,10 @@ permalink: /curriculum/
                 <div class="ui sub header">Projects</div>
                 <div class="ui horizontal selection list">
                     {% for project in skill.projects %}
-                    <div class="item">
-                        <div class="content">
-                            <a class="header">{{ project }}</a>
-                        </div>
+                    <div class="ui item">
+                        <a class="header" href="{{ site.base_url }}/projects{{ project | relative_url }}">
+                            {{ project }}
+                        </a>
                     </div>
                     {% endfor %}
                 </div>
@@ -91,5 +91,15 @@ permalink: /curriculum/
             </div>
         </div>
         {% endfor %}
+    </div>
+    <div class="ui hidden divider"></div>
+    <div class="ui hidden divider"></div>
+    <div class="ui center aligned segment">
+        <div class="ui header">
+            Looking for more information? Don't hesitate to contact me!
+        </div>
+        <a class="ui massive primary button" href="{{ site.base_url }}/contact">
+            Contact
+        </a>
     </div>
 </div>

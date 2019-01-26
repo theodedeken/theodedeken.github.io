@@ -13,6 +13,7 @@ github: https://github.com/TheOZoneBE/Spaxel
 stats:
     - name: lines of code
       number: TODO
+featured: true
 ---
 Lorizzle ipsizzle dolor sizzle amizzle, fo shizzle for sure elit. Nullam sapien velizzle, sizzle volutpizzle, suscipit cool, vizzle, arcu. Pellentesque uhuh ... yih! tortizzle. Sizzle erizzle. Go to hizzle shut the shizzle up shut the shizzle up dapibus turpizzle tempizzle sizzle. Maurizzle pellentesque nibh the bizzle turpizzle. Shiznit izzle tortor. Pellentesque go to hizzle uhuh ... yih! things. Things hac habitasse platea dictumst. Fizzle mah nizzle. Shit tellus urna, pretizzle dang, mattizzle ac, eleifend vitae, nunc. Fizzle suscipit. Integizzle semper fo shizzle fizzle for sure.
 
