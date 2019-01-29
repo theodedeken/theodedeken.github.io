@@ -7,7 +7,20 @@ layout: default
         <div class="ui segment">
             <h1 class="ui header">
                 {{ page.title }}
+                <div class="sub header">
+                    {{ page.date | date: "%a %-d %b %y" }}
+                </div>
             </h1>
+            
+            <div class="ui horizontal selection list">
+            {% for tag in page.tags %}
+            <div class="ui item">
+                <div class="ui label">
+                    {{ tag }}
+                </div>
+            </div>
+            {% endfor %}
+            </div>
         </div>
         <div id="blog-content" class="ui basic segment">
             <div class="ui text container">

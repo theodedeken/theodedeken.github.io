@@ -17,11 +17,6 @@ layout: default
         {% for project in site.projects %}
         {% if project.featured %}
         <a class="card" href="{{ project.url | relative_url }}">
-            {% if project.thumb %}
-            <div class="image">
-                <img src="{{ project.thumb }}">
-            </div>
-            {% endif %}
             <div class="content">
                 <div class="header">{{ project.title }}</div>
             </div>

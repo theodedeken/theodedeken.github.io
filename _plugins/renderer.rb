@@ -6,16 +6,21 @@ class SemanticRender < Redcarpet::Render::HTML
   include Rouge::Plugins::Redcarpet
 
   def image(link, title, alt)
-    "<div class=\"ui compact segment\">
+    "<div class=\"ui center aligned segment\">
       <div class=\"ui rounded image\">
         <img src=\"#{link}\" alt=\"#{alt}\" title=\"#{title}\">
       </div>
-      <div class='ui divider'></div>
-      <div class=\"content\">
-        <h5 class=\"ui header\">#{title}</h5>
-      </div>
+      #{title ? image_title(title) : ''}
     </div>"
   end
+
+  def image_title(title)
+    "<div class='ui divider'></div>
+    <div class=\"content\">
+        <h5 class=\"ui header\">#{title}</h5>
+    </div>"  
+  end
+
 
   def header(text, header_level)
     unless @header_list
@@ -81,7 +86,7 @@ class SemanticRender < Redcarpet::Render::HTML
   def generate_toc_tree(h_list)
     lvl, text, link = h_list.shift
     tree = [[text, link, []]]
-    while h_list.count > 1 && h_list[0][0] >= lvl
+    while h_list.count > 0 && h_list[0][0] >= lvl
       if h_list[0][0] == lvl
         lvl, text, link = h_list.shift
         tree.push([text, link, []])
