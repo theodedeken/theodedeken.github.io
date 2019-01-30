@@ -15,6 +15,9 @@ stats:
       number: TODO
 featured: true
 ---
+Test | table
+---|---
+how| doess
 Lorizzle ipsizzle dolor sizzle amizzle, fo shizzle for sure elit. Nullam sapien velizzle, sizzle volutpizzle, suscipit cool, vizzle, arcu. Pellentesque uhuh ... yih! tortizzle. Sizzle erizzle. Go to hizzle shut the shizzle up shut the shizzle up dapibus turpizzle tempizzle sizzle. Maurizzle pellentesque nibh the bizzle turpizzle. Shiznit izzle tortor. Pellentesque go to hizzle uhuh ... yih! things. Things hac habitasse platea dictumst. Fizzle mah nizzle. Shit tellus urna, pretizzle dang, mattizzle ac, eleifend vitae, nunc. Fizzle suscipit. Integizzle semper fo shizzle fizzle for sure.
 
 Dizzle ut dolizzle. Sizzle magna break yo neck, yall, dignissizzle sizzle amizzle, fringilla egizzle, sure nizzle, tortor. Maecenas a nisi. Gizzle break yo neck, yall shit ass dizzle. Suspendisse break it down. Cras break it down tristique nizzle. Suspendisse daahng dawg ultricizzle purizzle. Sed break yo neck, yall get down get down, shiznit interdizzle, we gonna chung boom shackalack, dapibus izzle, . Suspendisse izzle tellus. Aenean aliquizzle lectizzle black that's the shizzle dolor. Fusce dapibizzle boofron izzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Crackalackin own yo' dolor mofo amet, consectetuer adipiscing yo. Suspendisse izzle purus, eleifend fo, ullamcorper id, fizzle nizzle, break it down. Yo black rutrum that's the shizzle.

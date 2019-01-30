@@ -4,11 +4,13 @@
     {%- include head.html -%}
 
     <body>
+    <div id="container">
 
         {%- include header.html -%}
 
         
-            <div id="main-container" class="main ui container">
+            <div id="body" class="ui container">
+
       
                 {{ content }}
 
@@ -17,6 +19,8 @@
 
         {%- include footer.html -%}
 
+
+    </div>
     </body>
 
 </html>

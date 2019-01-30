@@ -62,6 +62,28 @@ class SemanticRender < Redcarpet::Render::HTML
     </div>"
   end
 
+  def table(header, body)
+    header = header.gsub('<td>', '<th>')
+    header = header.gsub('</td>', '</th>')
+    "<table class=\"ui celled table\">
+      <thead>
+        #{header}
+      </thead>
+      <tbody>
+        #{body}
+      </tbody>
+    </table>"
+  end
+
+  def table_row(content)
+    "<tr>#{content}</tr>"
+  end
+  
+  def table_cell(content, alignment)
+    puts alignment
+    "<td>#{content}</td>"
+  end
+
   def doc_footer()
     if @header_list.count.zero?
       nil

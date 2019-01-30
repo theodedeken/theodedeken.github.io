@@ -1,5 +1,12 @@
 ---
 layout: default
 ---
-
-{{ content }}
+<div class="ui vertical masthead segment">
+    {% include breadcrumb.html %}
+    <h1>{{ page.title }}</h1>
+</div>
+<div class="ui text container">
+    <div class="ui hidden divider"></div>
+    {{ content }}
+    <div class="ui hidden divider"></div>
+</div>

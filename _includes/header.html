@@ -2,7 +2,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <div class="ui inverted segment">
+    <div id="header" class="ui inverted segment">
         <div class="ui inverted large secondary pointing menu">
             <a class="item {% if page.url == '/' %}active{% endif %}" href="{{ "/" | relative_url }}">
                 {{ site.title | escape }}
