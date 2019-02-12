@@ -1,4 +1,5 @@
 - language: Java
+  grade: 9
   icon: devicon-java-plain
   frameworks:
     - Spring
@@ -9,6 +10,7 @@
     - spaxel
     - perlin-noise
 - language: Rust
+  grade: 6
   frameworks:
     - wasm_bindgen
     - pest
@@ -17,6 +19,7 @@
     - webgl-rs
     - warp-engine
 - language: Python
+  grade: 9
   icon: devicon-python-plain
   frameworks:
     - keras
@@ -27,7 +30,9 @@
     - django
   projects:
     - thesis
+    - comp-bio
 - language: Javascript
+  grade: 5
   icon: devicon-javascript-plain
   frameworks:
     - Vue
@@ -40,12 +45,14 @@
     - sprout
     - traffic-troubles
 - language: C#
+  grade: 5
   icon: devicon-csharp-plain
   frameworks:
     - ASP.NET
   projects:
     - rideaway
 - language: Ruby
+  grade: 4
   icon: devicon-ruby-plain
   frameworks:
     - Jekyll
@@ -53,6 +60,7 @@
   projects:
     - site
 - language: C, C++
+  grade: 6
   icon: devicon-c-plain
   projects:
     - huffman-coding

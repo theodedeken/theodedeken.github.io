@@ -1,13 +1,12 @@
-- institution: Maricolen Maldegem
-  degree: Latin Mathematics
-  started: 2007
-  ended: 2013
-- institution: Ghent University
-  degree: Bachelor in Computer Science
-  started: 2014
-  ended: 2017
 - institution: Ghent University
   degree: Master in Computer Science
   started: 2017
   ended: 2019
-
+- institution: Ghent University
+  degree: Bachelor in Computer Science
+  started: 2014
+  ended: 2017
+- institution: Maricolen Maldegem
+  degree: Latin Mathematics
+  started: 2007
+  ended: 2013

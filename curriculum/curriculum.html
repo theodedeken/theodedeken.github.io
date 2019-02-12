@@ -32,6 +32,11 @@ permalink: /curriculum/
                     <div class="description">
                         <p>{{ exp.description | markdownify}}</p>
                     </div>
+                    {% if exp.leveraged %}
+                    <div class="description">
+                        <strong>Leveraged knowledge: </strong>{{ exp.leveraged }}
+                    </div>
+                    {% endif %}
                 </div>
             </div>
             {% endfor %}
@@ -63,6 +68,20 @@ permalink: /curriculum/
                 <div class="header">
                     {{ skill.language }}
                 </div>
+                <div class="extra">
+                    {% for i in (1..10) %}
+                        {% assign mod = i | modulo: 2 %}
+                        {% if mod == 0 %}
+                            <i class="star icon"></i>
+                        {% endif %}
+                        {% if i == skill.grade %}
+                            {% if mod == 1 %}
+                            <i class="half star icon"></i>
+                            {% endif %}
+                            {% break %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
                 <div class="ui divider"> </div>
                 {% if skill.frameworks %}
                 <div class="ui sub header">Frameworks</div>
@@ -86,11 +105,13 @@ permalink: /curriculum/
                     {% endfor %}
                 </div>
                 {% endif %}
+                
             </div>
         </div>
         {% endfor %}
     </div>
     <div class="ui hidden divider"></div>
+    <div class="ui star rating" data-rating="3" data-max-rating="5"></div>
     <div class="ui hidden divider"></div>
     <div class="ui center aligned segment">
         <div class="ui header">
