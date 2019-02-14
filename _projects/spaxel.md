@@ -2,30 +2,44 @@
 layout: project
 title: Spaxel
 permalink: /projects/spaxel
-thumb: /assets/thumbs/missing.png
+thumb: /assets/projects/thumbs/spaxel.png
 description: >-
-    TODO rework -> A game that will probably never be finished, but has provided me with loads of experience 
-    in all kinds of areas.
+    A journey of making a small game from scratch. While being quite small this project has provided me with
+    loads of experience in different programming concepts. Maybe some day I will even finish it...
 started: 2014
 ended: now
 language: Java
 github: https://github.com/TheOZoneBE/Spaxel
-stats:
-    - name: lines of code
-      number: TODO
 featured: true
 ---
-Test | table
----|---
-how| doess
-Lorizzle ipsizzle dolor sizzle amizzle, fo shizzle for sure elit. Nullam sapien velizzle, sizzle volutpizzle, suscipit cool, vizzle, arcu. Pellentesque uhuh ... yih! tortizzle. Sizzle erizzle. Go to hizzle shut the shizzle up shut the shizzle up dapibus turpizzle tempizzle sizzle. Maurizzle pellentesque nibh the bizzle turpizzle. Shiznit izzle tortor. Pellentesque go to hizzle uhuh ... yih! things. Things hac habitasse platea dictumst. Fizzle mah nizzle. Shit tellus urna, pretizzle dang, mattizzle ac, eleifend vitae, nunc. Fizzle suscipit. Integizzle semper fo shizzle fizzle for sure.
 
-Dizzle ut dolizzle. Sizzle magna break yo neck, yall, dignissizzle sizzle amizzle, fringilla egizzle, sure nizzle, tortor. Maecenas a nisi. Gizzle break yo neck, yall shit ass dizzle. Suspendisse break it down. Cras break it down tristique nizzle. Suspendisse daahng dawg ultricizzle purizzle. Sed break yo neck, yall get down get down, shiznit interdizzle, we gonna chung boom shackalack, dapibus izzle, . Suspendisse izzle tellus. Aenean aliquizzle lectizzle black that's the shizzle dolor. Fusce dapibizzle boofron izzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Crackalackin own yo' dolor mofo amet, consectetuer adipiscing yo. Suspendisse izzle purus, eleifend fo, ullamcorper id, fizzle nizzle, break it down. Yo black rutrum that's the shizzle.
+The journey of making this game started in the beginning of my academic career, I just learned my first programming language and I liked playing games.
+The decision of also trying to make a game was easily made and with the help of some tutorials I put down my first lines of code.
+Over the years development has been very irregular and for large periods of time no work was done.
 
-Vestibulum check out this ipsum primis in faucibus orci fizzle izzle ultricizzle gangster bizzle Curae; Sed vitae pot quizzle fo crackalackin aliquizzle. Phasellus sure erizzle. I saw beyonces tizzles and my pizzle went crizzle volutpat accumsan owned. Praesent dizzle ass, adipiscing vitae, rizzle sizzle, shiz phat, ante. Etizzle malesuada bibendum maurizzle. Izzle izzle elit izzle augue porta i'm in the shizzle. Nizzle sizzle augue. Vivamus sagittizzle. Praesent eu lacizzle quis lacizzle posuere shut the shizzle up. Yo ghetto tellizzle sheezy felizzle ma nizzle dawg. Integer odio. Sure dang. Break yo neck, yall hizzle eros, dignissizzle da bomb, porttitizzle gangster, imperdizzle fizzle, orci. Integizzle commodo brizzle lectizzle. That's the shizzle sollicitudizzle rizzle sizzle. Ass mi tellivizzle, convallis rizzle, pellentesque ghetto, ultricizzle izzle, nibh. My shizz yo mamma get down get down, facilisis crackalackin, sollicitudin eu, aliquet dang, lectus. Phat maurizzle risus, varizzle , adipiscing away, blandit fo shizzle mah nizzle fo rizzle, mah home g-dizzle amizzle, enim.
+## The beginning
+The first lines of code where written as early as 2014 and at that time I used not a single dependency.
+Partly maybe because I had still no idea how dependencies worked in Java, but probably also because I was eager to learn all the kinds of parts that make up a game.
 
-Nulla facilisi. Etiam faucibizzle pharetra pimpin'. Vestibulizzle dizzle black shizzle my nizzle crocodizzle maurizzle. Cras accumsizzle odio ma nizzle for sure. Curabitizzle dizzle nibh ass lectizzle. Rizzle laorizzle, owned eget eleifend tincidunt, dolor sizzle shut the shizzle up crazy, eu i saw beyonces tizzles and my pizzle went crizzle quam mauris crunk mi. Etizzle shit, lectus away aliquet aliquizzle, tellus nisl lacinia funky fresh, izzle stuff mi boofron purizzle. Shiz aliquet mattis pede. Crazy fo shizzle phat dolizzle. Praesent leo mofo, fizzle nec, facilisizzle nizzle, laorizzle uhuh ... yih!, sizzle. Crunk egizzle massa quis boofron blandizzle pizzle. Vestibulizzle ullamcorper my shizz izzle sem hizzle lobortizzle. Pimpin' quizzle ma nizzle. Maecenas cool. Vivamizzle fermentizzle enizzle. Pellentesque ghetto. Lorizzle ipsizzle fo shizzle my nizzle crunk amizzle, fo shizzle mah nizzle fo rizzle, mah home g-dizzle adipiscing shut the shizzle up. Nizzle shut the shizzle up arcu, i saw beyonces tizzles and my pizzle went crizzle egizzle, yippiyo fizzle, pharetra eu, neque. Lorizzle yo mamma dolizzle sizzle amizzle, fo shizzle adipiscing elizzle.
+## Rendering on the GPU
+As the first version of my game was based on code of a tutorial of a simple game, all the graphics in the game were still being rendered by the CPU.
+This became a problem as I began to think about adding more visual effects like particles, blur and distortion.
+Early tests by implementing these things in the current engine showed that adding them would reduce the game to a slideshow.
 
-In gravida ligula shizznit . Daahng dawg ullamcorpizzle. Etiam bling bling. For sure own yo' mofo fo shizzle fizzle imperdizzle vehicula. Dizzle go to hizzle shizzlin dizzle. Sed iaculizzle phat izzle lacizzle. Praesent bow wow wow ipsizzle stuff urna euismod ullamcorper. Integizzle nec shizzle my nizzle crocodizzle. Vivamus lobortis lacizzle vel felizzle. Stuff egizzle justo. Shizznit eu yippiyo shiz magna elementizzle lobortizzle. Fo placerizzle, shizznit non porta, nizzle est adipiscing nunc, cursizzle ornare mi dolizzle daahng dawg amet pizzle. Morbi turpizzle. Vestibulum fizzle ghetto shiz izzle uhuh ... yih! orci things izzle ultrices doggy fo shizzle my nizzle Curae; You son of a bizzle phat, justo laoreet go to hizzle hendrerit, risizzle shit break yo neck, yall nunc, things fermentizzle metizzle quizzle nibh. Ma nizzle pretium sizzle izzle yo. Bling bling accumsan. Cizzle shizznit natoque izzle et you son of a bizzle dizzle crunk montizzle, check out this ridiculizzle yippiyo. Proin et cool phat quam izzle congue. Own yo' non mi.
+I decided to rework the whole rendering system of the engine and to switch over to LWJGL. 
+This also required me to learn some OpenGL and GLSL.
+I ultimately set up an instanced rendering system where all sprites are first buffered together and subsequently rendered all in one render call.
 
-Fo shizzle sure purus. Fo shizzle sizzle amet fo fo shizzle my nizzle fo shizzle get down get down pellentesque. Tellivizzle bling bling erat. Vivamizzle nizzle sapien, mah nizzle my shizz amet, vulputate own yo', condimentizzle ac, nunc. Crizzle sizzle brizzle mauris. Shiznit fermentum mattis nunc. I saw beyonces tizzles and my pizzle went crizzle vulputate, check out this bizzle gizzle facilisizzle, velit crackalackin cursus ass, dope sizzle i saw beyonces tizzles and my pizzle went crizzle purizzle quizzle gizzle. Boofron fermentum pulvinar mofo. Pellentesque dignissim. Yippiyo go to hizzle sheezy dope . Brizzle sit . Donizzle sizzle crackalackin. We gonna chung izzle cool. Nizzle lobortis, elit eget crunk da bomb, massa owned pretizzle lorem, quizzle i saw beyonces tizzles and my pizzle went crizzle ipsizzle elit izzle go to hizzle.
+## Rework after rework
+Over the years this project has undergone more reworks then I can count.
+Sometimes I even think the whole purpose of this piece of software is to be a playground for me to test my new skills as I grow as a software developer.
+Maybe some day I might call this game finished, even though it will probably never be what I envisioned it to be, I'm am still proud of what I made and what it has tought me.
+
+## The state of the game
+Currently the game is at a reasonably playable state and it has quite an interesting engine under the belt.
+As the engine evolved over the years some notable systems have been implemented.
+These include:
+
+- An UI system with a very slimmed down version of cascading stylesheets
+- An OpenGL rendering system with sprite buffering, different layers, texture packing, postprocessing steps...
+- Separation of the game's content from the code by use of json property files
