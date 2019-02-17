@@ -3,7 +3,7 @@ layout: project
 title: Computational Biology
 permalink: /projects/comp-bio
 description: >-
-    The exercises for a course on Computational Biology
+    The exercises for a course on Computational Biology.
 started: February 2018
 ended: June 2018
 language: Python
