@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-02-17T11:37:54+00:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Init 2019</title><link href="/blog/general/2019/01/06/init-2019.html" rel="alternate" type="text/html" title="Init 2019" /><published>2019-01-06T00:00:00+00:00</published><updated>2019-01-06T00:00:00+00:00</updated><id>/blog/general/2019/01/06/init-2019</id><content type="html" xml:base="/blog/general/2019/01/06/init-2019.html">&lt;p&gt;A new year has started and while it is a bit of a cliché to make New Years&amp;#39; resolutions. I&amp;#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. &lt;/p&gt;
+
+&lt;p&gt;In that sense my resolutions are nothing more than me setting out a plan for what exactly I am working towards this year. Writing these down on paper, some place where they are noticeable enough gives me a better chance to actually complete them. I find it also important to look back on them at certain moments to be able to evaluate my progress so far.&lt;/p&gt;
+
+&lt;p&gt;I am quite ambitious with my goals this year, they will likely adapt over the course of it, but having written them down adds a bit more pressure to keep them.&lt;/p&gt;
+&lt;h2 class='ui header' id=&quot;blogging&quot;&gt;
+      Blogging
+    &lt;/h2&gt;
+&lt;p&gt;The first goal of this year was setting up this site as a personal portfolio and a place for my to post some blogs about my interests and the things I am currently working on. Ideally I would want to post at least once every two weeks but, preferably even once a week. The topics I would like to cover are:&lt;/p&gt;
+&lt;div class=&quot;ui bulleted list&quot;&gt;
+      &lt;div class=&quot;item&quot;&gt;The games I am playing
+&lt;/div&gt;&lt;div class=&quot;item&quot;&gt;The books I am reading
+&lt;/div&gt;&lt;div class=&quot;item&quot;&gt;The projects I am working on
+&lt;/div&gt;
+    &lt;/div&gt;&lt;h2 class='ui header' id=&quot;new-programming-languages-and-frameworks&quot;&gt;
+      New programming languages and frameworks
+    &lt;/h2&gt;
+&lt;p&gt;In this new year there are also a number of new programming languages and frameworks I would like to learn and get some experience with. Some of them will tie into some of the new projects I am planning, others I just find remarkable and would like to get to know better, perhaps then some project idea will emerge. &lt;/p&gt;
+&lt;h3 class='ui header' id=&quot;elm&quot;&gt;
+      Elm
+    &lt;/h3&gt;
+&lt;p&gt;&lt;div class=&quot;ui center aligned segment&quot;&gt;
+      &lt;div class=&quot;ui rounded image&quot;&gt;
+        &lt;img src=&quot;/assets/blog/init-2019/elm.png&quot; alt=&quot;Elm&quot; title=&quot;&quot;&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;I recently got to know a little language called Elm, for those of you who don&amp;#39;t know it. It&amp;#39;s a functional programming language that compiles to Javascript. It is only focused on building web apps, that way a lot of features of normal Javascript can be removed. What&amp;#39;s left is a simple but powerful language that compiles to compact, safe and fast Javascript code(or so I can gather from the material I found online regarding this language). &lt;/p&gt;
+
+&lt;p&gt;I think it is a great addition to my skillset, not only because it provides me with some experience in the functional programming style. But also because front end development is something I have little experience with and having a type safe way to build web applications feels a lot better for a guy primarily interested in staticly typed languages.&lt;/p&gt;
+&lt;h3 class='ui header' id=&quot;dart--flutter&quot;&gt;
+      Dart + Flutter
+    &lt;/h3&gt;
+&lt;p&gt;&lt;div class=&quot;ui center aligned segment&quot;&gt;
+      &lt;div class=&quot;ui rounded image&quot;&gt;
+        &lt;img src=&quot;/assets/blog/init-2019/flutter.png&quot; alt=&quot;Flutter&quot; title=&quot;&quot;&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Flutter is a platform for developing crossplatform native mobile apps from Google. It seems very promising, both in terms of performance and ease of development. Mobile development is another area where I lack some experience and being able to just publish apps for all platforms on one codebase does look very exciting. I am still unsure though on how mature the platform is currently. While there seems to be support in some IDEs including Google&amp;#39;s own Android Studio, this might still be in the early stages.&lt;/p&gt;
+&lt;h3 class='ui header' id=&quot;go&quot;&gt;
+      Go
+    &lt;/h3&gt;
+&lt;p&gt;&lt;div class=&quot;ui center aligned segment&quot;&gt;
+      &lt;div class=&quot;ui rounded image&quot;&gt;
+        &lt;img src=&quot;/assets/blog/init-2019/go.png&quot; alt=&quot;Go&quot; title=&quot;&quot;&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;The last language I might have a look at this year is the Go language. The premise of being able to write concurrent procedures very easy, makes it feel like a great language for quick development for scalable backends. However the fact that it is garbage collected might incur some performance penalties. This combined with the fact that Rust also has quite simple concurrency with the added benefit of memory safety together with better performance, might make the usecases for this language quite limited. Nevertheless it will not hurt to have a look and experiment a bit.&lt;/p&gt;
+&lt;h2 class='ui header' id=&quot;open-source&quot;&gt;
+      Open source
+    &lt;/h2&gt;
+&lt;p&gt;I believe that Open Source software has an important purpose in providing the computer science world with easy to access and free code to help accelerate the development of programs. I have started a few repositories of my own with an Open Source license and in 2019 I would like to continue to build on them and try to establish communities around them. &lt;/p&gt;
+
+&lt;p&gt;On top of that I would also like to do my part and contribute to other Open Source projects I like. Likely I will focus on projects in the areas I am currently researching.&lt;/p&gt;
+&lt;h2 class='ui header' id=&quot;spaxel-release&quot;&gt;
+      Spaxel release
+    &lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/projects/spaxel&quot;&gt;Spaxel&lt;/a&gt; is a game I started developing not long after I first enrolled in my Computer Science degree. Now almost 5 years later I feel that it might be finally time to release it. &lt;/p&gt;
+
+&lt;p&gt;Spaxel is quite a simple and small game, however because I started implementing everything from scratch the development is taking a lot longer. Over the years I worked on and off on this project and it has gone through some major rewrites. Sometimes I feel like the purpose of this project is not to finish it but to provide me with a canvas to apply my new knowledge I have acquired over the years on. &lt;/p&gt;
+
+&lt;p&gt;But, as I am finishing up my studies, I think it is only fair to also provide a satisfying ending for this project. It probably will never be the game I have envisioned it to be in the beginning. But now it is time to move on and bring my attention to bigger and better projects. I will be developing the game to a sufficiently finished state. This will mean it will likely have little content and will not be worth releasing it as a priced game. So probably it will be a free download with all the source code being Open Source &lt;/p&gt;
+&lt;div class=&quot;ui left rail&quot; style=&quot;width:300px&quot;&gt;
+      &lt;div class=&quot;ui sticky&quot;&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;
+          &lt;h3 class=&quot;ui header&quot;&gt;Table of contents&lt;/h3&gt;
+          &lt;div class=&quot;ui list&quot;&gt;
+            &lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#blogging&quot;&gt;Blogging&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#new-programming-languages-and-frameworks&quot;&gt;New programming languages and frameworks&lt;/a&gt;
+          &lt;div class=&quot;list&quot;&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#elm&quot;&gt;Elm&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#dart--flutter&quot;&gt;Dart + Flutter&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#go&quot;&gt;Go&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#open-source&quot;&gt;Open source&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#spaxel-release&quot;&gt;Spaxel release&lt;/a&gt;
+          
+        &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</content><author><name>Theo Dedeken</name></author><category term="2019" /><category term="resolutions" /><category term="Elm" /><category term="Blog" /><category term="Flutter" /><category term="Go" /><category term="spaxel" /><summary type="html">A new year has started and while it is a bit of a cliché to make New Years&amp;#39; resolutions. I&amp;#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve.</summary></entry></feed>

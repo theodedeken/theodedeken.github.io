@@ -50,13 +50,13 @@
 </head><body>
     <div id="container"><header><div id="header" class="ui inverted segment">
         <div class="ui inverted stackable large secondary pointing menu">
-            <a class="item active" href="/">
+            <a class="item " href="/">
                 Theo Dedeken
             </a>
             <a class="item " href="/curriculum/">
                 Curriculum
             </a>
-            <a class="item " href="/projects/">
+            <a class="item active" href="/projects/">
                 Projects
             </a>
             <a class="item " href="/blog/">
@@ -72,33 +72,101 @@
 </header><div id="body" class="ui container">
 
       
-                <div class="ui vertical masthead center aligned segment">
-    <div class="ui text container">
-        <img class="ui centered medium circular image" src="/assets/me.jpg">
-        <h1 class="ui header">
-            Theo Dedeken
-            <div class="sub header">Computer Science Student</div>
-        </h1>
+                <div class="ui vertical masthead segment">
+    
+
+
+
+<div class="ui breadcrumb">
+    <a class="section" href="/">Home</a>
+    <i class="right angle icon divider"></i>
+    
+    
+    
+    
+    <a class="section" href="/projects/">projects</a>
+    <i class="right angle icon divider"></i>
+    
+    
+    
+    
+    <div class="active section">spaxel</div>
+</div>
+            
+            <a class="ui right floated github button" href="https://github.com/TheOZoneBE/Spaxel">
+                <i class="github icon"></i>
+                Github
+            </a>
+            
+            
+            <h1 class="ui header">Spaxel</h1>
+            
+            <div class="ui blue tag label">
+                Java
+            </div>
+            
+            <p>A journey of making a small game from scratch. While being quite small this project has provided me with loads of experience in different programming concepts. Maybe some day I will even finish it...</p>
+   
+</div>
+<div class="ui text container">
+<p>The journey of making this game started in the beginning of my academic career, I just learned my first programming language and I liked playing games.
+The decision of also trying to make a game was easily made and with the help of some tutorials I put down my first lines of code.
+Over the years development has been very irregular and for large periods of time no work was done.</p>
+<h2 class='ui header' id="the-beginning">
+      The beginning
+    </h2>
+<p>The first lines of code where written as early as 2014 and at that time I used not a single dependency.
+Partly maybe because I had still no idea how dependencies worked in Java, but probably also because I was eager to learn all the kinds of parts that make up a game.</p>
+<h2 class='ui header' id="rendering-on-the-gpu">
+      Rendering on the GPU
+    </h2>
+<p>As the first version of my game was based on code of a tutorial of a simple game, all the graphics in the game were still being rendered by the CPU.
+This became a problem as I began to think about adding more visual effects like particles, blur and distortion.
+Early tests by implementing these things in the current engine showed that adding them would reduce the game to a slideshow.</p>
+
+<p>I decided to rework the whole rendering system of the engine and to switch over to LWJGL. 
+This also required me to learn some OpenGL and GLSL.
+I ultimately set up an instanced rendering system where all sprites are first buffered together and subsequently rendered all in one render call.</p>
+<h2 class='ui header' id="rework-after-rework">
+      Rework after rework
+    </h2>
+<p>Over the years this project has undergone more reworks then I can count.
+Sometimes I even think the whole purpose of this piece of software is to be a playground for me to test my new skills as I grow as a software developer.
+Maybe some day I might call this game finished, even though it will probably never be what I envisioned it to be, I&#39;m am still proud of what I made and what it has tought me.</p>
+<h2 class='ui header' id="the-state-of-the-game">
+      The state of the game
+    </h2>
+<p>Currently the game is at a reasonably playable state and it has quite an interesting engine under the belt.
+As the engine evolved over the years some notable systems have been implemented.
+These include:</p>
+<div class="ui bulleted list">
+      <div class="item">An UI system with a very slimmed down version of cascading stylesheets
+</div><div class="item">An OpenGL rendering system with sprite buffering, different layers, texture packing, postprocessing steps...
+</div><div class="item">Separation of the game&#39;s content from the code by use of json property files
+</div>
+    </div><div class="ui left rail" style="width:300px">
+      <div class="ui sticky">
+        <div class="ui segment">
+          <h3 class="ui header">Table of contents</h3>
+          <div class="ui list">
+            <div class="item">
+          <a href="#the-beginning">The beginning</a>
+          
+        </div><div class="item">
+          <a href="#rendering-on-the-gpu">Rendering on the GPU</a>
+          
+        </div><div class="item">
+          <a href="#rework-after-rework">Rework after rework</a>
+          
+        </div><div class="item">
+          <a href="#the-state-of-the-game">The state of the game</a>
+          
+        </div>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
-
-<div class="ui text container">  
-    <div class="ui hidden divider"></div><h2 class="ui header">Latest posts</h2>
-    <div class="ui divided items"><div class="item">
-    <div class="image">
-      <img class="ui small image" src="/assets/blog/init-2019/thumb.png">
-    </div>
-    <div class="content">
-      <a class="header" href="/blog/general/2019/01/06/init-2019.html">Init 2019</a>
-      <div class="meta">
-        <span>Sun 6 Jan 19</span>
-      </div>
-      <div class="description">
-        <p><p>A new year has started and while it is a bit of a cliché to make New Years&#39; resolutions. I&#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. </p>
-</p>
-      </div>
-    </div>
-  </div></div></div>
 
             </div><footer>
     <div id="footer" class="ui inverted vertical footer segment">
