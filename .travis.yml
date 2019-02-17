@@ -20,6 +20,10 @@ addons:
     packages:
       - libcurl4-openssl-dev
 
+branches:
+  only:
+    - source
+
 sudo: false # route your build to the container-based infrastructure for a faster build
 
 cache: bundler # caching bundler gem packages will speed up build
@@ -35,4 +39,5 @@ deploy:
   github-token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
-    branch: master
+    branch: source
+  target-branch: master
