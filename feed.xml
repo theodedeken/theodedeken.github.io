@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-02-17T11:37:54+00:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Init 2019</title><link href="/blog/general/2019/01/06/init-2019.html" rel="alternate" type="text/html" title="Init 2019" /><published>2019-01-06T00:00:00+00:00</published><updated>2019-01-06T00:00:00+00:00</updated><id>/blog/general/2019/01/06/init-2019</id><content type="html" xml:base="/blog/general/2019/01/06/init-2019.html">&lt;p&gt;A new year has started and while it is a bit of a cliché to make New Years&amp;#39; resolutions. I&amp;#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. &lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-02-21T13:32:34+00:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Leveling up my resume</title><link href="/blog/career-tools/2019/02/20/leveling-up-my-resume.html" rel="alternate" type="text/html" title="Leveling up my resume" /><published>2019-02-20T00:00:00+00:00</published><updated>2019-02-20T00:00:00+00:00</updated><id>/blog/career-tools/2019/02/20/leveling-up-my-resume</id><content type="html" xml:base="/blog/career-tools/2019/02/20/leveling-up-my-resume.html">&lt;p&gt;As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.&lt;/p&gt;
+&lt;h2 class='ui header' id=&quot;making-my-own-template&quot;&gt;
+      Making my own template
+    &lt;/h2&gt;
+&lt;p&gt;After reading this excellent &lt;a href=&quot;https://medium.freecodecamp.org/writing-a-killer-software-engineering-resume-b11c91ef699d&quot;&gt;Medium post&lt;/a&gt;, which advocates a quite simple structure with clear concise information, I decided to make my own Latex template. &lt;/p&gt;
+
+&lt;p&gt;Writing your own template is rather easy for simple cases, but to add some more complex concepts you really start to notice the limitations of the Tex language. For example the use of simple control sequences like &lt;code&gt;if else&lt;/code&gt; is very tedious. While making this I gained a lot more respect for the creators of some of the Latex packages in the ecosystem, writing such complex things must be a pain. &lt;/p&gt;
+&lt;h2 class='ui header' id=&quot;generation-from-yml&quot;&gt;
+      Generation from yml
+    &lt;/h2&gt;
+&lt;p&gt;The next step was to improve the creation of multiple resumes and cover letters. When writing multiple resumes for different applications, there will likely be only little differences adapting to the application itself with the most part being the same in all files. Doing this by editing &lt;code&gt;tex&lt;/code&gt; files is a bit tedious as content and structure are intertwined. &lt;/p&gt;
+
+&lt;p&gt;To solve this I seperated the content of my resume and cover letter to &lt;code&gt;yml&lt;/code&gt; files, which then get processed by scripts to generate the corresponding &lt;code&gt;tex&lt;/code&gt; files to generate the pdfs.&lt;/p&gt;
+&lt;h2 class='ui header' id=&quot;find-this-on-github&quot;&gt;
+      Find this on Github
+    &lt;/h2&gt;
+&lt;p&gt;I have uploaded both of my templates as well as my script to Github in &lt;a href=&quot;https://github.com/TheOZoneBE/career-tools&quot;&gt;this repository&lt;/a&gt;. It has an open source license, so feel free to use it if you want! &lt;/p&gt;
+&lt;div class=&quot;ui left rail&quot; style=&quot;width:300px&quot;&gt;
+      &lt;div class=&quot;ui sticky&quot;&gt;
+        &lt;div class=&quot;ui segment&quot;&gt;
+          &lt;h3 class=&quot;ui header&quot;&gt;Table of contents&lt;/h3&gt;
+          &lt;div class=&quot;ui list&quot;&gt;
+            &lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#making-my-own-template&quot;&gt;Making my own template&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#generation-from-yml&quot;&gt;Generation from yml&lt;/a&gt;
+          
+        &lt;/div&gt;&lt;div class=&quot;item&quot;&gt;
+          &lt;a href=&quot;#find-this-on-github&quot;&gt;Find this on Github&lt;/a&gt;
+          
+        &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</content><author><name>Theo Dedeken</name></author><category term="latex" /><category term="python" /><category term="career" /><category term="resume" /><category term="job" /><summary type="html">As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</summary></entry><entry><title type="html">Init 2019</title><link href="/blog/general/2019/01/06/init-2019.html" rel="alternate" type="text/html" title="Init 2019" /><published>2019-01-06T00:00:00+00:00</published><updated>2019-01-06T00:00:00+00:00</updated><id>/blog/general/2019/01/06/init-2019</id><content type="html" xml:base="/blog/general/2019/01/06/init-2019.html">&lt;p&gt;A new year has started and while it is a bit of a cliché to make New Years&amp;#39; resolutions. I&amp;#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. &lt;/p&gt;
 
 &lt;p&gt;In that sense my resolutions are nothing more than me setting out a plan for what exactly I am working towards this year. Writing these down on paper, some place where they are noticeable enough gives me a better chance to actually complete them. I find it also important to look back on them at certain moments to be able to evaluate my progress so far.&lt;/p&gt;
 
