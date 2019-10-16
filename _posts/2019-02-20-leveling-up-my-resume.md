@@ -28,4 +28,4 @@ The next step was to improve the creation of multiple resumes and cover letters.
 To solve this I seperated the content of my resume and cover letter to `yml` files, which then get processed by scripts to generate the corresponding `tex` files to generate the pdfs.
 
 ## Find this on Github
-I have uploaded both of my templates as well as my script to Github in [this repository](https://github.com/TheOZoneBE/career-tools). It has an open source license, so feel free to use it if you want! 
+I have uploaded both of my templates as well as my script to Github in [this repository](https://github.com/theodedeken/career-tools). It has an open source license, so feel free to use it if you want! 

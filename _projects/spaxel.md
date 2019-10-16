@@ -9,7 +9,7 @@ description: >-
 started: 2014
 ended: now
 language: Java
-github: https://github.com/TheOZoneBE/Spaxel
+github: https://github.com/theodedeken/Spaxel
 featured: true
 ---
 

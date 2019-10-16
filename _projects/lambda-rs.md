@@ -2,7 +2,7 @@
 layout: project
 title: Lambda Interpreter
 permalink: /projects/lambda-rs
-github: https://github.com/TheOZoneBE/lambda-rs
+github: https://github.com/theodedeken/lambda-rs
 started: July 2018
 ended: August 2018
 language: Rust
