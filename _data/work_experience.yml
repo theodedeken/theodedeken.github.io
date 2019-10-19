@@ -1,3 +1,24 @@
+- company: Young Innovation HUB Åmål, Sweden
+  jobtitle: European Solidarity Corps volunteer
+  description: >-
+    After graduating in my master computer science I decided to take a year to do a volunteership.
+    This volunteership is part of the [European Solidarity Corps](https://europa.eu/youth/solidarity_en) programme, which is an initiative of the EU to allow youths to perform a volunteership within Europe.
+    I was selected to come work in the Young Innovation HUB in Åmål, Sweden.
+    This is a place where we help young people to furfill their personal projects, such as organizing events or starting a business.
+  started: September 2019
+  ended: August 2020
+- company: Open Knowledge Belgium
+  jobtitle: Summer job Open Summer of Code 2019
+  description: >-
+    [Open Summer of Code](https://2019.summerofcode.be/) is a project where several teams of students work on real life open innovation projects. 
+    This year I was assigned to the Best@ project.
+    This project was issued by the Digital Transformation department of the federal government.
+    The aim was to develop a toolbox of useful scripts to allow the recently published dataset of addresses in Belgium to be used more easily.
+    For this we produced Python scripts that allowed to download the zipped dataset of the addresses, extract the xml files, convert them to csv and use them in other applications such as geocoders.
+    An overview of our work can be found [here](https://osoc19.github.io/best/), all [code](https://github.com/oSoc19/best) is public and open source.
+  started: July 2019
+  ended: August 2019
+  leveraged: All code was written in Python using pandas, datashader and bokeh
 - company: Hochschule Zittau/Görlitz, Germany
   jobtitle: Research Intern
   description: >-
@@ -5,17 +26,17 @@
     and to challenge myself by putting myself in an unfamiliar environment. The internship took place at the [University of Applied Sciences](https://www.hszg.de/en) 
     in Zittau, Germany. As an intern I did research into machine learning solutions for the monitoring of nuclear waste containers by analysing 
     the vibrations of these structures. At the end of my internship I wrote a [paper](/assets/report.pdf) about my research which will likely be 
-    published in the [ACC Journal](https://acc-ern.tul.cz/en/acc-journal)
+    published in the [ACC Journal](https://acc-ern.tul.cz/en/acc-journal).
   started: July 2018
   ended: September 2018
   leveraged: Implementation was done in Python using the Keras framework.
 - company: Open Knowledge Belgium
-  jobtitle: Summer job Open Summer of Code
+  jobtitle: Summer job Open Summer of Code 2017
   description: >-
     [Open Summer of Code](https://2017.summerofcode.be/) is a project where several teams of students work on real life open innovation projects. 
     I was tasked to develop the backend of a bicycle navigation application commissioned by Brussels Mobility. The following year more funding 
     for the project was acquired. A new team extended the application, I couldn't participate because of an internship. The current application 
-    can be found [here](https://bike4brussels.osm.be/), all [code](https://github.com/oSoc18/bike4brussels-backend) is public and open source
+    can be found [here](https://bike4brussels.osm.be/), all [code](https://github.com/oSoc18/bike4brussels-backend) is public and open source.
   started: July 2017
   ended: August 2017
   leveraged: Backend was written in C# using ASP.NET, frontend used Javascript and Mapbox
