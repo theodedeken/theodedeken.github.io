@@ -1,10 +1,8 @@
 <header>
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths = site.header_pages | default: default_paths -%} {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     <div id="header" class="ui inverted segment">
         <div class="ui inverted stackable large secondary pointing menu">
-            <a class="item {% if page.url == '/' %}active{% endif %}" href="{{ "/" | relative_url }}">
+            <a class="item {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}" style="font-size: 1.5rem">
                 {{ site.title | escape }}
             </a>
             <a class="item {% if page.url contains '/curriculum/' %}active{% endif %}" href="/curriculum/">
