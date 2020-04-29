@@ -1,7 +1,35 @@
 <header>
-    {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths = site.header_pages | default: default_paths -%} {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <div id="header" class="ui inverted segment">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <div class="ui inverted bottom attached segment" id="header">
         <div class="ui inverted stackable large secondary pointing menu">
+            <div class="ui container">
+                <a class="item {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}" style="font-size: 1.5rem">
+                    {{ site.title | escape }}
+                </a>
+                <a class="item {% if page.url contains '/curriculum/' %}active{% endif %}" href="/curriculum/">
+                    Curriculum
+                </a>
+                <a class="item {% if page.url contains '/projects/' %}active{% endif %}" href="/projects/">
+                    Projects
+                </a>
+                <a class="item {% if page.url contains '/blog/' %}active{% endif %}" href="/blog/">
+                    Blog
+                </a>
+                <div class="right menu">
+                    <a class="ui item {% if page.url contains '/contact/' %}active{% endif %}" href="/contact/">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% include masthead.html %}
+    </div>
+
+
+    <div class="ui stackable large secondary pointing fixed menu transition hidden" id="desktop-fade-menu">
+        <div class="ui container">
             <a class="item {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}" style="font-size: 1.5rem">
                 {{ site.title | escape }}
             </a>
@@ -21,4 +49,5 @@
             </div>
         </div>
     </div>
+
 </header>
