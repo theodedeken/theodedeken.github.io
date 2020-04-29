@@ -13,6 +13,8 @@ tags:
     - career
     - resume
     - job
+excerpt: |-
+    As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. For this round of applications I wanted to upgrade my process of constructing my resume and cover letter.
 ---
 
 As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.

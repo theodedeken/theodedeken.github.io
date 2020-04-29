@@ -54,4 +54,8 @@ https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-
 .rvmrc
 
 node_modules
-semantic
+semantic/dist
+semantic/tasks
+semantic/gulpfile.js
+semantic/src/definitions
+semantic/src/themes

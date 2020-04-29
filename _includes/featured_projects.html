@@ -1,0 +1,16 @@
+<div class="ui center aligned segment">
+    <h2 class="ui header">
+        Featured
+    </h2>
+    <div class="ui four stackable centered cards">
+        {% for project in site.projects %}
+            {% if project.featured %}
+                <a class="card" href="{{ project.url | relative_url }}">
+                    <div class="content">
+                        <div class="header">{{ project.title }}</div>
+                    </div>
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

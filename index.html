@@ -11,13 +11,13 @@ layout: home
             <p>Project box</p>
 
         </div>
-        <div class="ui primary bottom attached button" tabindex="0">View all projects
+        <a class="ui primary bottom attached button" href="/projects/" tabindex="0">View all projects
             <i class="arrow circle right icon"></i>
-        </div>
+        </a>
     </div>
     <div class="eleven wide column">
         <div class="ui center aligned basic segment">
-            <p>Featured projects</p>
+            {%- include featured_projects.html -%}
         </div>
     </div>
     <div class="sixteen wide column">
@@ -32,7 +32,7 @@ layout: home
     </div>
     <div class="eleven wide column">
         <div class="ui center aligned basic segment">
-            <p>Latest posts</p>
+            {%- include latest_blogs.html -%}
         </div>
     </div>
     <div class="five wide column">
@@ -40,9 +40,9 @@ layout: home
             <h1>Blog</h1>
             <p>blog box</p>
         </div>
-        <div class="ui primary bottom attached button" tabindex="0">View all blogposts
+        <a class="ui primary bottom attached button" href="/blog/" tabindex="0">View all blogposts
             <i class="arrow circle right icon"></i>
-        </div>
+        </a>
     </div>
 </div>
 
