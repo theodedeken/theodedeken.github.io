@@ -1,6 +1,6 @@
 - language: Java
   grade: 9
-  icon: devicon-java-plain
+  icon: java icon
   frameworks:
     - Spring
     - LWJGL
@@ -11,6 +11,7 @@
     - perlin-noise
 - language: Rust
   grade: 6
+  icon: rust-icon icon
   frameworks:
     - wasm_bindgen
     - pest
@@ -20,7 +21,7 @@
     - warp-engine
 - language: Python
   grade: 9
-  icon: devicon-python-plain
+  icon: python icon
   frameworks:
     - keras
     - numpy

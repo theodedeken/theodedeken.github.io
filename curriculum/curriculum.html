@@ -1,70 +1,111 @@
 ---
 layout: page
 title: Curriculum
+subtitle: Education, Experience and Skills
 permalink: /curriculum/
+masthead_flair: <i class="graduation cap massive icon"></i>
 ---
+<div class="ui orange raised segment">
+    <h1>Current occupation</h1>
+    <div class="ui orange large label">
+        Looking for work, Learning new skills
+    </div>
+    <i class="large at icon"></i>
+    <div class="ui secondary large label">Home</div>
+
+</div>
+
+
+<div class="ui horizontal section divider">
+    <div class="ui massive primary label">Education</div>
+</div>
+
 <div class="ui text container">
-    <h2 class="ui header">Education</h2>
     <div class="ui segment">
         <div class="ui relaxed divided list">
             {% for edu in site.data.education %}
-            <div class="item">
-                <div class="right floated content">{{ edu.institution }}</div>
-                <div class="header">{{ edu.degree }}</div>
-                {{ edu.started }} - {{ edu.ended }}
+                <div class="item">
+                    <div class="right floated content">{{ edu.institution }}</div>
+                    <div class="header">{{ edu.degree }}</div>
+                    {{ edu.started }}
+                    -
+                    {{ edu.ended }}
 
-            </div>
+                </div>
             {% endfor %}
         </div>
     </div>
+</div>
 
-    <h2 class="ui header">Work Experience</h2>
+<div class="ui horizontal section divider">
+    <div class="ui massive primary label">Work Experience</div>
+</div>
+
+<div class="ui text container">
     <div class="ui segment">
         <div class="ui divided items">
             {% for exp in site.data.work_experience %}
-            <div class="item">
-                <div class="content">
-                    <div class="right floated content"><i class="map marker alternate icon"></i> {{ exp.company }}</div>
-                    <div class="header">{{ exp.jobtitle }}</div>
-                    <div class="meta">
-                        <i class="calendar alternate outline icon"></i> {{ exp.started }} - {{ exp.ended }}
+                <div class="item">
+                    <div class="content">
+                        <div class="right floated content">
+                            <i class="map marker alternate icon"></i>
+                            {{ exp.company }}</div>
+                        <div class="header">{{ exp.jobtitle }}</div>
+                        <div class="meta">
+                            <i class="calendar alternate outline icon"></i>
+                            {{ exp.started }}
+                            -
+                            {{ exp.ended }}
+                        </div>
+                        <div class="description">
+                            <p>{{ exp.description | markdownify}}</p>
+                        </div>
+                        {% if exp.leveraged %}
+                            <div class="description">
+                                <strong>Leveraged knowledge:
+                                </strong>
+                                {{ exp.leveraged }}
+                            </div>
+                        {% endif %}
                     </div>
-                    <div class="description">
-                        <p>{{ exp.description | markdownify}}</p>
-                    </div>
-                    {% if exp.leveraged %}
-                    <div class="description">
-                        <strong>Leveraged knowledge: </strong>{{ exp.leveraged }}
-                    </div>
-                    {% endif %}
                 </div>
-            </div>
             {% endfor %}
         </div>
     </div>
+</div>
 
-    <h2 class="ui header">Other Experience</h2>
+<div class="ui horizontal section divider">
+    <div class="ui massive primary label">Other Experience</div>
+</div>
+
+<div class="ui text container">
     <div class="ui segment">
         <div class="ui divided items">
             {% for exp in site.data.other_experience %}
-            <div class="item">
-                <div class="content">
-                    <div class="header">{{ exp.title }}</div>
-                    <div class="description">
-                        <p>{{ exp.description | markdownify}}</p>
+                <div class="item">
+                    <div class="content">
+                        <div class="header">{{ exp.title }}</div>
+                        <div class="description">
+                            <p>{{ exp.description | markdownify}}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             {% endfor %}
         </div>
     </div>
+</div>
 
-    <h2 class="ui header">Programming Languages</h2>
-    <div class="ui three stackable cards">
-        {% for skill in site.data.skills %}
+<div class="ui horizontal section divider">
+    <div class="ui massive primary label">Programming Languages</div>
+</div>
+
+<div class="ui four stackable cards">
+    {% for skill in site.data.skills %}
         <div class="card">
             <div class="content">
-                <span class="right floated"><i style="font-size: 2rem" class="{{ skill.icon }}"></i></span>
+                <span class="right floated">
+                    <i style="font-size: 2rem" class="{{ skill.icon }}"></i>
+                </span>
                 <div class="header">
                     {{ skill.language }}
                 </div>
@@ -76,51 +117,55 @@ permalink: /curriculum/
                         {% endif %}
                         {% if i == skill.grade %}
                             {% if mod == 1 %}
-                            <i class="half star icon"></i>
+                                <i class="half star icon"></i>
                             {% endif %}
                             {% break %}
                         {% endif %}
                     {% endfor %}
                 </div>
-                <div class="ui divider"> </div>
+                <div class="ui divider"></div>
                 {% if skill.frameworks %}
-                <div class="ui sub header">Frameworks</div>
-                <ul class="ui list">
-                    {% for framework in skill.frameworks %}
-                    <li>
-                        {{ framework }}
-                    </li>
-                    {% endfor %}
-                </ul>
+                    <div class="ui sub header">Frameworks</div>
+                    <ul class="ui list">
+                        {% for framework in skill.frameworks %}
+                            <li>
+                                {{ framework }}
+                            </li>
+                        {% endfor %}
+                    </ul>
                 {% endif %}
                 {% if skill.projects %}
-                <div class="ui sub header">Projects</div>
-                <div class="ui horizontal selection list">
-                    {% for project in skill.projects %}
-                    <div class="ui item">
-                        <a class="header" href="{{ site.base_url }}/projects{{ project | relative_url }}">
-                            {{ project }}
-                        </a>
+                    <div class="ui sub header">Projects</div>
+                    <div class="ui horizontal selection list">
+                        {% for project in skill.projects %}
+                            <div class="ui item">
+                                <a class="header" href="{{ site.base_url }}/projects{{ project | relative_url }}">
+                                    {{ project }}
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
                 {% endif %}
-                
+
             </div>
         </div>
-        {% endfor %}
+    {% endfor %}
+</div>
+
+<div class="ui horizontal section divider">
+    <div class="ui massive secondary label">
+        Contact
     </div>
-    <div class="ui hidden divider"></div>
-    <div class="ui star rating" data-rating="3" data-max-rating="5"></div>
-    <div class="ui hidden divider"></div>
+</div>
+
+<div class="ui text container">
     <div class="ui center aligned segment">
         <div class="ui header">
             Looking for more information? Don't hesitate to contact me!
         </div>
-        <a class="ui massive primary button" href="{{ site.base_url }}/contact">
+        <a class="ui massive primary right labeled icon button" href="{{ site.base_url }}/contact">
+            <i class="paper plane icon"></i>
             Contact
         </a>
     </div>
-    
-
 </div>

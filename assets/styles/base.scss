@@ -46,3 +46,10 @@ code {
 #desktop-fade-menu{
     background: #fff;
 }
+
+.rust-icon {
+    content: "";
+    background: url("https://www.rust-lang.org/logos/rust-logo-blk.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
