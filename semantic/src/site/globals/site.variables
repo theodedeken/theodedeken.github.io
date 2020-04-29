@@ -6,3 +6,6 @@
 @primaryColor   : #80a1c1ff;
 @secondaryColor : #2d3f3aff;
 @textColor : #090909ff;
+@red: #b93337ff;
+@orange: #cc7014ff;
+@invertedBackground: @secondaryColor;

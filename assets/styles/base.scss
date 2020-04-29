@@ -33,46 +33,6 @@ $gradient-top-left: linear-gradient(225deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80
 $gradient-bottom-left: linear-gradient(315deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
 $gradient-radial: radial-gradient(#cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-#container {
-    min-height: 100%;
-    position: relative;
-}
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-    #footer {
-        height: 150px;
-        /* Height of the footer */
-    }
-    #body {
-        padding-bottom: 150px;
-        /* Height of the footer */
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #footer {
-        height: 275px;
-        /* Height of the footer */
-    }
-    #body {
-        padding-bottom: 275px;
-        /* Height of the footer */
-    }
-}
-
 code {
     background-color: rgba(0, 0, 0, 0.08);
     border-radius: 3px;
