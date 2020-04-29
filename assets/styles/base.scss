@@ -1,0 +1,85 @@
+---
+---
+
+/* HSL */
+$color1: hsla(164%, 10%, 90%, 1);
+$color2: hsla(163%, 29%, 25%, 1);
+$color3: hsla(358%, 72%, 73%, 1);
+$color4: hsla(210%, 34%, 76%, 1);
+$color5: hsla(0%, 0%, 4%, 1);
+
+/* RGB */
+$background-color: rgba(207, 230, 224, 1);
+$secondary-color: rgba(45, 63, 58, 1);
+$accent-color: rgba(185, 51, 55, 1);
+$primary-color: rgba(128, 161, 193, 1);
+$text-color: rgba(9, 9, 9, 1);
+
+/* HEX */
+$color1: #cfe6e0ff;
+$color2: #2d3f3aff;
+$color3: #b93337ff;
+$color4: #80a1c1ff;
+$color5: #090909ff;
+
+/* GRADIENT */
+$gradient-top: linear-gradient(0deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-right: linear-gradient(90deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-bottom: linear-gradient(180deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-left: linear-gradient(270deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-top-right: linear-gradient(45deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-bottom-right: linear-gradient(135deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-top-left: linear-gradient(225deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-bottom-left: linear-gradient(315deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+$gradient-radial: radial-gradient(#cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: $background-color;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    #footer {
+        height: 150px;
+        /* Height of the footer */
+    }
+    #body {
+        padding-bottom: 150px;
+        /* Height of the footer */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footer {
+        height: 275px;
+        /* Height of the footer */
+    }
+    #body {
+        padding-bottom: 275px;
+        /* Height of the footer */
+    }
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    display: inline-block;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace;
+    font-weight: bold;
+    padding: 1px 6px;
+    vertical-align: baseline;
+}
