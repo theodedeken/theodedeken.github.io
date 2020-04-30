@@ -1,25 +1,7 @@
-<div class="ui text container">
-    {%- if site.posts.size > 0 -%}
-        <h2 class="ui header">Latest posts</h2>
-        <div class="ui divided items">
-            {%- for post in site.posts limit:3 -%}
-                <div class="item">
-                    <div class="image">
-                        <img class="ui small image" src="{{ post.thumb }}">
-                    </div>
-                    <div class="content">
-                        <a class="header" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                        <div class="meta">
-                            <span>{{ post.date | date: "%a %-d %b %y" }}</span>
-                        </div>
-                        <div class="description">
-                            <p>{{ post.excerpt }}</p>
-                        </div>
-                    </div>
-                </div>
-
-            {%- endfor -%}
-        </div>
-    {%- endif -%}
-
-</div>
+{%- if site.posts.size > 0 -%}
+    <div class="ui  segments">
+        {%- for post in site.posts limit:3 -%}
+            {% include post.html post=post %}
+        {%- endfor -%}
+    </div>
+{%- endif -%}

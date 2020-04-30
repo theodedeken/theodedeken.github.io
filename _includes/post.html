@@ -1,18 +1,22 @@
-<div class="ui segment">
+<div class="ui orange segment">
     <div class="ui stackable divided grid">
         <div class="six wide column">
             <img class="ui image" src="{{ include.post.thumb }}">
         </div>
         <div class="ten wide column">
-            <a class="ui top right attached primary label" href="{{ site.base_url }}/projects{{ include.post.project | relative_url }}">{{ include.post.project }}</a>
-            <a class="ui header" href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
-            <br>
-            <span class="ui grey text">
-                {{ include.post.date | date: "%a, %-d %b %Y" }}
-            </span>
-            <div class="ui divider"></div>
-            <div class="description">
-                <p>{{ include.post.excerpt }}</p>
+            {% if include.post.project %}
+                <a class="ui top right attached orange label" href="{{ site.base_url }}/projects{{ include.post.project | relative_url }}">{{ include.post.project }}</a>
+            {% endif %}
+            <div class="ui basic segment">
+                <a class="ui header" href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
+                <br>
+                <span class="ui grey text">
+                    {{ include.post.date | date: "%a, %-d %b %Y" }}
+                </span>
+                <div class="ui divider"></div>
+                <div class="description">
+                    <p>{{ include.post.excerpt }}</p>
+                </div>
             </div>
         </div>
     </div>
