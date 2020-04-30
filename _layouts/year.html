@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+{%- if site.posts.size > 0 -%}
+    <div class="ui  segments">
+        {%- for post in site.posts -%}
+            {% assign post_year = post.date | date: "%Y" %}
+            {% if page.year == post_year %}
+                {% include post_alternative.html post=post %}
+            {% endif %}
+        {%- endfor -%}
+    </div>
+{%- endif -%}

@@ -1,6 +1,7 @@
 <div class="ui horizontal masthead inverted padded segment">
     <div class="ui container">
         {% include breadcrumb.html %}
+        <div class="ui hidden divider"></div>
         <div class="ui stackable grid">
             <div class="twelve wide bottom aligned column">
                 <h1 class="ui inverted header">
@@ -16,11 +17,16 @@
                     <div>
                         <h2 class="ui orange sub header">{{ page.date | date: "%a, %-d %b %Y" }}</h2>
                     </div>
+                {% elsif page.layout == 'year' %}
+                    <div>
+                        <h2 class="ui orange sub header">The blogposts of the year
+                            {{ page.year }}</h2>
+                    </div>
                 {% endif %}
             </div>
             <div class="ui four wide center aligned column">
                 {% if page.layout == 'post' %}
-                    <div class="ui large inverted statistic">
+                    <div class="ui inverted statistic">
                         <div class="value">
                             {{ page.content | number_of_words | plus: 100 | divided_by: 200 }}
                             Min
@@ -29,7 +35,10 @@
                             Read
                         </div>
                     </div>
-
+                {% elsif page.layout == 'year' %}
+                    <i class="feather alternate massive icon"></i>
+                {% elsif page.layout == 'project' %}
+                    <img class="ui centered medium rounded image" src="{{ page.thumb }}">
                 {% else %}
                     {{ page.masthead_flair }}
                 {% endif %}

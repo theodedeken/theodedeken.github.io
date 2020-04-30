@@ -3,7 +3,6 @@ layout: project
 title: Spaxel
 key: spaxel
 subtitle: A small game written in Java
-masthead_flair: <img class="ui centered medium rounded image" src="/assets/projects/thumbs/spaxel.png">
 thumb: /assets/projects/thumbs/spaxel.png
 description: >-
     A journey of making a small game from scratch. While being quite small this project has provided me with

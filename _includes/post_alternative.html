@@ -1,7 +1,9 @@
-<a class="ui orange fluid link card" href="{{ include.post.url | relative_url }}">
+<div class="ui orange segment">
     <div class="ui stackable divided grid">
         <div class="six wide column">
-            <img class="ui image" src="{{ include.post.thumb }}">
+            <a href="{{ include.post.url | relative_url }}" class="ui fluid image">
+                <img src="{{ include.post.thumb }}">
+            </a>
         </div>
         <div class="ten wide column">
             {% if include.post.project %}
@@ -14,9 +16,11 @@
                     {{ include.post.date | date: "%a, %-d %b %Y" }}
                 </span>
                 <div class="ui divider"></div>
-                <div class="description">
-                    <p>{{ include.post.excerpt }}</p>
-                </div>
+                <a href="{{ include.post.url | relative_url }}" class="description">
+                    <span class="ui black text">
+                        <p>{{ include.post.excerpt }}</p>
+                    </span>
+                </a>
             </div>
             <div class="ui primary right ribbon label">
                 {{ include.post.content | number_of_words | plus: 100 | divided_by: 200 }}
@@ -24,4 +28,5 @@
             </div>
         </div>
     </div>
-</a>
+
+</div>

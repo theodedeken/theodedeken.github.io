@@ -7,6 +7,7 @@ categories:
     - blog
 thumb: /assets/blog/leveling-up-my-resume/thumb.png
 header: /assets/blog/leveling-up-my-resume/header.png
+permalink: /blog/2019/leveling-up-my-resume
 tags: 
     - latex
     - python
