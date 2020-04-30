@@ -1,15 +1,27 @@
 <footer>
-    <div id="footer" class="ui inverted vertical footer segment">
-        <div class="ui container">
 
+    <div class="ui inverted segment" id="footer">
+        <div class="ui container">
             <div class="ui stackable inverted divided equal height stackable grid">
+
                 <div class="five wide column">
                     {%- include social.html -%}
                 </div>
                 <div class="ten wide column">
+
                     <h4>{{ site.title | escape }}</h4>
                     <p>{{- site.description | escape -}}</p>
+
+                    <div class="ui secondary label">
+                        Made with
+                        <a href="https://jekyllrb.com/">Jekyll</a>
+                        and
+                        <a href="https://fomantic-ui.com/">Fomantic UI</a>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>

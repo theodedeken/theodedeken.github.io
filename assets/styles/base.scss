@@ -53,3 +53,37 @@ code {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    #content-wrap {
+        padding-bottom: 30rem;    /* Footer height */
+    }
+
+    #footer {
+        height: 30rem; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #content-wrap {
+        padding-bottom: 14rem;    /* Footer height */
+    }
+
+    #footer {
+        height: 14rem; 
+    }
+}

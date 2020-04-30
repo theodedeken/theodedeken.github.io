@@ -4,10 +4,10 @@
     {%- include head.html -%}
 
     <body>
-    <div id="container">
-
+    
+        <div id="page-container">
         {%- include header.html -%}
-
+        <div id="content-wrap">
         
 
 
@@ -15,12 +15,16 @@
             {{ content }}
 
             
-        
+            <div class="ui hidden divider"></div>
+        </div>
+
+
 
         {%- include footer.html -%}
-
-
     </div>
+
+
+    
     </body>
 
 </html>
