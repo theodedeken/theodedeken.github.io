@@ -1,37 +1,31 @@
 ---
 layout: default
 ---
-<div class="ui vertical masthead segment">
-    {% include breadcrumb.html %}
+<div class="ui container">
+    <img class="ui fluid rounded image" src="{{ page.header }}">
+
     <div class="ui hidden divider"></div>
 
-            <img class="ui fluid rounded image" src="{{ page.header }}">
-            <h1 class="ui header">
-                {{ page.title }}
-                <div class="sub header">
-                    {{ page.date | date: "%a %-d %b %y" }}
-                </div>
-            </h1>
-            
-            <div class="ui horizontal selection list">
+    <div class="ui text container" id="blog-content">
+        {{ content }}
+        <div class="ui horizontal selection list">
             {% for tag in page.tags %}
-            <div class="ui item">
-                <div class="ui label">
-                    {{ tag }}
+                <div class="ui item">
+                    <div class="ui label">
+                        {{ tag }}
+                    </div>
                 </div>
-            </div>
             {% endfor %}
+        </div>
+    </div>
+
+    {% if page.project %}
+        <div class="ui hidden divider"></div>
+        <div class="ui text container">
+            <div class="two ui buttons">
+                <button class="ui primary button">More posts from this project</button>
+                <a class="ui secondary button" href="{{ site.base_url }}/projects{{ page.project | relative_url }}">View project</a>
             </div>
         </div>
-<div class="ui text container" style="width: 700px"> 
-
-        
-        <div id="blog-content" class="ui basic segment">
-            <div class="ui text container">
-            {{ content }}
-            </div>
-        </div>
-
+    {% endif %}
 </div>
-
-
