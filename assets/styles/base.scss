@@ -33,6 +33,9 @@ $gradient-top-left: linear-gradient(225deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80
 $gradient-bottom-left: linear-gradient(315deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
 $gradient-radial: radial-gradient(#cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
 
+$java-blue: #21A1EF;
+$java-red: #FD0000;
+
 code {
     background-color: rgba(0, 0, 0, 0.08);
     border-radius: 3px;
@@ -41,6 +44,11 @@ code {
     font-weight: bold;
     padding: 1px 6px;
     vertical-align: baseline;
+}
+
+.java-style {
+    background-color: $java-blue;
+    color: $java-red
 }
 
 #desktop-fade-menu{

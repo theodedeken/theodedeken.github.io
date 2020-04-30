@@ -1,16 +1,28 @@
 ---
 layout: project
 title: Spaxel
-permalink: /projects/spaxel
+key: spaxel
+subtitle: A small game written in Java
+masthead_flair: <img class="ui centered medium rounded image" src="/assets/projects/thumbs/spaxel.png">
 thumb: /assets/projects/thumbs/spaxel.png
 description: >-
     A journey of making a small game from scratch. While being quite small this project has provided me with
     loads of experience in different programming concepts. Maybe some day I will even finish it...
-started: 2014
-ended: now
-language: Java
-github: https://github.com/theodedeken/Spaxel
+time:
+    started: 2014
+    ended: now
+language: 
+    - java
+links: 
+    - github: https://github.com/theodedeken/Spaxel
 featured: true
+status: active
+tags:
+    - game development
+    - opengl
+    - lwjgl
+    - space
+    - pixel art
 ---
 
 The journey of making this game started in the beginning of my academic career, I just learned my first programming language and I liked playing games.

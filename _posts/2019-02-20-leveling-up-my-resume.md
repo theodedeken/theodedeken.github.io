@@ -2,9 +2,9 @@
 layout: post
 title: Leveling up my resume
 author: Theo Dedeken
+project: career-tools
 categories: 
     - blog
-    - career-tools
 thumb: /assets/blog/leveling-up-my-resume/thumb.png
 header: /assets/blog/leveling-up-my-resume/header.png
 tags: 

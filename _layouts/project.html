@@ -1,24 +1,93 @@
 ---
 layout: default
 ---
-<div class="ui vertical masthead segment">
-    {% include breadcrumb.html %}
-            {% if page.github %}
-            <a class="ui right floated github button" href="{{ page.github }}">
-                <i class="github icon"></i>
-                Github
-            </a>
-            {% endif %}
-            
-            <h1 class="ui header">{{ page.title }}</h1>
-            {% if page.language %}
-            <div class="ui blue tag label">
-                {{ page.language }}
+<div class="ui container">
+    <div class="ui orange segment">
+        <div class="ui stackable divided grid">
+            <div class="four wide column">
+                {% if page.status == 'active' %}
+                    <div class="ui green ribbon label">
+                        Active
+                    </div>
+                {% elsif page.status == 'done' %}
+                    <div class="ui primary ribbon label">
+                        Finished
+                    </div>
+                {% else %}
+                    <div class="ui red ribbon label">
+                        Cancelled
+                    </div>
+                {% endif %}
+
+                <div class="ui top right attached large orange label">
+                    <i class="calendar icon"></i>
+                    {{ page.time.started }}
+                    -
+                    {{ page.time.ended }}
+                </div>
+
+                <div class="ui dividing sub header">
+                    {% if page.language.size > 1 %}
+                        Languages
+                    {% else %}
+                        Language
+                    {% endif %}
+                </div>
+                <div class="ui horizontal list">
+                    {% for lang in page.language %}
+                        <div class="ui item">
+                            {% include language.html lang=lang %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="ui dividing sub header">
+                    {% if page.links.size > 1 %}
+                        Links
+                    {% else %}
+                        Link
+                    {% endif %}
+                </div>
+                <div class="ui list">
+                    {% for link_hash in page.links %}
+                        {% for fragment in link_hash %}
+                            {% assign link_type = fragment[0] %}
+                            {% assign link_url = fragment[1] %}
+                            <div class="ui item">
+                                {% include link.html link_type=link_type link_url=link_url %}
+                            </div>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+                <div class="ui dividing sub header">
+                    {% if page.tags.size > 1 %}
+                        Tags
+                    {% else %}
+                        Tag
+                    {% endif %}
+                </div>
+
+                <div class="ui horizontal list">
+                    {% for tag in page.tags %}
+                        <div class="ui item">
+                            <div class="ui label">{{ tag }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+
             </div>
-            {% endif %}
-            <p>{{page.description}}</p>
-   
-</div>
-<div class="ui text container">
-{{ content }}
+            <div class="twelve wide column">
+                Project Stats
+            </div>
+        </div>
+    </div>
+
+    {% include latest_project_post.html project=page.key %}
+
+    <div class="ui horizontal section divider">
+        <div class="ui massive primary label">About</div>
+    </div>
+    <div class="ui text container">
+        {{ content }}
+    </div>
 </div>
