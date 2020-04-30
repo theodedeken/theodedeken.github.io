@@ -12,9 +12,27 @@
                         <h2 class="ui orange sub header">{{ page.subtitle }}</h2>
                     </div>
                 {% endif %}
+                {% if page.layout == 'post' %}
+                    <div>
+                        <h2 class="ui orange sub header">{{ page.date | date: "%a, %-d %b %Y" }}</h2>
+                    </div>
+                {% endif %}
             </div>
             <div class="ui four wide center aligned column">
-                {{ page.masthead_flair }}
+                {% if page.layout == 'post' %}
+                    <div class="ui large inverted statistic">
+                        <div class="value">
+                            {{ page.content | number_of_words | plus: 100 | divided_by: 200 }}
+                            Min
+                        </div>
+                        <div class="label">
+                            Read
+                        </div>
+                    </div>
+
+                {% else %}
+                    {{ page.masthead_flair }}
+                {% endif %}
             </div>
         </div>
     </div>

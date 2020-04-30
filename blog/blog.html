@@ -1,43 +1,45 @@
 ---
 layout: page
 title: Blog
+subtitle: Posts about projects and things I am doing
+masthead_flair: <i class="feather alternate massive icon"></i>
 permalink: /blog/
 ---
 
 <div class="ui center aligned segment">
-  <div class="ui right action left icon input">
-    <i class="search icon"></i>
-    <input type="text" placeholder="Search">
-    <div class="ui basic floating dropdown button">
-      <div class="text">Category</div>
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <div class="item" data-value="general">General</div>
+    <div class="ui right action left icon input">
+        <i class="search icon"></i>
+        <input placeholder="Search" type="text">
+        <div class="ui basic floating dropdown button">
+            <div class="text">Category</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item" data-value="general">General</div>
 
-        {% for project in site.projects %}
-        <div class="item" data-value="{{ project.title }}">{{ project.title }}</div>
-        {% endfor %}
-      </div>
+                {% for project in site.projects %}
+                    <div class="item" data-value="{{ project.title }}">{{ project.title }}</div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="ui divided items">
-  {%- for post in site.posts -%}
-  <div class="item">
-    <div class="image">
-      <img class="ui small image" src="{{ post.thumb }}">
-    </div>
-    <div class="content">
-      <a class="header" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <div class="meta">
-        <span>{{ post.date | date: "%a %-d %b %y" }}</span>
-      </div>
-      <div class="description">
-        <p>{{ post.excerpt }}</p>
-      </div>
-    </div>
-  </div>
+    {%- for post in site.posts -%}
+        <div class="item">
+            <div class="image">
+                <img class="ui small image" src="{{ post.thumb }}">
+            </div>
+            <div class="content">
+                <a class="header" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <div class="meta">
+                    <span>{{ post.date | date: "%a %-d %b %y" }}</span>
+                </div>
+                <div class="description">
+                    <p>{{ post.excerpt }}</p>
+                </div>
+            </div>
+        </div>
 
-  {%- endfor -%}
+    {%- endfor -%}
 </div>
