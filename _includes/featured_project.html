@@ -1,0 +1,20 @@
+<a class="ui special centered card" href="{{ include.project.url | relative_url }}" id="featured-project">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">{{ include.project.description }}</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="{{ include.project.thumb }}">
+    </div>
+
+    <div class="content">
+        <div class="header">
+            {{ include.project.title }}
+        </div>
+    </div>
+</a>

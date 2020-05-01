@@ -95,3 +95,17 @@ code {
         height: 14rem; 
     }
 }
+
+
+.featured-hide {
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: -360px !important;
+    top: 50% !important;
+    margin-top: -225px !important;
+}
+
+#featured-project {
+    width: 720px;
+    height: 450px;
+}

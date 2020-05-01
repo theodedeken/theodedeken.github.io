@@ -1,16 +1,27 @@
-<div class="ui center aligned segment">
-    <h2 class="ui header">
-        Featured
-    </h2>
-    <div class="ui four stackable centered cards">
+<div class="ui center aligned basic segment">
+    <div class="ui huge orange label">
+        Featured Projects
+    </div>
+    <div class="ui center aligned basic segment" id="featured">
         {% for project in site.projects %}
             {% if project.featured %}
-                <a class="card" href="{{ project.url | relative_url }}">
-                    <div class="content">
-                        <div class="header">{{ project.title }}</div>
-                    </div>
-                </a>
+                {% include featured_project.html project=project %}
             {% endif %}
         {% endfor %}
     </div>
 </div>
+
+<script>
+    $("#featured > a:gt(0)").hide();
+
+    setInterval(function () {
+        $("#featured > a:first")
+            .transition("fade up")
+            .addClass("featured-hide")
+            .next()
+            .transition("fade down")
+            .removeClass("featured-hide")
+            .end()
+            .appendTo("#featured");
+    }, 5000);
+</script>

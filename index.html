@@ -7,44 +7,52 @@ title: Theo Dedeken
 subtitle: Computer Scientist | Machine Learning Engineer
 masthead_flair: <img class="ui centered small circular image" src="/assets/me.jpg">
 ---
-<div class="ui stackable compact grid container">
-    <div class="five wide column">
-        <div class="ui top attached segment">
-            <h1>Projects</h1>
-            <p>Project box</p>
 
-        </div>
-        <a class="ui primary bottom attached button" href="/projects/" tabindex="0">View all projects
-            <i class="arrow circle right icon"></i>
-        </a>
+<div class="ui stackable compact grid container">
+    <div class="two wide column"></div>
+    <div class="twelve wide column">    
+        {%- include featured_projects.html -%}
     </div>
-    <div class="eleven wide column">
-        <div class="ui center aligned basic segment">
-            {%- include featured_projects.html -%}
-        </div>
-    </div>
-    <div class="sixteen wide column">
-        <div class="ui horizontal stackable segments">
-            <div class="ui center aligned segment">
-                Stat 1
+    <div class="six wide center aligned column">
+        <div class="ui massive statistic">
+            <div class="value">
+              42
             </div>
-            <div class="ui center aligned segment">
-                Stat 2
+            <div class="label">
+              Stat 1
             </div>
-        </div>
+          </div>
     </div>
-    <div class="eleven wide column">
-        <div class="ui basic segment">
-            {%- include latest_blogs.html -%}
-        </div>
+    <div class="four wide center aligned column">
+        <div class="ui vertical buttons">
+            <a class="ui large  primary right labeled icon button" href="/projects/" tabindex="0">
+                View all projects
+                <i class="code icon"></i>
+            </a>
+            <a class="ui large secondary right labeled icon button" href="/stats/" tabindex="0">
+                More Stats
+                <i class="chart pie icon"></i>
+            </a>
+            <a class="ui large primary right labeled icon button" href="/blog/" tabindex="0">
+                View all blogposts
+                <i class="feather alternate icon"></i>
+            </a>
+          </div>
+
     </div>
-    <div class="five wide column">
-        <div class="ui top attached segment">
-            <h1>Blog</h1>
-            <p>blog box</p>
-        </div>
-        <a class="ui primary bottom attached button" href="/blog/" tabindex="0">View all blogposts
-            <i class="arrow circle right icon"></i>
-        </a>
+    <div class="six wide center aligned column">
+        <div class="ui massive statistic">
+            <div class="value">
+              1024
+            </div>
+            <div class="label">
+              Stat 2
+            </div>
+          </div>
+    </div>
+    <div class="three wide column"></div>
+    <div class="ten wide column">
+        <div class="ui hidden divider"></div>
+        {%- include latest_blogs.html -%}
     </div>
 </div>

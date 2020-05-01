@@ -1,4 +1,13 @@
 {%- if site.posts.size > 0 -%}
+    <div class="ui center aligned container">
+
+
+        <div class="ui huge orange label">
+            Latest Blogposts
+        </div>
+
+    </div>
+
     <div class="ui segments">
         {%- for post in site.posts limit:3 -%}
             {% include post_alternative.html post=post %}

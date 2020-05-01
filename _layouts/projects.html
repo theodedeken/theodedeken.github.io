@@ -1,16 +1,21 @@
 ---
 layout: page
 ---
+{%- include featured_projects.html -%}
 
-<div class="ui segments">
-    {%- include featured_projects.html -%}
-    <div class="ui segment">
-        <div class="ui fluid icon input">
-            <input placeholder="Search for a project" type="text">
-            <i class="search icon"></i>
-        </div>
+<div class="ui horizontal section divider">
+    <div class="ui massive primary label">
+        All projects
     </div>
 </div>
+
+<div class="ui segment">
+    <div class="ui fluid icon input">
+        <input placeholder="Search for a project" type="text">
+        <i class="search icon"></i>
+    </div>
+</div>
+
 <div class="ui container">
     <div class="ui two stackable centered cards">
         {% for project in site.projects %}
