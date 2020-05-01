@@ -1,0 +1,49 @@
+<a class="ui special card" href="{{ include.project.url | relative_url }}">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">{{ include.project.description }}</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="{{ include.project.thumb }}">
+    </div>
+
+    <div class="content">
+        <div class="header">{{ include.project.title }}
+            {% if include.project.status == 'active' %}
+                <div class="ui right floated large green label">
+                    Active
+                </div>
+            {% elsif include.project.status == 'done' %}
+                <div class="ui right floated large  primary label">
+                    Finished
+                </div>
+            {% else %}
+                <div class="ui right floated large  red label">
+                    Cancelled
+                </div>
+            {% endif %}
+        </div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                {{ include.project.time.started }}
+                -
+                {{ include.project.time.ended }}</span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list">
+            {% for tag in include.project.tags %}
+                <div class="ui item">
+                    <div class="ui label">{{ tag }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</a>
