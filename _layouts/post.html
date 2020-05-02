@@ -20,12 +20,24 @@ layout: default
     </div>
 
     {% if page.project %}
-        <div class="ui hidden divider"></div>
-        <div class="ui text container">
-            <div class="two ui buttons">
-                <button class="ui primary button">More posts from this project</button>
-                <a class="ui secondary button" href="{{ site.base_url }}/projects{{ page.project | relative_url }}">View project</a>
-            </div>
+        <div class="ui divider"></div>
+
+
+        <div class="ui center aligned text container">
+
+            <button class="ui large primary button">More posts from this project</button>
+
         </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="ui centered two cards">
+            {% for project in site.projects %}
+                {% if project.key == page.project %}
+                    {% include project_view.html project=project %}
+                {% endif %}
+            {% endfor %}
+        </div>
+
     {% endif %}
 </div>
