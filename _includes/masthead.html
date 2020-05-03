@@ -1,6 +1,6 @@
 <div class="ui horizontal masthead inverted padded segment">
     <div class="ui container">
-        {% include breadcrumb.html %}
+        {%- include breadcrumb.html -%}
         <div class="ui hidden divider"></div>
         <div class="ui stackable grid">
             <div class="twelve wide bottom aligned column">
@@ -8,24 +8,24 @@
                     {{ page.title }}
 
                 </h1>
-                {% if page.subtitle %}
+                {%- if page.subtitle -%}
                     <div>
                         <h2 class="ui orange sub header">{{ page.subtitle }}</h2>
                     </div>
-                {% endif %}
-                {% if page.layout == 'post' %}
+                {%- endif -%}
+                {%- if page.layout == 'post' -%}
                     <div>
                         <h2 class="ui orange sub header">{{ page.date | date: "%a, %-d %b %Y" }}</h2>
                     </div>
-                {% elsif page.layout == 'year' %}
+                {%- elsif page.layout == 'year' -%}
                     <div>
                         <h2 class="ui orange sub header">The blogposts of the year
                             {{ page.year }}</h2>
                     </div>
-                {% endif %}
+                {%- endif -%}
             </div>
             <div class="ui four wide center aligned column">
-                {% if page.layout == 'post' %}
+                {%- if page.layout == 'post' -%}
                     <div class="ui inverted statistic">
                         <div class="value">
                             {{ page.content | number_of_words | plus: 100 | divided_by: 200 }}
@@ -35,13 +35,13 @@
                             Read
                         </div>
                     </div>
-                {% elsif page.layout == 'year' %}
+                {%- elsif page.layout == 'year' -%}
                     <i class="feather alternate massive icon"></i>
-                {% elsif page.layout == 'project' %}
+                {%- elsif page.layout == 'project' -%}
                     <img class="ui centered medium rounded image" src="{{ page.thumb }}">
-                {% else %}
+                {%- else -%}
                     {{ page.masthead_flair }}
-                {% endif %}
+                {%- endif -%}
             </div>
         </div>
     </div>

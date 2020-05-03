@@ -6,9 +6,9 @@
             </a>
         </div>
         <div class="ten wide column">
-            {% if include.post.project %}
+            {%- if include.post.project -%}
                 <a class="ui top right attached orange label" href="{{ site.base_url }}/projects{{ include.post.project | relative_url }}">{{ include.post.project }}</a>
-            {% endif %}
+            {%- endif -%}
             <div class="ui basic segment">
                 <a class="ui header" href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a>
                 <br>

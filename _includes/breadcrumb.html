@@ -1,21 +1,21 @@
-{% capture url_parts %}
+{%- capture url_parts -%}
     {{ page.url | replace: "/", " "}}
-{% endcapture %}
-{% assign url_test = url_parts | split: " " %}
-{% assign last_el = url_test.last %}
-{% assign path = "/" %}
+{%- endcapture -%}
+{%- assign url_test = url_parts | split: " " -%}
+{%- assign last_el = url_test.last -%}
+{%- assign path = "/" -%}
 <div class="ui secondary label">
     <div class="ui inverted breadcrumb">
         <a class="section" href="{{ path }}">Home</a>
         <i class="right angle icon divider"></i>
-        {% for part in url_test %}
-            {% if part != last_el %}
-                {% assign path = path | append: part %}
-                {% assign path = path | append: "/" %}
+        {%- for part in url_test -%}
+            {%- if part != last_el -%}
+                {%- assign path = path | append: part -%}
+                {%- assign path = path | append: "/" -%}
                 <a class="section" href="{{ path }}">{{ part }}</a>
                 <i class="right angle icon divider"></i>
-            {% endif %}
-        {% endfor %}
+            {%- endif -%}
+        {%- endfor -%}
         <div class="active section">{{ last_el }}</div>
     </div>
 </div>

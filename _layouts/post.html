@@ -9,17 +9,17 @@ layout: default
     <div class="ui justified text container" id="blog-content">
         {{ content }}
         <div class="ui horizontal selection list">
-            {% for tag in page.tags %}
+            {%- for tag in page.tags -%}
                 <div class="ui item">
                     <div class="ui label">
                         {{ tag }}
                     </div>
                 </div>
-            {% endfor %}
+            {%- endfor -%}
         </div>
     </div>
 
-    {% if page.project %}
+    {%- if page.project -%}
         <div class="ui divider"></div>
 
 
@@ -32,12 +32,12 @@ layout: default
         <div class="ui hidden divider"></div>
 
         <div class="ui centered two cards">
-            {% for project in site.projects %}
-                {% if project.key == page.project %}
-                    {% include project_view.html project=project %}
-                {% endif %}
-            {% endfor %}
+            {%- for project in site.projects -%}
+                {%- if project.key == page.project -%}
+                    {%- include project_view.html project=project -%}
+                {%- endif -%}
+            {%- endfor -%}
         </div>
 
-    {% endif %}
+    {%- endif -%}
 </div>

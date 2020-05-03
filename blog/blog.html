@@ -16,9 +16,9 @@ permalink: /blog/
             <div class="menu">
                 <div class="item" data-value="general">General</div>
 
-                {% for project in site.projects %}
+                {%- for project in site.projects -%}
                     <div class="item" data-value="{{ project.title }}">{{ project.title }}</div>
-                {% endfor %}
+                {%- endfor -%}
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@ permalink: /blog/
 {%- if site.posts.size > 0 -%}
     <div class="ui  segments">
         {%- for post in site.posts -%}
-            {% include post_alternative.html post=post %}
+            {%- include post_alternative.html post=post -%}
         {%- endfor -%}
     </div>
 {%- endif -%}

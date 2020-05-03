@@ -14,19 +14,19 @@
 
     <div class="content">
         <div class="header">{{ include.project.title }}
-            {% if include.project.status == 'active' %}
+            {%- if include.project.status == 'active' -%}
                 <div class="ui right floated large green label">
                     Active
                 </div>
-            {% elsif include.project.status == 'done' %}
+            {%- elsif include.project.status == 'done' -%}
                 <div class="ui right floated large  primary label">
                     Finished
                 </div>
-            {% else %}
+            {%- else -%}
                 <div class="ui right floated large  red label">
                     Cancelled
                 </div>
-            {% endif %}
+            {%- endif -%}
         </div>
         <div class="meta">
 
@@ -39,11 +39,11 @@
     </div>
     <div class="extra content">
         <div class="ui horizontal list">
-            {% for tag in include.project.tags %}
+            {%- for tag in include.project.tags -%}
                 <div class="ui item">
                     <div class="ui label">{{ tag }}</div>
                 </div>
-            {% endfor %}
+            {%- endfor -%}
         </div>
     </div>
 </a>

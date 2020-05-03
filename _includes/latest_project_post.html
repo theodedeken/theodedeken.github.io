@@ -1,11 +1,11 @@
-{% assign project_posts = site.posts | where: "project", include.project %}
-{% assign latest = project_posts.first %}
+{%- assign project_posts = site.posts | where: "project", include.project -%}
+{%- assign latest = project_posts.first -%}
 {%- if latest -%}
     <div class="ui horizontal section divider">
         <div class="ui massive orange label">Latest post</div>
     </div>
     <div class="ui text container">
-        {% include post_alternative.html post=latest %}
+        {%- include post_alternative.html post=latest -%}
         <div class="ui fluid secondary button" tabindex="0">More posts</div>
     </div>
 

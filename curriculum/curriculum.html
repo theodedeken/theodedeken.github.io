@@ -23,7 +23,7 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 <div class="ui text container">
     <div class="ui segment">
         <div class="ui relaxed divided list">
-            {% for edu in site.data.education %}
+            {%- for edu in site.data.education -%}
                 <div class="item">
                     <div class="right floated content">{{ edu.institution }}</div>
                     <div class="header">{{ edu.degree }}</div>
@@ -32,7 +32,7 @@ masthead_flair: <i class="graduation cap massive icon"></i>
                     {{ edu.ended }}
 
                 </div>
-            {% endfor %}
+            {%- endfor -%}
         </div>
     </div>
 </div>
@@ -44,7 +44,7 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 <div class="ui text container">
     <div class="ui segment">
         <div class="ui divided items">
-            {% for exp in site.data.work_experience %}
+            {%- for exp in site.data.work_experience -%}
                 <div class="item">
                     <div class="content">
                         <div class="right floated content">
@@ -60,16 +60,16 @@ masthead_flair: <i class="graduation cap massive icon"></i>
                         <div class="description">
                             <p>{{ exp.description | markdownify}}</p>
                         </div>
-                        {% if exp.leveraged %}
+                        {%- if exp.leveraged -%}
                             <div class="description">
                                 <strong>Leveraged knowledge:
                                 </strong>
                                 {{ exp.leveraged }}
                             </div>
-                        {% endif %}
+                        {%- endif -%}
                     </div>
                 </div>
-            {% endfor %}
+            {%- endfor -%}
         </div>
     </div>
 </div>
@@ -81,7 +81,7 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 <div class="ui text container">
     <div class="ui segment">
         <div class="ui divided items">
-            {% for exp in site.data.other_experience %}
+            {%- for exp in site.data.other_experience -%}
                 <div class="item">
                     <div class="content">
                         <div class="header">{{ exp.title }}</div>
@@ -90,7 +90,7 @@ masthead_flair: <i class="graduation cap massive icon"></i>
                         </div>
                     </div>
                 </div>
-            {% endfor %}
+            {%- endfor -%}
         </div>
     </div>
 </div>
@@ -100,9 +100,9 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 </div>
 
 <div class="ui four stackable cards">
-    {% for skill in site.data.languages %}
+    {%- for skill in site.data.languages -%}
         {%- include language_card.html skill=skill -%}
-    {% endfor %}
+    {%- endfor -%}
 </div>
 
 <div class="ui horizontal section divider">

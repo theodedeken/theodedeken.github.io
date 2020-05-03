@@ -3,11 +3,11 @@
         Featured Projects
     </div>
     <div class="ui center aligned basic segment" id="featured">
-        {% for project in site.projects %}
-            {% if project.featured %}
-                {% include featured_project.html project=project %}
-            {% endif %}
-        {% endfor %}
+        {%- for project in site.projects -%}
+            {%- if project.featured -%}
+                {%- include featured_project.html project=project -%}
+            {%- endif -%}
+        {%- endfor -%}
     </div>
 </div>
 
