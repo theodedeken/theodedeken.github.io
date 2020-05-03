@@ -1,0 +1,15 @@
+{%- comment -%}
+Lists all projects tags
+
+Returns:
+- result: a collection of tags
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for project in site.projects -%}
+        {%- for tag in project.tags -%}
+            {{ tag }},
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

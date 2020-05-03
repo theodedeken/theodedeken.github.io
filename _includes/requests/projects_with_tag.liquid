@@ -1,0 +1,20 @@
+{%- comment -%}
+Lists all projects with a given tag
+
+Arguments:
+- tag: the given tag
+
+Returns:
+- result: a collection of project keys
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for project in site.projects -%}
+        {%- for tag in project.tags -%}
+            {%- if tag == include.tag -%}
+                {{ project.key }},
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

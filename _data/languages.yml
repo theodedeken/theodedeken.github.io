@@ -1,6 +1,6 @@
 - language: Java
   key: java
-  grade: 9
+  grade: 8
   icon: java icon
   frameworks:
     - Spring

@@ -1,0 +1,18 @@
+{%- comment -%}
+Lists all projects with a given status
+
+Arguments:
+- status: the given status
+
+Returns:
+- result: a collection of project keys
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for project in site.projects -%}
+        {%- if project.status == include.status -%}
+            {{ project.key }},
+        {%- endif -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}
