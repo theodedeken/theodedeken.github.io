@@ -28,9 +28,27 @@ layout: page
     $(document).ready(function () {
         let searchParams = new URLSearchParams(window.location.search);
 
+        $.getJSON("/projects/filtering.json").done(filtering => {
+            let all = filtering.all;
+            let tags = all;
+            let langs = all;
+            let stats = all;
+            if (searchParams.has("tag")) {
+                tags = filtering.tag[searchParams.get("tag")];
+            }
+            if (searchParams.has("lang")) {
+                langs = filtering.lang[searchParams.get("lang")];
+            }
+            if (searchParams.has("status")) {
+                stats = filtering.status[searchParams.get("status")];
+            }
+
+            let filtered = tags.filter(el => langs.includes(el) && stats.includes(el));
+            let others = all.filter(el => ! filtered.includes(el));
+
+            $("div.ui.two.stackable.centered.cards a.ui.special.card").filter((index, el) => others.includes(el.id)).hide();
+            $("div.ui.two.stackable.centered.cards a.ui.special.card").filter((index, el) => filtered.includes(el.id)).transition("fade in");
+        });
         if (searchParams.has("tag")) {}
-
-
-        console.log(searchParams.get("tag"))
     });
 </script>
