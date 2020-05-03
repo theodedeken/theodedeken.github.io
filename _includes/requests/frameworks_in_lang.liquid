@@ -1,0 +1,26 @@
+{%- comment -%}
+Lists all frameworks used of the given language
+
+Arguments:
+- lang: the given language
+
+Returns:
+- result: a collection of frameworks
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for project in site.projects -%}
+        {%- for language in project.language -%}
+            {%- for language_fragment in language -%}
+                {%- assign language_name = language_fragment[0] -%}
+                {%- assign language_frameworks = language_fragment[1] -%}
+                {%- if language_name == include.lang -%}
+                    {%- for framework in language_frameworks.frameworks -%}
+                        {{ framework }},
+                    {%- endfor -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

@@ -96,59 +96,12 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 </div>
 
 <div class="ui horizontal section divider">
-    <div class="ui massive primary label">Programming Languages</div>
+    <div class="ui massive primary label">Skills</div>
 </div>
 
 <div class="ui four stackable cards">
-    {% for skill in site.data.skills %}
-        <div class="card">
-            <div class="content">
-                <span class="right floated">
-                    <i style="font-size: 2rem" class="{{ skill.icon }}"></i>
-                </span>
-                <div class="header">
-                    {{ skill.language }}
-                </div>
-                <div class="extra">
-                    {% for i in (1..10) %}
-                        {% assign mod = i | modulo: 2 %}
-                        {% if mod == 0 %}
-                            <i class="star icon"></i>
-                        {% endif %}
-                        {% if i == skill.grade %}
-                            {% if mod == 1 %}
-                                <i class="half star icon"></i>
-                            {% endif %}
-                            {% break %}
-                        {% endif %}
-                    {% endfor %}
-                </div>
-                <div class="ui divider"></div>
-                {% if skill.frameworks %}
-                    <div class="ui sub header">Frameworks</div>
-                    <ul class="ui list">
-                        {% for framework in skill.frameworks %}
-                            <li>
-                                {{ framework }}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-                {% if skill.projects %}
-                    <div class="ui sub header">Projects</div>
-                    <div class="ui horizontal selection list">
-                        {% for project in skill.projects %}
-                            <div class="ui item">
-                                <a class="header" href="{{ site.base_url }}/projects{{ project | relative_url }}">
-                                    {{ project }}
-                                </a>
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-
-            </div>
-        </div>
+    {% for skill in site.data.languages %}
+        {%- include language_card.html skill=skill -%}
     {% endfor %}
 </div>
 

@@ -26,20 +26,38 @@ layout: default
                     {{ page.time.ended }}
                 </div>
 
+                {%- include requests/languages_in_project.liquid project=page -%}
                 <div class="ui dividing sub header">
-                    {% if page.language.size > 1 %}
+                    {% if result.size > 1 %}
                         Languages
                     {% else %}
                         Language
                     {% endif %}
                 </div>
                 <div class="ui horizontal list">
-                    {% for lang in page.language %}
+                    {% for lang in result %}
                         <div class="ui item">
                             {% include language.html lang=lang %}
                         </div>
                     {% endfor %}
                 </div>
+
+                {%- include requests/frameworks_in_project.liquid project=page -%}
+                <div class="ui dividing sub header">
+                    {% if result.size > 1 %}
+                        Frameworks
+                    {% else %}
+                        Framework
+                    {% endif %}
+                </div>
+                <ul class="ui list">
+                    {%- for framework in result -%}
+                        <li>
+                            {{ framework }}
+                        </li>
+                    {%- endfor -%}
+                </ul>
+
                 <div class="ui dividing sub header">
                     {% if page.links.size > 1 %}
                         Links

@@ -1,7 +1,8 @@
-{% if include.lang == 'java' %}
-    <a class="ui large secondary label">
-        <i class="java icon"></i>
-        Java
-
-    </a>
-{% endif %}
+{%- for lang in site.data.languages -%}
+    {%- if include.lang == lang.key -%}
+        <a class="ui large secondary label">
+            <i class="{{ lang.icon }}"></i>
+            {{ lang.language }}
+        </a>
+    {%- endif -%}
+{%- endfor -%}

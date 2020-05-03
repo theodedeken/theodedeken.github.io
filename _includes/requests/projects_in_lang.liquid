@@ -1,0 +1,23 @@
+{%- comment -%}
+Lists all projects that are written using the given language
+
+Arguments:
+- lang: the given language
+
+Returns:
+- result: a collection of project keys
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for project in site.projects -%}
+        {%- for language in project.language -%}
+            {%- for language_fragment in language -%}
+                {%- assign language_name = language_fragment[0] -%}
+                {%- if language_name == include.lang -%}
+                    {{ project.key }},
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

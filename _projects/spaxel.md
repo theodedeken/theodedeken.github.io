@@ -11,7 +11,10 @@ time:
     started: 2014
     ended: now
 language: 
-    - java
+    - java:
+        frameworks:
+            - LWJGL
+            - Jackson
 links: 
     - github: https://github.com/theodedeken/Spaxel
 featured: true

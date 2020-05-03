@@ -1,4 +1,5 @@
 - language: Java
+  key: java
   grade: 9
   icon: java icon
   frameworks:
@@ -10,7 +11,8 @@
     - spaxel
     - perlin-noise
 - language: Rust
-  grade: 6
+  key: rust
+  grade: 7
   icon: rust-icon icon
   frameworks:
     - wasm_bindgen
@@ -20,6 +22,7 @@
     - webgl-rs
     - warp-engine
 - language: Python
+  key: python
   grade: 9
   icon: python icon
   frameworks:
@@ -33,7 +36,8 @@
     - thesis
     - comp-bio
 - language: Javascript
-  grade: 5
+  key: javascript
+  grade: 7
   icon: devicon-javascript-plain
   frameworks:
     - Vue
@@ -47,6 +51,7 @@
     - sprout
     - traffic-troubles
 - language: C#
+  key: csharp
   grade: 5
   icon: devicon-csharp-plain
   frameworks:
@@ -54,7 +59,8 @@
   projects:
     - rideaway
 - language: Ruby
-  grade: 4
+  key: ruby
+  grade: 5
   icon: devicon-ruby-plain
   frameworks:
     - Jekyll
@@ -62,7 +68,8 @@
   projects:
     - site
 - language: C, C++
-  grade: 6
+  key: cplusplus
+  grade: 5
   icon: devicon-c-plain
   projects:
     - huffman-coding
