@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Theo Dedeken</title>
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="apple-touch-icon" href="/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/favicon-144.png">
-	<meta name="msapplication-config" content="/browserconfig.xml"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><link rel="stylesheet" href="/assets/styles/monokai.css">
-	<link rel="stylesheet" href="/assets/styles/extra.css">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>Blog</title>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/favicon.ico" rel="icon" sizes="16x16 32x32 64x64">
+    <link href="/favicon-192.png" rel="icon" sizes="196x196" type="image/png">
+    <link href="/favicon-160.png" rel="icon" sizes="160x160" type="image/png">
+    <link href="/favicon-96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="/favicon-64.png" rel="icon" sizes="64x64" type="image/png">
+    <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/favicon-57.png" rel="apple-touch-icon">
+    <link href="/favicon-114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="/favicon-72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="/favicon-144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="/favicon-60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="/favicon-120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="/favicon-76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/favicon-152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="/favicon-180.png" rel="apple-touch-icon" sizes="180x180">
+    <meta content="#FFFFFF" name="msapplication-TileColor">
+    <meta content="/favicon-144.png" name="msapplication-TileImage">
+    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Blog">
+<meta property="og:description" content="Posts about projects and things I am doing"><meta property="og:url" content="/blog/">
+<meta name="twitter:card" content="summary_large_image"><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <script src="/semantic/dist/semantic.min.js"></script>
+    <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/styles/monokai.css">
+    <link rel="stylesheet" href="/assets/styles/base.css">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" crossorigin="anonymous" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-	<script>
+    <script>
 		$(document).ready(function () {
 			$('.ui.sticky')
 				.sticky({
@@ -42,15 +43,75 @@
 			$('.ui.dropdown')
 				.dropdown()
 			;
+      $('.special.card .image').dimmer({
+        on: 'hover'
+      });
+			// fix menu when passed
+			if($(window).width() >= 1024){
+				$('.masthead')
+					.visibility({
+						once: false,
+						onBottomPassed: function() {
+							$('.fixed.menu').transition('fade in');
+						},
+						onBottomPassedReverse: function() {
+							$('.fixed.menu').transition('fade out');
+						}
+					})
+				;
+			}
+			
 		});
-
-
 	</script>
-
-</head><body>
-    <div id="container"><header><div id="header" class="ui inverted segment">
+</head>
+</head>
+<body>
+    
+        <div id="page-container"><header><div class="ui inverted bottom attached segment" id="header">
         <div class="ui inverted stackable large secondary pointing menu">
-            <a class="item " href="/">
+            <div class="ui container">
+                <a class="item " href="/" style="font-size: 1.5rem">
+                    Theo Dedeken
+                </a>
+                <a class="item " href="/curriculum/">
+                    Curriculum
+                </a>
+                <a class="item " href="/projects/">
+                    Projects
+                </a>
+                <a class="item active" href="/blog/">
+                    Blog
+                </a>
+                <div class="right menu">
+                    <a class="ui item" href="/contact/">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div><div class="ui horizontal masthead inverted padded segment">
+    <div class="ui container"><div class="ui secondary label">
+    <div class="ui inverted breadcrumb">
+        <a class="section" href="/">Home</a>
+        <i class="right angle icon divider"></i><div class="active section">blog</div>
+    </div>
+</div><div class="ui hidden divider"></div>
+        <div class="ui stackable grid">
+            <div class="twelve wide bottom aligned column">
+                <h1 class="ui inverted header">
+                    Blog
+
+                </h1><div>
+                        <h2 class="ui orange sub header">Posts about projects and things I am doing</h2>
+                    </div></div>
+            <div class="ui four wide center aligned column"><i class="feather alternate massive icon"></i></div>
+        </div>
+    </div>
+</div></div>
+
+
+    <div class="ui stackable large secondary pointing fixed menu transition hidden" id="desktop-fade-menu">
+        <div class="ui container">
+            <a class="item " href="/" style="font-size: 1.5rem">
                 Theo Dedeken
             </a>
             <a class="item " href="/curriculum/">
@@ -69,124 +130,248 @@
             </div>
         </div>
     </div>
-</header><div id="body" class="ui container">
+
+</header><div id="content-wrap">
+        
+
 
       
-                <div class="ui vertical masthead segment">
-    
-
-
-
-<div class="ui breadcrumb">
-    <a class="section" href="/">Home</a>
-    <i class="right angle icon divider"></i>
-    
-    
-    
-    <div class="active section">blog</div>
-</div>
-    <h1>Blog</h1>
-</div>
-<div class="ui text container">
-    <div class="ui hidden divider"></div>
-    <div class="ui center aligned segment">
-  <div class="ui right action left icon input">
-    <i class="search icon"></i>
-    <input type="text" placeholder="Search">
-    <div class="ui basic floating dropdown button">
-      <div class="text">Category</div>
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <div class="item" data-value="general">General</div>
-
-        
-        <div class="item" data-value="Computational Biology">Computational Biology</div>
-        
-        <div class="item" data-value="Lambda Interpreter">Lambda Interpreter</div>
-        
-        <div class="item" data-value="Perlin Noise">Perlin Noise</div>
-        
-        <div class="item" data-value="Spaxel">Spaxel</div>
-        
-        <div class="item" data-value="Sprout">Sprout</div>
-        
-        <div class="item" data-value="Warp Engine">Warp Engine</div>
-        
-        <div class="item" data-value="Webgl-rs">Webgl-rs</div>
-        
-      </div>
+            <div class="ui container">
+    <div class="ui center aligned orange raised segment">
+    <div class="ui large header">Filter posts</div>
+    <div class="ui grid">
+        <div class="twelve wide column">
+            <div class="ui form">
+                <div class="two fields">
+                    <div class="field">
+                        <label>Filter by project</label>
+                        <div class="ui selection scrolling dropdown" id="project">
+                            <input name="lang" type="hidden">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Project</div>
+                            <div class="menu"><div class="item" data-value="comp-bio">Computational Biology</div><div class="item" data-value="lambda-rs">Lambda Interpreter</div><div class="item" data-value="perlin-noise">Perlin Noise</div><div class="item" data-value="spaxel">Spaxel</div><div class="item" data-value="sprout">Sprout</div><div class="item" data-value="thesis">Masterthesis</div><div class="item" data-value="warp-engine">Warp Engine</div><div class="item" data-value="webgl-rs">Webgl-rs</div></div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Filter by tag</label>
+                        <div class="ui selection scrolling dropdown" id="tag">
+                            <input name="tag" type="hidden">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Tag</div>
+                            <div class="menu"><div class="item" data-value="2019">2019</div><div class="item" data-value="blog">blog</div><div class="item" data-value="career">career</div><div class="item" data-value="elm">elm</div><div class="item" data-value="flutter">flutter</div><div class="item" data-value="go">go</div><div class="item" data-value="job">job</div><div class="item" data-value="latex">latex</div><div class="item" data-value="python">python</div><div class="item" data-value="resolutions">resolutions</div><div class="item" data-value="resume">resume</div><div class="item" data-value="spaxel">spaxel</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column"><br>
+            <div class="ui large fluid dropdown">
+                <div class="text">Posts per year</div>
+                <i class="dropdown icon"></i>
+                <div class="menu"><a class="item" href="/blog/2020">
+                            Posts of
+                            2020
+                        </a><a class="item" href="/blog/2019">
+                            Posts of
+                            2019
+                        </a></div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-<div class="ui divided items"><div class="item">
-    <div class="image">
-      <img class="ui small image" src="/assets/blog/leveling-up-my-resume/thumb.png">
+</div><div class="ui segments"><div class="ui orange segment" id="/blog/2019/leveling-up-my-resume">
+    <div class="ui stackable divided grid">
+        <div class="six wide column">
+            <a href="/blog/2019/leveling-up-my-resume" class="ui fluid image">
+                <img src="/assets/blog/leveling-up-my-resume/thumb.png">
+            </a>
+        </div>
+        <div class="ten wide column"><a class="ui top right attached orange label" href="/projects/interview-toolkit">interview-toolkit</a><div class="ui basic segment">
+                <a class="ui header" href="/blog/2019/leveling-up-my-resume">Leveling up my resume</a>
+                <br>
+                <span class="ui grey text">
+                    Wed, 20 Feb 2019
+                </span>
+                <div class="ui divider"></div>
+                <a href="/blog/2019/leveling-up-my-resume" class="description">
+                    <span class="ui black text">
+                        <p>As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. For this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</p>
+                    </span>
+                </a>
+            </div>
+            <div class="ui primary right ribbon label">
+                2
+                min read
+            </div>
+        </div>
     </div>
-    <div class="content">
-      <a class="header" href="/blog/career-tools/2019/02/20/leveling-up-my-resume.html">Leveling up my resume</a>
-      <div class="meta">
-        <span>Wed 20 Feb 19</span>
-      </div>
-      <div class="description">
-        <p><p>As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</p>
+
+</div><div class="ui orange segment" id="/blog/2019/init-2019">
+    <div class="ui stackable divided grid">
+        <div class="six wide column">
+            <a href="/blog/2019/init-2019" class="ui fluid image">
+                <img src="/assets/blog/init-2019/thumb.png">
+            </a>
+        </div>
+        <div class="ten wide column"><div class="ui basic segment">
+                <a class="ui header" href="/blog/2019/init-2019">Init 2019</a>
+                <br>
+                <span class="ui grey text">
+                    Sun, 6 Jan 2019
+                </span>
+                <div class="ui divider"></div>
+                <a href="/blog/2019/init-2019" class="description">
+                    <span class="ui black text">
+                        <p><p>A new year has started and while it is a bit of a cliché to make New Years&#39; resolutions. I&#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. </p>
 </p>
-      </div>
+                    </span>
+                </a>
+            </div>
+            <div class="ui primary right ribbon label">
+                5
+                min read
+            </div>
+        </div>
     </div>
-  </div><div class="item">
-    <div class="image">
-      <img class="ui small image" src="/assets/blog/init-2019/thumb.png">
-    </div>
-    <div class="content">
-      <a class="header" href="/blog/general/2019/01/06/init-2019.html">Init 2019</a>
-      <div class="meta">
-        <span>Sun 6 Jan 19</span>
-      </div>
-      <div class="description">
-        <p><p>A new year has started and while it is a bit of a cliché to make New Years&#39; resolutions. I&#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. </p>
-</p>
-      </div>
-    </div>
-  </div></div>
-    <div class="ui hidden divider"></div>
+
+</div></div><script>
+    $(document).ready(function () {
+        let searchParams = new URLSearchParams(window.location.search);
+
+        $.getJSON("/blog/filtering.json").done(filtering => {
+            function filterProjects() {
+                let all = filtering.all;
+                let tags = all;
+                let projects = all;
+
+                if (searchParams.has("tag")) {
+                    tags = filtering.tag[searchParams.get("tag")];
+                }
+                if (searchParams.has("project")) {
+                    projects = filtering.project[searchParams.get("project")];
+                }
+
+                let filtered = tags.filter(el => projects.includes(el));
+                let others = all.filter(el => ! filtered.includes(el));
+
+                $("div.ui.segments div.ui.orange.segment").filter((index, el) => others.includes(el.id)).transition("fade out");
+                $("div.ui.segments div.ui.orange.segment").filter((index, el) => filtered.includes(el.id)).transition("fade in");
+            }
+
+            function updateDropdowns() {
+                if (searchParams.has("tag")) {
+                    $("#tag").dropdown("set selected", searchParams.get("tag"));
+                } else {
+                    $("#tag").dropdown("clear", true);
+                }
+                if (searchParams.has("project")) {
+                    $("#project").dropdown("set selected", searchParams.get("project"));
+                } else {
+                    $("#project").dropdown("clear", true);
+                }
+            }
+
+
+            updateDropdowns();
+
+
+            $("#tag").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("tag", change);
+                    } else {
+                        searchParams.delete("tag");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $("#project").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("project", change);
+                    } else {
+                        searchParams.delete("project");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $(window).on("popstate", function (event, state) {
+                searchParams = new URLSearchParams(window.location.search);
+                updateDropdowns();
+                filterProjects();
+            });
+
+            filterProjects()
+        });
+    });
+</script>
 </div>
 
 
-            </div><footer>
-    <div id="footer" class="ui inverted vertical footer segment">
+            
+            <div class="ui hidden divider"></div>
+        </div><footer>
+
+    <div class="ui inverted segment" id="footer">
         <div class="ui container">
-
             <div class="ui stackable inverted divided equal height stackable grid">
+
                 <div class="five wide column"><h4>Social</h4>
 <div class="ui list"><div class="item">
-        <i class="github icon"> </i>
-        <div class="content">
-            <a href="https://github.com/TheOZoneBE">
-                <span class="username">TheOZoneBE</span>
-            </a>
-        </div>
-    </div><div class="item">
-        <i class="linkedin icon"> </i>
-        <div class="content">
-            <a href="https://www.linkedin.com/in/theo-dedeken-920341147">
-                <span class="username">theo-dedeken-920341147</span>
-            </a>
-        </div>
-    </div><div class="item">
-        <i class="twitter icon"></i>
-        <div class="content">
-            <a href="https://twitter.com/TheOZoneBE">
-                <span class="username">TheOZoneBE</span></a>
-        </div>
-    </div></div></div>
+            <div class="ui secondary large label">
+                <i class="github large icon"></i>
+
+                <a href="https://github.com/theodedeken">
+                    <span class="username">theodedeken</span>
+                </a>
+
+            </div>
+        </div><div class="item">
+            <div class="ui secondary large label">
+                <i class="linkedin large icon"></i>
+
+                <a href="https://www.linkedin.com/in/theo-dedeken-920341147">
+                    <span class="username">theo-dedeken-920341147</span>
+                </a>
+            </div>
+        </div><div class="item">
+            <div class="ui large secondary label">
+                <i class="twitter large icon"></i>
+
+                <a href="https://twitter.com/theodedeken">
+                    <span class="username">theodedeken</span>
+                </a>
+            </div>
+        </div></div></div>
                 <div class="ten wide column">
+
                     <h4>Theo Dedeken</h4>
                     <p>Get more information about me, my curriculum and personal projects.</p>
+
+                    <div class="ui secondary label">
+                        Made with
+                        <a href="https://jekyllrb.com/">Jekyll</a>
+                        and
+                        <a href="https://fomantic-ui.com/">Fomantic UI</a>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>
 </footer></div>
+
+
+    
     </body>
 
 </html>

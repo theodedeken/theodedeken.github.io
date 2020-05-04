@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Theo Dedeken</title>
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="apple-touch-icon" href="/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/favicon-144.png">
-	<meta name="msapplication-config" content="/browserconfig.xml"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><link rel="stylesheet" href="/assets/styles/monokai.css">
-	<link rel="stylesheet" href="/assets/styles/extra.css">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>Projects</title>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/favicon.ico" rel="icon" sizes="16x16 32x32 64x64">
+    <link href="/favicon-192.png" rel="icon" sizes="196x196" type="image/png">
+    <link href="/favicon-160.png" rel="icon" sizes="160x160" type="image/png">
+    <link href="/favicon-96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="/favicon-64.png" rel="icon" sizes="64x64" type="image/png">
+    <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/favicon-57.png" rel="apple-touch-icon">
+    <link href="/favicon-114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="/favicon-72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="/favicon-144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="/favicon-60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="/favicon-120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="/favicon-76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/favicon-152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="/favicon-180.png" rel="apple-touch-icon" sizes="180x180">
+    <meta content="#FFFFFF" name="msapplication-TileColor">
+    <meta content="/favicon-144.png" name="msapplication-TileImage">
+    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Projects">
+<meta property="og:description" content="Things I am working on"><meta property="og:url" content="/projects/">
+<meta name="twitter:card" content="summary_large_image"><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <script src="/semantic/dist/semantic.min.js"></script>
+    <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/styles/monokai.css">
+    <link rel="stylesheet" href="/assets/styles/base.css">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" crossorigin="anonymous" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-	<script>
+    <script>
 		$(document).ready(function () {
 			$('.ui.sticky')
 				.sticky({
@@ -42,15 +43,75 @@
 			$('.ui.dropdown')
 				.dropdown()
 			;
+      $('.special.card .image').dimmer({
+        on: 'hover'
+      });
+			// fix menu when passed
+			if($(window).width() >= 1024){
+				$('.masthead')
+					.visibility({
+						once: false,
+						onBottomPassed: function() {
+							$('.fixed.menu').transition('fade in');
+						},
+						onBottomPassedReverse: function() {
+							$('.fixed.menu').transition('fade out');
+						}
+					})
+				;
+			}
+			
 		});
-
-
 	</script>
-
-</head><body>
-    <div id="container"><header><div id="header" class="ui inverted segment">
+</head>
+</head>
+<body>
+    
+        <div id="page-container"><header><div class="ui inverted bottom attached segment" id="header">
         <div class="ui inverted stackable large secondary pointing menu">
-            <a class="item " href="/">
+            <div class="ui container">
+                <a class="item " href="/" style="font-size: 1.5rem">
+                    Theo Dedeken
+                </a>
+                <a class="item " href="/curriculum/">
+                    Curriculum
+                </a>
+                <a class="item active" href="/projects/">
+                    Projects
+                </a>
+                <a class="item " href="/blog/">
+                    Blog
+                </a>
+                <div class="right menu">
+                    <a class="ui item" href="/contact/">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div><div class="ui horizontal masthead inverted padded segment">
+    <div class="ui container"><div class="ui secondary label">
+    <div class="ui inverted breadcrumb">
+        <a class="section" href="/">Home</a>
+        <i class="right angle icon divider"></i><div class="active section">projects</div>
+    </div>
+</div><div class="ui hidden divider"></div>
+        <div class="ui stackable grid">
+            <div class="twelve wide bottom aligned column">
+                <h1 class="ui inverted header">
+                    Projects
+
+                </h1><div>
+                        <h2 class="ui orange sub header">Things I am working on</h2>
+                    </div></div>
+            <div class="ui four wide center aligned column"><i class="code massive icon"></i></div>
+        </div>
+    </div>
+</div></div>
+
+
+    <div class="ui stackable large secondary pointing fixed menu transition hidden" id="desktop-fade-menu">
+        <div class="ui container">
+            <a class="item " href="/" style="font-size: 1.5rem">
                 Theo Dedeken
             </a>
             <a class="item " href="/curriculum/">
@@ -69,211 +130,557 @@
             </div>
         </div>
     </div>
-</header><div id="body" class="ui container">
+
+</header><div id="content-wrap">
+        
+
 
       
-                <div class="ui vertical masthead segment">
-    
+            <div class="ui container">
+    <div class="ui center aligned basic segment">
+    <div class="ui huge orange label">
+        Featured Projects
+    </div>
 
+    <div class="ui center aligned basic segment" id="featured">
+        <div class="featured-spacer" style="visibility: hidden;"></div><a class="ui special centered card featured-project" href="/projects/spaxel.html">
 
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">A journey of making a small game from scratch. While being quite small this project has provided me with loads of experience in different programming concepts. Maybe some day I will even finish it...</span>
 
-<div class="ui breadcrumb">
-    <a class="section" href="/">Home</a>
-    <i class="right angle icon divider"></i>
-    
-    
-    
-    <div class="active section">projects</div>
-</div>
-    <h1>Projects</h1>
-</div>
-<div class="ui text container">
-    <div class="ui hidden divider"></div>
-    <div class="ui segments">
-    <div class="ui center aligned segment"> 
-    <h2 class="ui header">
-        Featured
-    </h2>
-    <div class="ui four stackable centered cards">
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="card" href="/projects/spaxel">
-            <div class="content">
-                <div class="header">Spaxel</div>
+                </div>
             </div>
-        </a>
-        
-        
-        
-        
-        
-        <a class="card" href="/projects/warp-engine">
-            <div class="content">
-                <div class="header">Warp Engine</div>
-            </div>
-        </a>
-        
-        
-        
-        
+        </div>
+        <img src="/assets/projects/thumbs/spaxel.png">
     </div>
+
+    <div class="content">
+        <div class="header">
+            Spaxel
+        </div>
     </div>
-    <div class="ui segment"> 
-    <div class="ui fluid icon input">
-        <input type="text" placeholder="Search for a project">
-        <i class="search icon"></i>
+</a><a class="ui special centered card featured-project" href="/projects/thesis">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">My master thesis which completed my degree in Computer Science. It concerns research into dimensionality reduction and visualization techniques for  high-dimensional data using autoencoders.</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
     </div>
+
+    <div class="content">
+        <div class="header">
+            Masterthesis
+        </div>
     </div>
-</div>
-<div class="ui text container">
-    <div class="ui one stackable centered cards">
-        
-        <a class="card" href="/projects/comp-bio">
-            
+</a><a class="ui special centered card featured-project" href="/projects/warp-engine">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
             <div class="content">
-                <div class="header">Computational Biology</div>
-                <div class="meta">
-                    <span class="date">February 2018 - June 2018</span>
-                </div>
-                <div class="description">
-                    The exercises for a course on Computational Biology.
+                <div class="center">
+                    <span class="ui large text"></span>
+
                 </div>
             </div>
-        </a>
-        
-        <a class="card" href="/projects/lambda-rs">
-            
-            <div class="content">
-                <div class="header">Lambda Interpreter</div>
-                <div class="meta">
-                    <span class="date">July 2018 - August 2018</span>
-                </div>
-                <div class="description">
-                    A lambda interpreter written in Rust.
-                </div>
-            </div>
-        </a>
-        
-        <a class="card" href="/projects/perlin-noise">
-            
-            <div class="content">
-                <div class="header">Perlin Noise</div>
-                <div class="meta">
-                    <span class="date"> - </span>
-                </div>
-                <div class="description">
-                    An experiment implementing a Perlin noise generator in Java.
-                </div>
-            </div>
-        </a>
-        
-        <a class="card" href="/projects/spaxel">
-            
-            <div class="image">
-                <img src="/assets/projects/thumbs/spaxel.png">
-            </div>
-            
-            <div class="content">
-                <div class="header">Spaxel</div>
-                <div class="meta">
-                    <span class="date">2014 - now</span>
-                </div>
-                <div class="description">
-                    A journey of making a small game from scratch. While being quite small this project has provided me with loads of experience in different programming concepts. Maybe some day I will even finish it...
-                </div>
-            </div>
-        </a>
-        
-        <a class="card" href="/projects/sprout">
-            
-            <div class="image">
-                <img src="/assets/thumbs/missing.png">
-            </div>
-            
-            <div class="content">
-                <div class="header">Sprout</div>
-                <div class="meta">
-                    <span class="date"> - </span>
-                </div>
-                <div class="description">
-                    
-                </div>
-            </div>
-        </a>
-        
-        <a class="card" href="/projects/warp-engine">
-            
-            <div class="content">
-                <div class="header">Warp Engine</div>
-                <div class="meta">
-                    <span class="date"> - </span>
-                </div>
-                <div class="description">
-                    
-                </div>
-            </div>
-        </a>
-        
-        <a class="card" href="/projects/webgl-rs">
-            
-            <div class="content">
-                <div class="header">Webgl-rs</div>
-                <div class="meta">
-                    <span class="date"> - </span>
-                </div>
-                <div class="description">
-                    
-                </div>
-            </div>
-        </a>
-        
+        </div>
+        <img src="">
     </div>
-</div>
-    <div class="ui hidden divider"></div>
+
+    <div class="content">
+        <div class="header">
+            Warp Engine
+        </div>
+    </div>
+</a></div>
 </div>
 
+<script>
+    $("#featured > a:gt(0)").hide();
 
-            </div><footer>
-    <div id="footer" class="ui inverted vertical footer segment">
+    setInterval(function () {
+        $("#featured > a:first")
+            .transition("fade right")
+            .next()
+            .transition("fade left")
+            .end()
+            .appendTo("#featured");
+    }, 5000);
+</script><div class="ui horizontal section divider">
+    <div class="ui massive primary label">
+        All projects
+    </div>
+</div>
+
+<div class="ui center aligned orange raised segment">
+    <div class="ui large header">Filter projects</div>
+    <div class="ui form">
+        <div class="three fields">
+            <div class="field">
+                <label>Filter by status</label>
+                <div class="ui selection dropdown" id="status">
+                    <input name="status" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Status</div>
+                    <div class="menu">
+                        <div class="item" data-value="active">Active</div>
+                        <div class="item" data-value="done">Finished</div>
+                        <div class="item" data-value="cancelled">Cancelled</div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Filter by language</label>
+                <div class="ui selection scrolling dropdown" id="lang">
+                    <input name="lang" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Language</div>
+                    <div class="menu"><div class="item" data-value="java">Java</div><div class="item" data-value="rust">Rust</div><div class="item" data-value="python">Python</div><div class="item" data-value="javascript">Javascript</div><div class="item" data-value="csharp">C#</div><div class="item" data-value="ruby">Ruby</div><div class="item" data-value="cplusplus">C, C++</div></div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Filter by tag</label>
+                <div class="ui selection scrolling dropdown" id="tag">
+                    <input name="tag" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Tag</div>
+                    <div class="menu"><div class="item" data-value="game development">game development</div><div class="item" data-value="lwjgl">lwjgl</div><div class="item" data-value="opengl">opengl</div><div class="item" data-value="pixel art">pixel art</div><div class="item" data-value="space">space</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui container">
+    <div class="ui two stackable centered cards"><a class="ui special card" href="/projects/comp-bio" id="comp-bio">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">The exercises for a course on Computational Biology.</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">Computational Biology<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a><a class="ui special card" href="/projects/lambda-rs" id="lambda-rs">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">A lambda interpreter written in Rust.</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">Lambda Interpreter<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a><a class="ui special card" href="/projects/perlin-noise" id="perlin-noise">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">An experiment implementing a Perlin noise generator in Java.</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">Perlin Noise<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a><a class="ui special card" href="/projects/spaxel.html" id="spaxel">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">A journey of making a small game from scratch. While being quite small this project has provided me with loads of experience in different programming concepts. Maybe some day I will even finish it...</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="/assets/projects/thumbs/spaxel.png">
+    </div>
+
+    <div class="content">
+        <div class="header">Spaxel<div class="ui right floated large green label">
+                    Active
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                2014
+                -
+                now</span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"><div class="ui item">
+                    <div class="ui label">game development</div>
+                </div><div class="ui item">
+                    <div class="ui label">opengl</div>
+                </div><div class="ui item">
+                    <div class="ui label">lwjgl</div>
+                </div><div class="ui item">
+                    <div class="ui label">space</div>
+                </div><div class="ui item">
+                    <div class="ui label">pixel art</div>
+                </div></div>
+    </div>
+</a><a class="ui special card" href="/projects/sprout" id="sprout">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text"></span>
+
+                </div>
+            </div>
+        </div>
+        <img src="/assets/thumbs/missing.png">
+    </div>
+
+    <div class="content">
+        <div class="header">Sprout<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a><a class="ui special card" href="/projects/thesis" id="thesis">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">My master thesis which completed my degree in Computer Science. It concerns research into dimensionality reduction and visualization techniques for  high-dimensional data using autoencoders.</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">Masterthesis<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a><a class="ui special card" href="/projects/warp-engine" id="warp-engine">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text"></span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">Warp Engine<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a><a class="ui special card" href="/projects/webgl-rs" id="webgl-rs">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text"></span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">Webgl-rs<div class="ui right floated large  red label">
+                    Cancelled
+                </div></div>
+        <div class="meta">
+
+            <span class="ui orange text">
+                <i class="calendar icon"></i>
+                
+                -
+                </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <div class="ui horizontal list"></div>
+    </div>
+</a></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        let searchParams = new URLSearchParams(window.location.search);
+
+        $.getJSON("/projects/filtering.json").done(filtering => {
+            function filterProjects() {
+                let all = filtering.all;
+                let tags = all;
+                let langs = all;
+                let stats = all;
+                if (searchParams.has("tag")) {
+                    tags = filtering.tag[searchParams.get("tag")];
+                }
+                if (searchParams.has("lang")) {
+                    langs = filtering.lang[searchParams.get("lang")];
+                }
+                if (searchParams.has("status")) {
+                    stats = filtering.status[searchParams.get("status")];
+                }
+
+                let filtered = tags.filter(el => langs.includes(el) && stats.includes(el));
+                let others = all.filter(el => ! filtered.includes(el));
+
+                $("div.ui.two.stackable.centered.cards a.ui.special.card")
+                    .filter((index, el) => others.includes(el.id))
+                    .hide()
+                    .removeClass("transition");
+                $("div.ui.two.stackable.centered.cards a.ui.special.card")
+                    .filter((index, el) => filtered.includes(el.id))
+                    .show()
+                    .transition("fade in");
+            }
+
+            function updateDropdowns() {
+                if (searchParams.has("status")) {
+                    $("#status").dropdown("set selected", searchParams.get("status"));
+                } else {
+                    $("#status").dropdown("clear", true);
+                }
+                if (searchParams.has("tag")) {
+                    $("#tag").dropdown("set selected", searchParams.get("tag"));
+                } else {
+                    $("#tag").dropdown("clear", true);
+                }
+                if (searchParams.has("lang")) {
+                    $("#lang").dropdown("set selected", searchParams.get("lang"));
+                } else {
+                    $("#lang").dropdown("clear", true);
+                }
+            }
+
+
+            updateDropdowns();
+
+            $("#status").dropdown({
+                "clearable": true,
+
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("status", change);
+                    } else {
+                        searchParams.delete("status");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects();
+                }
+            });
+
+
+            $("#tag").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("tag", change);
+                    } else {
+                        searchParams.delete("tag");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $("#lang").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("lang", change);
+                    } else {
+                        searchParams.delete("lang");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $(window).on("popstate", function (event, state) {
+                searchParams = new URLSearchParams(window.location.search);
+                updateDropdowns();
+                filterProjects();
+            });
+
+            filterProjects()
+        });
+    });
+</script>
+</div>
+
+
+            
+            <div class="ui hidden divider"></div>
+        </div><footer>
+
+    <div class="ui inverted segment" id="footer">
         <div class="ui container">
-
             <div class="ui stackable inverted divided equal height stackable grid">
+
                 <div class="five wide column"><h4>Social</h4>
 <div class="ui list"><div class="item">
-        <i class="github icon"> </i>
-        <div class="content">
-            <a href="https://github.com/TheOZoneBE">
-                <span class="username">TheOZoneBE</span>
-            </a>
-        </div>
-    </div><div class="item">
-        <i class="linkedin icon"> </i>
-        <div class="content">
-            <a href="https://www.linkedin.com/in/theo-dedeken-920341147">
-                <span class="username">theo-dedeken-920341147</span>
-            </a>
-        </div>
-    </div><div class="item">
-        <i class="twitter icon"></i>
-        <div class="content">
-            <a href="https://twitter.com/TheOZoneBE">
-                <span class="username">TheOZoneBE</span></a>
-        </div>
-    </div></div></div>
+            <div class="ui secondary large label">
+                <i class="github large icon"></i>
+
+                <a href="https://github.com/theodedeken">
+                    <span class="username">theodedeken</span>
+                </a>
+
+            </div>
+        </div><div class="item">
+            <div class="ui secondary large label">
+                <i class="linkedin large icon"></i>
+
+                <a href="https://www.linkedin.com/in/theo-dedeken-920341147">
+                    <span class="username">theo-dedeken-920341147</span>
+                </a>
+            </div>
+        </div><div class="item">
+            <div class="ui large secondary label">
+                <i class="twitter large icon"></i>
+
+                <a href="https://twitter.com/theodedeken">
+                    <span class="username">theodedeken</span>
+                </a>
+            </div>
+        </div></div></div>
                 <div class="ten wide column">
+
                     <h4>Theo Dedeken</h4>
                     <p>Get more information about me, my curriculum and personal projects.</p>
+
+                    <div class="ui secondary label">
+                        Made with
+                        <a href="https://jekyllrb.com/">Jekyll</a>
+                        and
+                        <a href="https://fomantic-ui.com/">Fomantic UI</a>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>
 </footer></div>
+
+
+    
     </body>
 
 </html>

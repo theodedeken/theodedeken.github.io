@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>Theo Dedeken</title>
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="apple-touch-icon" href="/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/favicon-144.png">
-	<meta name="msapplication-config" content="/browserconfig.xml"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><link rel="stylesheet" href="/assets/styles/monokai.css">
-	<link rel="stylesheet" href="/assets/styles/extra.css">
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <title>Theo Dedeken</title>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="/favicon.ico" rel="icon" sizes="16x16 32x32 64x64">
+    <link href="/favicon-192.png" rel="icon" sizes="196x196" type="image/png">
+    <link href="/favicon-160.png" rel="icon" sizes="160x160" type="image/png">
+    <link href="/favicon-96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="/favicon-64.png" rel="icon" sizes="64x64" type="image/png">
+    <link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/favicon-57.png" rel="apple-touch-icon">
+    <link href="/favicon-114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="/favicon-72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="/favicon-144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="/favicon-60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="/favicon-120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="/favicon-76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="/favicon-152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="/favicon-180.png" rel="apple-touch-icon" sizes="180x180">
+    <meta content="#FFFFFF" name="msapplication-TileColor">
+    <meta content="/favicon-144.png" name="msapplication-TileImage">
+    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Theo Dedeken">
+<meta property="og:description" content="Computer Scientist | Machine Learning Engineer"><meta property="og:url" content="/">
+<meta name="twitter:card" content="summary_large_image"><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
+    <script src="/semantic/dist/semantic.min.js"></script>
+    <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/assets/styles/monokai.css">
+    <link rel="stylesheet" href="/assets/styles/base.css">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" crossorigin="anonymous" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-	<script>
+    <script>
 		$(document).ready(function () {
 			$('.ui.sticky')
 				.sticky({
@@ -42,15 +43,75 @@
 			$('.ui.dropdown')
 				.dropdown()
 			;
+      $('.special.card .image').dimmer({
+        on: 'hover'
+      });
+			// fix menu when passed
+			if($(window).width() >= 1024){
+				$('.masthead')
+					.visibility({
+						once: false,
+						onBottomPassed: function() {
+							$('.fixed.menu').transition('fade in');
+						},
+						onBottomPassedReverse: function() {
+							$('.fixed.menu').transition('fade out');
+						}
+					})
+				;
+			}
+			
 		});
-
-
 	</script>
-
-</head><body>
-    <div id="container"><header><div id="header" class="ui inverted segment">
+</head>
+</head>
+<body>
+    
+        <div id="page-container"><header><div class="ui inverted bottom attached segment" id="header">
         <div class="ui inverted stackable large secondary pointing menu">
-            <a class="item active" href="/">
+            <div class="ui container">
+                <a class="item active" href="/" style="font-size: 1.5rem">
+                    Theo Dedeken
+                </a>
+                <a class="item " href="/curriculum/">
+                    Curriculum
+                </a>
+                <a class="item " href="/projects/">
+                    Projects
+                </a>
+                <a class="item " href="/blog/">
+                    Blog
+                </a>
+                <div class="right menu">
+                    <a class="ui item" href="/contact/">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div><div class="ui horizontal masthead inverted padded segment">
+    <div class="ui container"><div class="ui secondary label">
+    <div class="ui inverted breadcrumb">
+        <a class="section" href="/">Home</a>
+        <i class="right angle icon divider"></i><div class="active section"></div>
+    </div>
+</div><div class="ui hidden divider"></div>
+        <div class="ui stackable grid">
+            <div class="twelve wide bottom aligned column">
+                <h1 class="ui inverted header">
+                    Theo Dedeken
+
+                </h1><div>
+                        <h2 class="ui orange sub header">Computer Scientist | Machine Learning Engineer</h2>
+                    </div></div>
+            <div class="ui four wide center aligned column"><img class="ui centered small circular image" src="/assets/me.jpg"></div>
+        </div>
+    </div>
+</div></div>
+
+
+    <div class="ui stackable large secondary pointing fixed menu transition hidden" id="desktop-fade-menu">
+        <div class="ui container">
+            <a class="item active" href="/" style="font-size: 1.5rem">
                 Theo Dedeken
             </a>
             <a class="item " href="/curriculum/">
@@ -69,86 +130,256 @@
             </div>
         </div>
     </div>
-</header><div id="body" class="ui container">
+
+</header><div id="content-wrap">
+        
+
 
       
-                <div class="ui vertical masthead center aligned segment">
-    <div class="ui text container">
-        <img class="ui centered medium circular image" src="/assets/me.jpg">
-        <h1 class="ui header">
-            Theo Dedeken
-            <div class="sub header">Computer Science Student</div>
-        </h1>
+            <div class="ui stackable compact grid container">
+    <div class="two wide column"></div>
+    <div class="twelve wide column"><div class="ui center aligned basic segment">
+    <div class="ui huge orange label">
+        Featured Projects
     </div>
+
+    <div class="ui center aligned basic segment" id="featured">
+        <div class="featured-spacer" style="visibility: hidden;"></div><a class="ui special centered card featured-project" href="/projects/spaxel.html">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">A journey of making a small game from scratch. While being quite small this project has provided me with loads of experience in different programming concepts. Maybe some day I will even finish it...</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="/assets/projects/thumbs/spaxel.png">
+    </div>
+
+    <div class="content">
+        <div class="header">
+            Spaxel
+        </div>
+    </div>
+</a><a class="ui special centered card featured-project" href="/projects/thesis">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text">My master thesis which completed my degree in Computer Science. It concerns research into dimensionality reduction and visualization techniques for  high-dimensional data using autoencoders.</span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">
+            Masterthesis
+        </div>
+    </div>
+</a><a class="ui special centered card featured-project" href="/projects/warp-engine">
+
+    <div class="blurring dimmable image">
+        <div class="ui dimmer">
+            <div class="content">
+                <div class="center">
+                    <span class="ui large text"></span>
+
+                </div>
+            </div>
+        </div>
+        <img src="">
+    </div>
+
+    <div class="content">
+        <div class="header">
+            Warp Engine
+        </div>
+    </div>
+</a></div>
 </div>
 
-<div class="ui text container">  
-    <div class="ui hidden divider"></div><h2 class="ui header">Latest posts</h2>
-    <div class="ui divided items"><div class="item">
-    <div class="image">
-      <img class="ui small image" src="/assets/blog/leveling-up-my-resume/thumb.png">
-    </div>
-    <div class="content">
-      <a class="header" href="/blog/career-tools/2019/02/20/leveling-up-my-resume.html">Leveling up my resume</a>
-      <div class="meta">
-        <span>Wed 20 Feb 19</span>
-      </div>
-      <div class="description">
-        <p><p>As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</p>
-</p>
-      </div>
-    </div>
-  </div><div class="item">
-    <div class="image">
-      <img class="ui small image" src="/assets/blog/init-2019/thumb.png">
-    </div>
-    <div class="content">
-      <a class="header" href="/blog/general/2019/01/06/init-2019.html">Init 2019</a>
-      <div class="meta">
-        <span>Sun 6 Jan 19</span>
-      </div>
-      <div class="description">
-        <p><p>A new year has started and while it is a bit of a cliché to make New Years&#39; resolutions. I&#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. </p>
-</p>
-      </div>
-    </div>
-  </div></div></div>
+<script>
+    $("#featured > a:gt(0)").hide();
 
-            </div><footer>
-    <div id="footer" class="ui inverted vertical footer segment">
+    setInterval(function () {
+        $("#featured > a:first")
+            .transition("fade right")
+            .next()
+            .transition("fade left")
+            .end()
+            .appendTo("#featured");
+    }, 5000);
+</script></div>
+    <div class="six wide center aligned column">
+        <div class="ui massive statistic">
+            <div class="value">
+              42
+            </div>
+            <div class="label">
+              Stat 1
+            </div>
+          </div>
+    </div>
+    <div class="four wide center aligned column">
+        <div class="ui vertical buttons">
+            <a class="ui large  primary right labeled icon button" href="/projects/" tabindex="0">
+                View all projects
+                <i class="code icon"></i>
+            </a>
+            <a class="ui large secondary right labeled icon button" href="/stats/" tabindex="0">
+                More Stats
+                <i class="chart pie icon"></i>
+            </a>
+            <a class="ui large primary right labeled icon button" href="/blog/" tabindex="0">
+                View all blogposts
+                <i class="feather alternate icon"></i>
+            </a>
+          </div>
+
+    </div>
+    <div class="six wide center aligned column">
+        <div class="ui massive statistic">
+            <div class="value">
+              1024
+            </div>
+            <div class="label">
+              Stat 2
+            </div>
+          </div>
+    </div>
+    <div class="three wide column"></div>
+    <div class="ten wide column">
+        <div class="ui hidden divider"></div><div class="ui center aligned container">
+
+
+        <div class="ui huge orange label">
+            Latest Blogposts
+        </div>
+
+    </div>
+
+    <div class="ui segments"><div class="ui orange segment" id="/blog/2019/leveling-up-my-resume">
+    <div class="ui stackable divided grid">
+        <div class="six wide column">
+            <a href="/blog/2019/leveling-up-my-resume" class="ui fluid image">
+                <img src="/assets/blog/leveling-up-my-resume/thumb.png">
+            </a>
+        </div>
+        <div class="ten wide column"><a class="ui top right attached orange label" href="/projects/interview-toolkit">interview-toolkit</a><div class="ui basic segment">
+                <a class="ui header" href="/blog/2019/leveling-up-my-resume">Leveling up my resume</a>
+                <br>
+                <span class="ui grey text">
+                    Wed, 20 Feb 2019
+                </span>
+                <div class="ui divider"></div>
+                <a href="/blog/2019/leveling-up-my-resume" class="description">
+                    <span class="ui black text">
+                        <p>As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. For this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</p>
+                    </span>
+                </a>
+            </div>
+            <div class="ui primary right ribbon label">
+                2
+                min read
+            </div>
+        </div>
+    </div>
+
+</div><div class="ui orange segment" id="/blog/2019/init-2019">
+    <div class="ui stackable divided grid">
+        <div class="six wide column">
+            <a href="/blog/2019/init-2019" class="ui fluid image">
+                <img src="/assets/blog/init-2019/thumb.png">
+            </a>
+        </div>
+        <div class="ten wide column"><div class="ui basic segment">
+                <a class="ui header" href="/blog/2019/init-2019">Init 2019</a>
+                <br>
+                <span class="ui grey text">
+                    Sun, 6 Jan 2019
+                </span>
+                <div class="ui divider"></div>
+                <a href="/blog/2019/init-2019" class="description">
+                    <span class="ui black text">
+                        <p><p>A new year has started and while it is a bit of a cliché to make New Years&#39; resolutions. I&#39;m just gonna go ahead and do it anyway. I think it is important to quite regularly take a step back and determine what exactly the goals are that you are trying to achieve. </p>
+</p>
+                    </span>
+                </a>
+            </div>
+            <div class="ui primary right ribbon label">
+                5
+                min read
+            </div>
+        </div>
+    </div>
+
+</div></div></div>
+</div>
+
+
+            
+            <div class="ui hidden divider"></div>
+        </div><footer>
+
+    <div class="ui inverted segment" id="footer">
         <div class="ui container">
-
             <div class="ui stackable inverted divided equal height stackable grid">
+
                 <div class="five wide column"><h4>Social</h4>
 <div class="ui list"><div class="item">
-        <i class="github icon"> </i>
-        <div class="content">
-            <a href="https://github.com/TheOZoneBE">
-                <span class="username">TheOZoneBE</span>
-            </a>
-        </div>
-    </div><div class="item">
-        <i class="linkedin icon"> </i>
-        <div class="content">
-            <a href="https://www.linkedin.com/in/theo-dedeken-920341147">
-                <span class="username">theo-dedeken-920341147</span>
-            </a>
-        </div>
-    </div><div class="item">
-        <i class="twitter icon"></i>
-        <div class="content">
-            <a href="https://twitter.com/TheOZoneBE">
-                <span class="username">TheOZoneBE</span></a>
-        </div>
-    </div></div></div>
+            <div class="ui secondary large label">
+                <i class="github large icon"></i>
+
+                <a href="https://github.com/theodedeken">
+                    <span class="username">theodedeken</span>
+                </a>
+
+            </div>
+        </div><div class="item">
+            <div class="ui secondary large label">
+                <i class="linkedin large icon"></i>
+
+                <a href="https://www.linkedin.com/in/theo-dedeken-920341147">
+                    <span class="username">theo-dedeken-920341147</span>
+                </a>
+            </div>
+        </div><div class="item">
+            <div class="ui large secondary label">
+                <i class="twitter large icon"></i>
+
+                <a href="https://twitter.com/theodedeken">
+                    <span class="username">theodedeken</span>
+                </a>
+            </div>
+        </div></div></div>
                 <div class="ten wide column">
+
                     <h4>Theo Dedeken</h4>
                     <p>Get more information about me, my curriculum and personal projects.</p>
+
+                    <div class="ui secondary label">
+                        Made with
+                        <a href="https://jekyllrb.com/">Jekyll</a>
+                        and
+                        <a href="https://fomantic-ui.com/">Fomantic UI</a>
+                    </div>
+
                 </div>
+
+
             </div>
         </div>
     </div>
 </footer></div>
+
+
+    
     </body>
 
 </html>

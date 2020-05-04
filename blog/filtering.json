@@ -1,0 +1,17 @@
+{
+    "all": [
+        "/blog/2019/leveling-up-my-resume", "/blog/2019/init-2019"
+    ],
+    "tag": {"2019": ["/blog/2019/init-2019"],"resolutions": ["/blog/2019/init-2019"],"elm": ["/blog/2019/init-2019"],"blog": ["/blog/2019/init-2019"],"flutter": ["/blog/2019/init-2019"],"go": ["/blog/2019/init-2019"],"spaxel": ["/blog/2019/init-2019"],"latex": ["/blog/2019/leveling-up-my-resume"],"python": ["/blog/2019/leveling-up-my-resume"],"career": ["/blog/2019/leveling-up-my-resume"],"resume": ["/blog/2019/leveling-up-my-resume"],"job": ["/blog/2019/leveling-up-my-resume"]
+    },
+    "project": {"comp-bio": [""
+            ],"lambda-rs": [""
+            ],"perlin-noise": [""
+            ],"spaxel": [""
+            ],"sprout": [""
+            ],"thesis": [""
+            ],"warp-engine": [""
+            ],"webgl-rs": [""
+            ]
+    }
+}

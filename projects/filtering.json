@@ -1,0 +1,34 @@
+{
+    "all": [
+        "comp-bio", "lambda-rs", "perlin-noise", "spaxel", "sprout", "thesis", "warp-engine", "webgl-rs"
+    ],
+    "tag": {"game development": [
+                "spaxel"
+            ],"opengl": [
+                "spaxel"
+            ],"lwjgl": [
+                "spaxel"
+            ],"space": [
+                "spaxel"
+            ],"pixel art": [
+                "spaxel"
+            ]
+    },
+    "status": {"active": [
+                "spaxel"
+            ],"done": [
+                ""
+            ],"cancelled": [
+                ""
+            ]
+    },
+    "lang": {"java": ["perlin-noise", "spaxel"
+            ],"rust": [""
+            ],"python": ["comp-bio"
+            ],"javascript": [""
+            ],"csharp": [""
+            ],"ruby": [""
+            ],"cplusplus": [""
+            ]
+    }
+}
