@@ -6,28 +6,150 @@ masthead_flair: <i class="feather alternate massive icon"></i>
 permalink: /blog/
 ---
 
-<div class="ui center aligned segment">
-    <div class="ui right action left icon input">
-        <i class="search icon"></i>
-        <input placeholder="Search" type="text">
-        <div class="ui basic floating dropdown button">
-            <div class="text">Category</div>
-            <i class="dropdown icon"></i>
-            <div class="menu">
-                <div class="item" data-value="general">General</div>
-
-                {%- for project in site.projects -%}
-                    <div class="item" data-value="{{ project.title }}">{{ project.title }}</div>
-                {%- endfor -%}
+<div class="ui center aligned orange raised segment">
+    <div class="ui large header">Filter posts</div>
+    <div class="ui grid">
+        <div class="twelve wide column">
+            <div class="ui form">
+                <div class="two fields">
+                    <div class="field">
+                        <label>Filter by project</label>
+                        <div class="ui selection scrolling dropdown" id="project">
+                            <input name="lang" type="hidden">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Project</div>
+                            <div class="menu">
+                                {%- for project in site.projects -%}
+                                    <div class="item" data-value="{{ project.key }}">{{ project.title }}</div>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Filter by tag</label>
+                        <div class="ui selection scrolling dropdown" id="tag">
+                            <input name="tag" type="hidden">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Tag</div>
+                            <div class="menu">
+                                {%- include requests/all_post_tags.liquid -%}
+                                {%- assign sorted = result | sort -%}
+                                {%- for tag in sorted -%}
+                                    <div class="item" data-value="{{ tag }}">{{ tag }}</div>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four wide column"><br>
+            <div class="ui large fluid dropdown">
+                <div class="text">Posts per year</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    {%- for year in site.years reversed -%}
+                        <a class="item" href="{{ year.url }}">
+                            Posts of
+                            {{ year.year }}
+                        </a>
+                    {%- endfor -%}
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 {%- if site.posts.size > 0 -%}
-    <div class="ui  segments">
+    <div class="ui segments">
         {%- for post in site.posts -%}
             {%- include post_alternative.html post=post -%}
         {%- endfor -%}
     </div>
 {%- endif -%}
+
+<script>
+    $(document).ready(function () {
+        let searchParams = new URLSearchParams(window.location.search);
+
+        $.getJSON("/blog/filtering.json").done(filtering => {
+            function filterProjects() {
+                let all = filtering.all;
+                let tags = all;
+                let projects = all;
+
+                if (searchParams.has("tag")) {
+                    tags = filtering.tag[searchParams.get("tag")];
+                }
+                if (searchParams.has("project")) {
+                    projects = filtering.project[searchParams.get("project")];
+                }
+
+                let filtered = tags.filter(el => projects.includes(el));
+                let others = all.filter(el => ! filtered.includes(el));
+
+                $("div.ui.segments div.ui.orange.segment")
+                    .filter((index, el) => others.includes(el.id))
+                    .hide()
+                    .removeClass("transition");
+                $("div.ui.segments div.ui.orange.segment")
+                    .filter((index, el) => filtered.includes(el.id))
+                    .show()
+                    .transition("fade in");
+            }
+
+            function updateDropdowns() {
+                if (searchParams.has("tag")) {
+                    $("#tag").dropdown("set selected", searchParams.get("tag"));
+                } else {
+                    $("#tag").dropdown("clear", true);
+                }
+                if (searchParams.has("project")) {
+                    $("#project").dropdown("set selected", searchParams.get("project"));
+                } else {
+                    $("#project").dropdown("clear", true);
+                }
+            }
+
+
+            updateDropdowns();
+
+
+            $("#tag").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("tag", change);
+                    } else {
+                        searchParams.delete("tag");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $("#project").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("project", change);
+                    } else {
+                        searchParams.delete("project");
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $(window).on("popstate", function (event, state) {
+                searchParams = new URLSearchParams(window.location.search);
+                updateDropdowns();
+                filterProjects();
+            });
+
+            filterProjects()
+        });
+    });
+</script>

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Lambda Interpreter
+key: lambda-rs
 permalink: /projects/lambda-rs
 github: https://github.com/theodedeken/lambda-rs
 started: July 2018

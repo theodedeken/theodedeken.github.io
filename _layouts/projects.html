@@ -9,12 +9,12 @@ layout: page
     </div>
 </div>
 
-<div class="ui center aligned orange segment">
+<div class="ui center aligned orange raised segment">
     <div class="ui large header">Filter projects</div>
     <div class="ui form">
         <div class="three fields">
             <div class="field">
-                <label>Status</label>
+                <label>Filter by status</label>
                 <div class="ui selection dropdown" id="status">
                     <input name="status" type="hidden">
                     <i class="dropdown icon"></i>
@@ -27,8 +27,8 @@ layout: page
                 </div>
             </div>
             <div class="field">
-                <label>Language</label>
-                <div class="ui selection dropdown" id="lang">
+                <label>Filter by language</label>
+                <div class="ui selection scrolling dropdown" id="lang">
                     <input name="lang" type="hidden">
                     <i class="dropdown icon"></i>
                     <div class="default text">Language</div>
@@ -40,14 +40,15 @@ layout: page
                 </div>
             </div>
             <div class="field">
-                <label>Tag</label>
-                <div class="ui selection dropdown" id="tag">
+                <label>Filter by tag</label>
+                <div class="ui selection scrolling dropdown" id="tag">
                     <input name="tag" type="hidden">
                     <i class="dropdown icon"></i>
                     <div class="default text">Tag</div>
                     <div class="menu">
                         {%- include requests/all_project_tags.liquid -%}
-                        {%- for tag in result -%}
+                        {%- assign sorted = result | sort -%}
+                        {%- for tag in sorted -%}
                             <div class="item" data-value="{{ tag }}">{{ tag }}</div>
                         {%- endfor -%}
                     </div>
@@ -66,14 +67,11 @@ layout: page
 </div>
 
 <script>
-
-
     $(document).ready(function () {
         let searchParams = new URLSearchParams(window.location.search);
 
         $.getJSON("/projects/filtering.json").done(filtering => {
             function filterProjects() {
-                console.log(searchParams.toString());
                 let all = filtering.all;
                 let tags = all;
                 let langs = all;
@@ -128,10 +126,8 @@ layout: page
                 onChange: function (change) {
                     if (change) {
                         searchParams.set("status", change);
-
                     } else {
                         searchParams.delete("status");
-
                     }
                     new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
                     window.history.pushState("", "Filtered", new_url);
@@ -145,10 +141,8 @@ layout: page
                 onChange: function (change) {
                     if (change) {
                         searchParams.set("tag", change);
-
                     } else {
                         searchParams.delete("tag");
-
                     }
                     new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
                     window.history.pushState("", "Filtered", new_url);
@@ -161,10 +155,8 @@ layout: page
                 onChange: function (change) {
                     if (change) {
                         searchParams.set("lang", change);
-
                     } else {
                         searchParams.delete("lang");
-
                     }
                     new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
                     window.history.pushState("", "Filtered", new_url);
@@ -174,7 +166,6 @@ layout: page
 
             $(window).on("popstate", function (event, state) {
                 searchParams = new URLSearchParams(window.location.search);
-                console.log(searchParams.toString());
                 updateDropdowns();
                 filterProjects();
             });

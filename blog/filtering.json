@@ -1,0 +1,28 @@
+---
+---
+{
+    "all": [
+        "{{ site.posts | map: 'permalink' | join: '", "' }}"
+    ],
+    "tag": {
+        {%- capture tags -%}
+        {%- for tag in site.tags -%}
+            "{{ tag[0] }}": ["{{ tag[1] | map: 'permalink' | join: '", "' }}"],
+        {%- endfor -%}
+        {%- endcapture -%}
+        {%- assign size = tags | size | minus: 1 -%}
+        {{ tags | slice: 0, size }}
+    },
+    "project": {
+        {%- capture projects -%}
+        {%- for project in site.projects -%}
+            "{{ project.key }}": [
+                {%- include requests/posts_in_project.liquid project=project.key -%}
+                "{{ result | join: '", "' }}"
+            ],
+        {%- endfor -%}
+        {%- endcapture -%}
+        {%- assign size = projects | size | minus: 1 -%}
+        {{ projects | slice: 0, size }}
+    }
+}

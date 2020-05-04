@@ -1,0 +1,13 @@
+{%- comment -%}
+Lists all post tags
+
+Returns:
+- result: a collection of tags
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for tag in site.tags -%}
+        {{ tag[0] }},
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

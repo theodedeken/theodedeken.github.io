@@ -2,6 +2,7 @@
 layout: project
 title: Masterthesis
 permalink: /projects/thesis
+key: thesis
 #thumb: /assets/projects/thumbs/spaxel.png
 description: >-
     My master thesis which completed my degree in Computer Science. It concerns
