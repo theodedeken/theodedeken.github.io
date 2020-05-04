@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-    <title>{{site.title}}</title>
+    <title>{{page.title}}</title>
     <link href="/favicon.ico" rel="shortcut icon">
     <link href="/favicon.ico" rel="icon" sizes="16x16 32x32 64x64">
     <link href="/favicon-192.png" rel="icon" sizes="196x196" type="image/png">
@@ -24,6 +24,8 @@
     <meta content="/favicon-144.png" name="msapplication-TileImage">
     <meta content="/browserconfig.xml" name="msapplication-config">
     {%- feed_meta -%}
+
+    {%- include sharing_meta.html -%}
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
