@@ -9,10 +9,51 @@ layout: page
     </div>
 </div>
 
-<div class="ui segment">
-    <div class="ui fluid icon input">
-        <input placeholder="Search for a project" type="text">
-        <i class="search icon"></i>
+<div class="ui center aligned orange segment">
+    <div class="ui large header">Filter projects</div>
+    <div class="ui form">
+        <div class="three fields">
+            <div class="field">
+                <label>Status</label>
+                <div class="ui selection dropdown" id="status">
+                    <input name="status" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Status</div>
+                    <div class="menu">
+                        <div class="item" data-value="active">Active</div>
+                        <div class="item" data-value="done">Finished</div>
+                        <div class="item" data-value="cancelled">Cancelled</div>
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Language</label>
+                <div class="ui selection dropdown" id="lang">
+                    <input name="lang" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Language</div>
+                    <div class="menu">
+                        {%- for lang in site.data.languages -%}
+                            <div class="item" data-value="{{ lang.key }}">{{ lang.language }}</div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Tag</label>
+                <div class="ui selection dropdown" id="tag">
+                    <input name="tag" type="hidden">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Tag</div>
+                    <div class="menu">
+                        {%- include requests/all_project_tags.liquid -%}
+                        {%- for tag in result -%}
+                            <div class="item" data-value="{{ tag }}">{{ tag }}</div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -25,30 +66,120 @@ layout: page
 </div>
 
 <script>
+
+
     $(document).ready(function () {
         let searchParams = new URLSearchParams(window.location.search);
 
         $.getJSON("/projects/filtering.json").done(filtering => {
-            let all = filtering.all;
-            let tags = all;
-            let langs = all;
-            let stats = all;
-            if (searchParams.has("tag")) {
-                tags = filtering.tag[searchParams.get("tag")];
-            }
-            if (searchParams.has("lang")) {
-                langs = filtering.lang[searchParams.get("lang")];
-            }
-            if (searchParams.has("status")) {
-                stats = filtering.status[searchParams.get("status")];
+            function filterProjects() {
+                console.log(searchParams.toString());
+                let all = filtering.all;
+                let tags = all;
+                let langs = all;
+                let stats = all;
+                if (searchParams.has("tag")) {
+                    tags = filtering.tag[searchParams.get("tag")];
+                }
+                if (searchParams.has("lang")) {
+                    langs = filtering.lang[searchParams.get("lang")];
+                }
+                if (searchParams.has("status")) {
+                    stats = filtering.status[searchParams.get("status")];
+                }
+
+                let filtered = tags.filter(el => langs.includes(el) && stats.includes(el));
+                let others = all.filter(el => ! filtered.includes(el));
+
+                $("div.ui.two.stackable.centered.cards a.ui.special.card")
+                    .filter((index, el) => others.includes(el.id))
+                    .hide()
+                    .removeClass("transition");
+                $("div.ui.two.stackable.centered.cards a.ui.special.card")
+                    .filter((index, el) => filtered.includes(el.id))
+                    .show()
+                    .transition("fade in");
             }
 
-            let filtered = tags.filter(el => langs.includes(el) && stats.includes(el));
-            let others = all.filter(el => ! filtered.includes(el));
+            function updateDropdowns() {
+                if (searchParams.has("status")) {
+                    $("#status").dropdown("set selected", searchParams.get("status"));
+                } else {
+                    $("#status").dropdown("clear", true);
+                }
+                if (searchParams.has("tag")) {
+                    $("#tag").dropdown("set selected", searchParams.get("tag"));
+                } else {
+                    $("#tag").dropdown("clear", true);
+                }
+                if (searchParams.has("lang")) {
+                    $("#lang").dropdown("set selected", searchParams.get("lang"));
+                } else {
+                    $("#lang").dropdown("clear", true);
+                }
+            }
 
-            $("div.ui.two.stackable.centered.cards a.ui.special.card").filter((index, el) => others.includes(el.id)).hide();
-            $("div.ui.two.stackable.centered.cards a.ui.special.card").filter((index, el) => filtered.includes(el.id)).transition("fade in");
+
+            updateDropdowns();
+
+            $("#status").dropdown({
+                "clearable": true,
+
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("status", change);
+
+                    } else {
+                        searchParams.delete("status");
+
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects();
+                }
+            });
+
+
+            $("#tag").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("tag", change);
+
+                    } else {
+                        searchParams.delete("tag");
+
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $("#lang").dropdown({
+                "clearable": true,
+                onChange: function (change) {
+                    if (change) {
+                        searchParams.set("lang", change);
+
+                    } else {
+                        searchParams.delete("lang");
+
+                    }
+                    new_url = window.location.origin + window.location.pathname + "?" + searchParams.toString();
+                    window.history.pushState("", "Filtered", new_url);
+                    filterProjects()
+                }
+            });
+
+            $(window).on("popstate", function (event, state) {
+                searchParams = new URLSearchParams(window.location.search);
+                console.log(searchParams.toString());
+                updateDropdowns();
+                filterProjects();
+            });
+
+            filterProjects()
         });
-        if (searchParams.has("tag")) {}
     });
 </script>
