@@ -2,7 +2,9 @@
     <div class="ui huge orange label">
         Featured Projects
     </div>
+
     <div class="ui center aligned basic segment" id="featured">
+        <div class="featured-spacer" style="visibility: hidden;"></div>
         {%- for project in site.projects -%}
             {%- if project.featured -%}
                 {%- include featured_project.html project=project -%}
@@ -16,11 +18,9 @@
 
     setInterval(function () {
         $("#featured > a:first")
-            .transition("fade up")
-            .addClass("featured-hide")
+            .transition("fade right")
             .next()
-            .transition("fade down")
-            .removeClass("featured-hide")
+            .transition("fade left")
             .end()
             .appendTo("#featured");
     }, 5000);

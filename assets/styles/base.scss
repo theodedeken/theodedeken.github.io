@@ -33,8 +33,10 @@ $gradient-top-left: linear-gradient(225deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80
 $gradient-bottom-left: linear-gradient(315deg, #cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
 $gradient-radial: radial-gradient(#cfe6e0ff, #2d3f3aff, #b93337ff, #80a1c1ff, #090909ff);
 
-$java-blue: #21A1EF;
-$java-red: #FD0000;
+$featured-width: 450px;
+$featured-height: 720px;
+
+$footer-height: 15rem;
 
 code {
     background-color: rgba(0, 0, 0, 0.08);
@@ -78,34 +80,38 @@ code {
 
 @media only screen and (max-width: 768px) {
     #content-wrap {
-        padding-bottom: 30rem;    /* Footer height */
+        padding-bottom: $footer-height * 2;    /* Footer height */
     }
 
     #footer {
-        height: 30rem; 
+        height: $footer-height * 2; 
     }
 }
 
 @media only screen and (min-width: 768px) {
     #content-wrap {
-        padding-bottom: 14rem;    /* Footer height */
+        padding-bottom: $footer-height;    /* Footer height */
     }
 
     #footer {
-        height: 14rem; 
+        height: $footer-height; 
     }
 }
 
 
-.featured-hide {
-    position: absolute !important;
-    left: 50% !important;
-    margin-left: -360px !important;
-    top: 50% !important;
-    margin-top: -225px !important;
+
+.featured-spacer {
+    position: relative;
+    width: $featured-width;
+    height: $featured-height;
 }
 
-#featured-project {
-    width: 720px;
-    height: 450px;
+.featured-project {
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: - $featured-width / 2 !important;
+    top: 50% !important;
+    margin-top: - $featured-height / 2 !important;
+    width: $featured-width !important;
+    height: $featured-height !important;
 }
