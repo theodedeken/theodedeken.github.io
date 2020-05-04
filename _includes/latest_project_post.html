@@ -6,7 +6,7 @@
     </div>
     <div class="ui text container">
         {%- include post_alternative.html post=latest -%}
-        <div class="ui fluid secondary button" tabindex="0">More posts</div>
+        <a class="ui fluid secondary button" href="/blog/?project={{ include.project }}" tabindex="0">More posts</a>
     </div>
 
 {%- endif -%}

@@ -88,14 +88,8 @@ permalink: /blog/
                 let filtered = tags.filter(el => projects.includes(el));
                 let others = all.filter(el => ! filtered.includes(el));
 
-                $("div.ui.segments div.ui.orange.segment")
-                    .filter((index, el) => others.includes(el.id))
-                    .hide()
-                    .removeClass("transition");
-                $("div.ui.segments div.ui.orange.segment")
-                    .filter((index, el) => filtered.includes(el.id))
-                    .show()
-                    .transition("fade in");
+                $("div.ui.segments div.ui.orange.segment").filter((index, el) => others.includes(el.id)).transition("fade out");
+                $("div.ui.segments div.ui.orange.segment").filter((index, el) => filtered.includes(el.id)).transition("fade in");
             }
 
             function updateDropdowns() {

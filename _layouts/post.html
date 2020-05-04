@@ -10,11 +10,11 @@ layout: default
         {{ content }}
         <div class="ui horizontal selection list">
             {%- for tag in page.tags -%}
-                <div class="ui item">
+                <a class="ui item" href="/blog?tag={{ tag }}">
                     <div class="ui label">
                         {{ tag }}
                     </div>
-                </div>
+                </a>
             {%- endfor -%}
         </div>
     </div>
@@ -25,7 +25,7 @@ layout: default
 
         <div class="ui center aligned text container">
 
-            <button class="ui large primary button">More posts from this project</button>
+            <a class="ui large primary button" href="/blog?project={{page.project}}">More posts from this project</a>
 
         </div>
 
