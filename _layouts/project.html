@@ -21,9 +21,9 @@ layout: default
 
                 <div class="ui top right attached large orange label">
                     <i class="calendar icon"></i>
-                    {{ page.time.started }}
+                    {{ page.time.started | date: page.time.format }}
                     -
-                    {{ page.time.ended }}
+                    {{ page.time.ended | date: page.time.format }}
                 </div>
 
                 {%- include requests/languages_in_project.liquid project=page -%}
@@ -96,8 +96,10 @@ layout: default
 
 
             </div>
-            <div class="eleven wide column">
-                Project stats
+            <div class="eleven wide center aligned column">
+                <div class="ui huge secondary label">
+                    No project stats (yet)
+                </div>
             </div>
         </div>
     </div>

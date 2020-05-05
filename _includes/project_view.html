@@ -32,9 +32,9 @@
 
             <span class="ui orange text">
                 <i class="calendar icon"></i>
-                {{ include.project.time.started }}
+                {{ include.project.time.started | date: include.project.time.format }}
                 -
-                {{ include.project.time.ended }}</span>
+                {{ include.project.time.ended | date: include.project.time.format }}</span>
         </div>
     </div>
     <div class="extra content">

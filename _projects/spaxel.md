@@ -8,7 +8,8 @@ description: >-
     A journey of making a small game from scratch. While being quite small this project has provided me with
     loads of experience in different programming concepts. Maybe some day I will even finish it...
 time:
-    started: 2014
+    format: "%Y"
+    started: 2014-01-01
     ended: now
 language: 
     - java:
