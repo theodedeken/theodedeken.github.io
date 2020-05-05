@@ -1,6 +1,8 @@
-{%- if include.link_type == 'github' -%}
+{%- if include.link.type == 'github' -%}
     <i class="github icon"></i>
-    <div class="content">
-        <a href="{{ include.link_url }}">Github</a>
-    </div>
+{%- else -%}
+    <i class="globe icon"></i>
 {%- endif -%}
+<div class="content">
+    <a href="{{ include.link.url }}" target="_blank">{{ include.link.text }}</a>
+</div>

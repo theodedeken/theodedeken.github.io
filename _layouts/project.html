@@ -67,14 +67,10 @@ layout: default
                         {%- endif -%}
                     </div>
                     <div class="ui list">
-                        {%- for link_hash in page.links -%}
-                            {%- for fragment in link_hash -%}
-                                {%- assign link_type = fragment[0] -%}
-                                {%- assign link_url = fragment[1] -%}
-                                <div class="ui item">
-                                    {%- include link.html link_type=link_type link_url=link_url -%}
-                                </div>
-                            {%- endfor -%}
+                        {%- for link in page.links -%}
+                            <div class="ui item">
+                                {%- include link.html link=link -%}
+                            </div>
                         {%- endfor -%}
                     </div>
                 {%- endif -%}

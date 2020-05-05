@@ -17,7 +17,9 @@ language:
             - LWJGL
             - Jackson
 links: 
-    - github: https://github.com/theodedeken/Spaxel
+    - type: github
+      url: https://github.com/theodedeken/Spaxel
+      text: Source
 featured: false
 status: active
 tags:

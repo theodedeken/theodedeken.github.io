@@ -38,7 +38,7 @@
     [Open Summer of Code](https://2017.summerofcode.be/) is a project where several teams of students work on real life open innovation projects. 
     I was tasked to develop the backend of a bicycle navigation application commissioned by Brussels Mobility. The following year more funding 
     for the project was acquired. A new team extended the application, I couldn't participate because of an internship. The current application 
-    can be found [here](https://bike4brussels.osm.be/), all [code](https://github.com/oSoc18/bike4brussels-backend) is public and open source.
+    can be found [here](https://routeplanner.bike.brussels/). View the [project page](/projects/rideaway) for more info.
   started: July 2017
   ended: August 2017
   leveraged: Backend was written in C# using ASP.NET, frontend used Javascript and Mapbox
