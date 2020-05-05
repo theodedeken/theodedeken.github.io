@@ -3,8 +3,8 @@ layout: post
 title: Leveling up my resume
 author: Theo Dedeken
 project: interview-toolkit
-thumb: /assets/blog/leveling-up-my-resume/thumb.png
-header: /assets/blog/leveling-up-my-resume/header.png
+thumb: /assets/img/blog/leveling-up-my-resume/thumb.png
+header: /assets/img/blog/leveling-up-my-resume/header.png
 permalink: /blog/2019/leveling-up-my-resume
 tags: 
     - latex

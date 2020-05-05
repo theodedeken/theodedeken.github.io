@@ -3,7 +3,7 @@ layout: project
 title: Spaxel
 key: spaxel
 subtitle: A small game written in Java
-thumb: /assets/projects/thumbs/spaxel.png
+thumb: /assets/img/projects/spaxel.png
 description: >-
     A journey of making a small game from scratch. While being quite small this project has provided me with
     loads of experience in different programming concepts. Maybe some day I will even finish it...
@@ -17,7 +17,7 @@ language:
             - Jackson
 links: 
     - github: https://github.com/theodedeken/Spaxel
-featured: true
+featured: false
 status: active
 tags:
     - game development
