@@ -19,6 +19,7 @@ tags:
   - noise
   - world generation
   - game development
+  - fractal
 description: >-
   An experiment implementing a Perlin noise generator in Java.
   Used it to create a randomly generated world.
@@ -27,4 +28,9 @@ links:
     url: https://github.com/theodedeken/perlin-noise
     text: Source
 ---
-This page is still under construction, come back later.
+Randomly generated worlds are being used more and more in game development.
+Most of these worlds are generated using some kind of noise.
+Out of interest I implemented a [Perlin Noise](https://en.wikipedia.org/wiki/Perlin_noise) generater in Java.
+Then I extended it to generate fractal noise by combining multiple noise images with different scales.
+
+As a proof of concept I made a randomly generated world.

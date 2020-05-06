@@ -13,7 +13,7 @@
 - language: Rust
   key: rust
   grade: 6
-  icon: rust-icon icon
+  icon: rust-icon
   frameworks:
     - wasm_bindgen
     - pest
