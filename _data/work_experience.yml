@@ -8,7 +8,7 @@
     During my time there I helped organize a few events, did some public speaking in the schools in the area and started my own workshop [Game I/O](/projects/game-io).
   started: September 2019
   ended: March 2020
-  leveraged: I gained experience in marketing and public speaking
+  leveraged: I gained experience in marketing, project management, and public speaking
 - company: Open Knowledge Belgium
   jobtitle: Summer job Open Summer of Code 2019
   description: >-
@@ -17,7 +17,7 @@
     This project was issued by the Digital Transformation department of the federal government.
     The aim was to develop a toolbox of useful scripts to allow the recently published dataset of addresses in Belgium to be used more easily.
     For this we produced Python scripts that allowed to download the zipped dataset of the addresses, extract the xml files, convert them to csv and use them in other applications such as geocoders.
-    An overview of our work can be found [here](https://osoc19.github.io/best/), all [code](https://github.com/oSoc19/best) is public and open source.
+    An overview of our work can be found [here](https://osoc19.github.io/best/). View the [project page](/projects/best-at) for more info.
   started: July 2019
   ended: August 2019
   leveraged: All code was written in Python using pandas, datashader and bokeh
@@ -42,16 +42,16 @@
   started: July 2017
   ended: August 2017
   leveraged: Backend was written in C# using ASP.NET, frontend used Javascript and Mapbox
-- company: Hospital AZ Alma
-  jobtitle: Summer job ICT service
-  description: >-
-    The following year I was again selected to work at the ICT service. This year everything was being prepared to move to a new facility. 
-    My assignment consisted of patching in the server rooms and making the inventory of the existing infrastructure.
-  started: July 2016
-  ended: August 2016
-- company: Hospital AZ Alma
-  jobtitle: Summer job ICT service
-  description: >-
-    As member of the ICT service I was responsible for the installation and placement of new computers using the KACE platform of Dell.
-  started: July 2015
-  ended: August 2015
+#- company: Hospital AZ Alma
+#  jobtitle: Summer job ICT service
+#  description: >-
+#    The following year I was again selected to work at the ICT service. This year everything was being prepared to move to a new facility.
+#    My assignment consisted of patching in the server rooms and making the inventory of the existing infrastructure.
+#  started: July 2016
+#  ended: August 2016
+#- company: Hospital AZ Alma
+#  jobtitle: Summer job ICT service
+#  description: >-
+#    As member of the ICT service I was responsible for the installation and placement of new computers using the KACE platform of Dell.
+#  started: July 2015
+#  ended: August 2015

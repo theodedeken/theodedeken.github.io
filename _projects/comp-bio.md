@@ -8,10 +8,9 @@ permalink: /projects/comp-bio
 description: >-
     In my first master year I took a course about computational biology. 
     There were a lot of exercises associated with it, so I am quite proud of the code I wrote for this course.
-time:
-    format: "%B %Y"
-    started: 2018-02-01
-    ended: 2018-06-01
+time_format: "%B %Y"
+started: 2018-02-01
+ended: 2018-06-01
 language: 
     - python:
         frameworks:

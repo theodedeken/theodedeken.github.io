@@ -7,10 +7,9 @@ thumb: /assets/img/projects/rideaway.jpg
 permalink: /projects/rideaway
 description: >-
     I helped develop a cycling routeplanner to be used for the Brussels bike network.
-time:
-    format: "%B %Y"
-    started: 2017-07-01
-    ended: 2017-08-01
+time_format: "%B %Y"
+started: 2017-07-01
+ended: 2017-08-01
 language: 
     - csharp:
         frameworks:
@@ -31,6 +30,9 @@ links:
     - type: web
       url: https://routeplanner.bike.brussels/
       text: Routeplanner app 
+    - type: web
+      url: https://2017.summerofcode.be/
+      text: open Summer of code 2017
 tags: 
     - cycling
     - brussels
@@ -38,4 +40,5 @@ tags:
     - network
     - frontend
     - backend
+    - open summer of code
 ---

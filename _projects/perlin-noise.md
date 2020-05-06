@@ -9,10 +9,9 @@ language:
     - java:
         frameworks:
           - JavaFX
-time:
-  format: "%B %Y"
-  started: 2016-12-01
-  ended: 2017-02-01
+time_format: "%B %Y"
+started: 2016-12-01
+ended: 2017-02-01
 featured: false
 status: done
 tags:

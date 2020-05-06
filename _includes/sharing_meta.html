@@ -2,6 +2,8 @@
 <meta property="og:description" content="{{ page.subtitle }}">
 {%- if page.thumb -%}
     <meta property="og:image" content="{{ page.thumb }}">
+{%- else -%}
+<meta property="og:image" content="/assets/img/default_thumb.jpg">
 {%- endif -%}
 <meta property="og:url" content="{{ page.url }}">
 <meta name="twitter:card" content="summary_large_image">

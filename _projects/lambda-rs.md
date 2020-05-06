@@ -9,10 +9,9 @@ links:
     - type: github
       url: https://github.com/theodedeken/lambda-rs
       text: Source
-time:
-    format: "%B %Y"
-    started: 2018-07-01
-    ended: 2018-08-01
+time_format: "%B %Y"
+started: 2018-07-01
+ended: 2018-08-01
 language: 
     - rust:
         frameworks:

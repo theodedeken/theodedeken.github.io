@@ -7,10 +7,9 @@ thumb: /assets/img/projects/spaxel.png
 description: >-
     A journey of making a small game from scratch. While being quite small this project has provided me with
     loads of experience in different programming concepts. Maybe some day I will even finish it...
-time:
-    format: "%Y"
-    started: 2014-01-01
-    ended: now
+time_format: "%Y"
+started: 2014-01-01
+ended: now
 language: 
     - java:
         frameworks:

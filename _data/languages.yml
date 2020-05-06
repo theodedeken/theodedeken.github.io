@@ -12,7 +12,7 @@
     - perlin-noise
 - language: Rust
   key: rust
-  grade: 7
+  grade: 6
   icon: rust-icon icon
   frameworks:
     - wasm_bindgen

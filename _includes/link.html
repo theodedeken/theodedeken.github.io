@@ -1,7 +1,11 @@
 {%- if include.link.type == 'github' -%}
     <i class="github icon"></i>
-{%- else -%}
+{%- elsif include.link.type == 'web' -%}
     <i class="globe icon"></i>
+{%- elsif include.link.type == 'docs' -%}
+    <i class="book open icon"></i>
+{%- elsif include.link.type == 'play' -%}
+    <i class="gamepad icon"></i>
 {%- endif -%}
 <div class="content">
     <a href="{{ include.link.url }}" target="_blank">{{ include.link.text }}</a>

@@ -6,87 +6,89 @@ layout: default
         <div class="ui stackable divided grid">
             <div class="five wide column">
                 {%- if page.status == 'active' -%}
-                    <div class="ui green ribbon label">
-                        Active
-                    </div>
+                <div class="ui green ribbon label">
+                    Active
+                </div>
                 {%- elsif page.status == 'done' -%}
-                    <div class="ui primary ribbon label">
-                        Finished
-                    </div>
+                <div class="ui primary ribbon label">
+                    Finished
+                </div>
                 {%- else -%}
-                    <div class="ui red ribbon label">
-                        Cancelled
-                    </div>
+                <div class="ui red ribbon label">
+                    Cancelled
+                </div>
                 {%- endif -%}
 
                 <div class="ui top right attached large orange label">
                     <i class="calendar icon"></i>
-                    {{ page.time.started | date: page.time.format }}
+                    {{ page.started | date: page.time_format }}
                     -
-                    {{ page.time.ended | date: page.time.format }}
+                    {{ page.ended | date: page.time_format }}
                 </div>
 
                 {%- include requests/languages_in_project.liquid project=page -%}
                 <div class="ui dividing sub header">
                     {%- if result.size > 1 -%}
-                        Languages
+                    Languages
                     {%- else -%}
-                        Language
+                    Language
                     {%- endif -%}
                 </div>
                 <div class="ui horizontal list">
                     {%- for lang in result -%}
-                        <div class="ui item">
-                            {%- include language.html lang=lang -%}
-                        </div>
+                    <div class="ui item">
+                        {%- include language.html lang=lang -%}
+                    </div>
                     {%- endfor -%}
                 </div>
 
                 {%- include requests/frameworks_in_project.liquid project=page -%}
+                {%- if result.size != 0 -%}
                 <div class="ui dividing sub header">
                     {%- if result.size > 1 -%}
-                        Frameworks
+                    Frameworks
                     {%- else -%}
-                        Framework
+                    Framework
                     {%- endif -%}
                 </div>
                 <ul class="ui list">
                     {%- for framework in result -%}
-                        <li>
-                            {{ framework }}
-                        </li>
+                    <li>
+                        {{ framework }}
+                    </li>
                     {%- endfor -%}
                 </ul>
+                {%- endif -%}
 
                 {%- if page.links -%}
-                    <div class="ui dividing sub header">
-                        {%- if page.links.size > 1 -%}
-                            Links
-                        {%- else -%}
-                            Link
-                        {%- endif -%}
+                <div class="ui dividing sub header">
+                    {%- if page.links.size > 1 -%}
+                    Links
+                    {%- else -%}
+                    Link
+                    {%- endif -%}
+                </div>
+                <div class="ui list">
+                    {%- for link in page.links -%}
+                    <div class="ui item">
+                        {%- include link.html link=link -%}
                     </div>
-                    <div class="ui list">
-                        {%- for link in page.links -%}
-                            <div class="ui item">
-                                {%- include link.html link=link -%}
-                            </div>
-                        {%- endfor -%}
-                    </div>
+                    {%- endfor -%}
+                </div>
                 {%- endif -%}
                 <div class="ui dividing sub header">
                     {%- if page.tags.size > 1 -%}
-                        Tags
+                    Tags
                     {%- else -%}
-                        Tag
+                    Tag
                     {%- endif -%}
                 </div>
 
                 <div class="ui horizontal selection list">
                     {%- for tag in page.tags -%}
-                        <a class="ui item" href="/projects?tag={{ tag }}">
-                            <div class="ui label">{{ tag }}</div>
-                        </a>
+                    <a class="ui item" href="/projects?tag={{ tag }}">
+                        <div class="ui label">{{ tag }}</div>
+                    </a>
                     {%- endfor -%}
                 </div>
 

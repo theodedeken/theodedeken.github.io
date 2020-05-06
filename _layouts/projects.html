@@ -60,8 +60,8 @@ layout: page
 
 <div class="ui container">
     <div class="ui two stackable centered cards">
-        {%-comment-%}{%- assign sorted = site.projects | sort: "time.ended" -%}{%-endcomment-%}
-        {%- for project in site.projects -%}
+        {%- assign sorted = site.projects | sort: "started" | reverse -%}
+        {%- for project in sorted -%}
             {%- include project_view.html project=project -%}
         {%- endfor -%}
     </div>

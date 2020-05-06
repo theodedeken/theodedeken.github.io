@@ -104,7 +104,8 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 </div>
 
 <div class="ui four stackable cards">
-    {%- for skill in site.data.languages -%}
+    {%- assign sorted = site.data.languages | sort: "grade" | reverse -%}
+    {%- for skill in sorted -%}
         {%- include language_card.html skill=skill -%}
     {%- endfor -%}
 </div>
