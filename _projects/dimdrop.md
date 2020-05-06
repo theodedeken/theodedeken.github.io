@@ -3,7 +3,7 @@ layout: project
 title: dimdrop
 subtitle: Python package to perform dimensionality reduction using neural networks
 key: dimdrop
-thumb: TODO
+thumb: /assets/img/projects/dimdrop.jpg
 permalink: projects/dimdrop
 description: >-
     I wrote a lot of code for my thesis, so I decided afterwards to release it as an open source Python package.
