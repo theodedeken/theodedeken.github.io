@@ -12,4 +12,4 @@ Returns:
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign size = raw | size | minus: 1 -%}
-{%- assign result = raw | slice: 0, size | split: ',' -%}
+{%- assign result = raw | slice: 0, size | split: ',' | uniq -%}
