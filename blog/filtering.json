@@ -4,14 +4,19 @@
     ],
     "tag": {"2019": ["/blog/2019/init-2019"],"resolutions": ["/blog/2019/init-2019"],"elm": ["/blog/2019/init-2019"],"blog": ["/blog/2019/init-2019"],"flutter": ["/blog/2019/init-2019"],"go": ["/blog/2019/init-2019"],"spaxel": ["/blog/2019/init-2019"],"latex": ["/blog/2019/leveling-up-my-resume"],"python": ["/blog/2019/leveling-up-my-resume"],"career": ["/blog/2019/leveling-up-my-resume"],"resume": ["/blog/2019/leveling-up-my-resume"],"job": ["/blog/2019/leveling-up-my-resume"]
     },
-    "project": {"comp-bio": [""
+    "project": {"best-at": [""
+            ],"comp-bio": [""
+            ],"covid-19-observables": [""
+            ],"dimdrop": [""
+            ],"game-io": [""
+            ],"interview-toolkit": ["/blog/2019/leveling-up-my-resume"
             ],"lambda-rs": [""
+            ],"morituri-combonaturi": [""
             ],"perlin-noise": [""
+            ],"personal-website": [""
+            ],"rideaway": [""
             ],"spaxel": [""
-            ],"sprout": [""
             ],"thesis": [""
-            ],"warp-engine": [""
-            ],"webgl-rs": [""
             ]
     }
 }

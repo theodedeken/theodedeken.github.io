@@ -24,7 +24,7 @@
     <meta content="#FFFFFF" name="msapplication-TileColor">
     <meta content="/favicon-144.png" name="msapplication-TileImage">
     <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Lambda Interpreter">
-<meta property="og:description" content=""><meta property="og:url" content="/projects/lambda-rs">
+<meta property="og:description" content="A lambda interpreter written in Rust"><meta property="og:image" content="/assets/img/projects/lambda-rs.jpg"><meta property="og:url" content="/projects/lambda-rs">
 <meta name="twitter:card" content="summary_large_image"><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link href="/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
     <script src="/semantic/dist/semantic.min.js"></script>
@@ -101,8 +101,10 @@
                 <h1 class="ui inverted header">
                     Lambda Interpreter
 
-                </h1></div>
-            <div class="ui four wide center aligned column"><img class="ui centered medium rounded image" src=""></div>
+                </h1><div>
+                        <h2 class="ui orange sub header">A lambda interpreter written in Rust</h2>
+                    </div></div>
+            <div class="ui four wide center aligned column"><img class="ui centered medium rounded image" src="/assets/img/projects/lambda-rs.jpg"></div>
         </div>
     </div>
 </div></div>
@@ -138,34 +140,51 @@
             <div class="ui container">
     <div class="ui orange segment">
         <div class="ui stackable divided grid">
-            <div class="four wide column"><div class="ui red ribbon label">
-                        Cancelled
-                    </div><div class="ui top right attached large orange label">
+            <div class="five wide column"><div class="ui primary ribbon label">
+                    Finished
+                </div><div class="ui top right attached large orange label">
                     <i class="calendar icon"></i>
-                    
+                    July 2018
                     -
-                    
+                    August 2018
                 </div><div class="ui dividing sub header">Language</div>
-                <div class="ui horizontal list"></div><div class="ui dividing sub header">Framework</div>
-                <ul class="ui list"></ul>
+                <div class="ui horizontal list"><div class="ui item"><a class="ui large secondary label" href="/projects?lang=rust">
+            <i class="rust-icon"></i>
+            Rust
+        </a></div></div><div class="ui dividing sub header">Framework</div>
+                <ul class="ui list"><li>
+                        pest
+                    </li></ul><div class="ui dividing sub header">Link</div>
+                <div class="ui list"><div class="ui item"><i class="github icon"></i><div class="content">
+    <a href="https://github.com/theodedeken/lambda-rs" target="_blank">Source</a>
+</div></div></div><div class="ui dividing sub header">Tags</div>
 
-                <div class="ui dividing sub header">Link</div>
-                <div class="ui list"></div>
-                <div class="ui dividing sub header">Tag</div>
-
-                <div class="ui horizontal selection list"></div>
+                <div class="ui horizontal selection list"><a class="ui item" href="/projects?tag=lambda">
+                        <div class="ui label">lambda</div>
+                    </a><a class="ui item" href="/projects?tag=functional programming">
+                        <div class="ui label">functional programming</div>
+                    </a><a class="ui item" href="/projects?tag=interpreter">
+                        <div class="ui label">interpreter</div>
+                    </a></div>
 
 
             </div>
-            <div class="twelve wide column">
-                Project stats
+            <div class="eleven wide center aligned column">
+                <div class="ui huge secondary label">
+                    No project stats (yet)
+                </div>
             </div>
         </div>
     </div><div class="ui horizontal section divider">
         <div class="ui massive primary label">About</div>
     </div>
     <div class="ui text container">
-        <p>This page is still under construction, come back later.</p>
+        <p>In my first master year I got an assignment for the course &#39;Fundamentals of programming&#39; to write an interpreter for the simply typed lambda calculus, extended with records, variants and recursion.
+There was complete freedom on how to implement this interpreter.
+As I had just discovered and started learning <a href="https://www.rust-lang.org/">Rust</a> a few months back I saw this as a great oppurtunity to get some practice.</p>
+
+<p>So I made <a href="https://github.com/theodedeken/lambda-rs">lambda-rs</a>, a lambda interpreter written in Rust using the <a href="https://crates.io/crates/pest">pest</a> crate.
+Afterwards I released it with an MIT license.</p>
 
     </div>
 </div>

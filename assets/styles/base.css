@@ -15,10 +15,20 @@ code {
   background: #fff; }
 
 .rust-icon {
-  content: "";
-  background: url("https://www.rust-lang.org/logos/rust-logo-blk.svg");
+  background: url("/assets/img/rust-logo-blk_crop.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain;
+  /*width: 2rem !important;
+  height: 2rem !important;*/ }
+
+.rust-icon::after {
+  content: "Rst";
+  visibility: hidden; }
+
+.secondary.label .rust-icon {
+  background: url("/assets/img/rust-logo-wht_crop.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 #page-container {
   position: relative;

@@ -1,33 +1,129 @@
 {
     "all": [
-        "comp-bio", "lambda-rs", "perlin-noise", "spaxel", "sprout", "thesis", "warp-engine", "webgl-rs"
+        "best-at", "comp-bio", "covid-19-observables", "dimdrop", "game-io", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "personal-website", "rideaway", "spaxel", "thesis"
     ],
-    "tag": {"game development": [
-                "spaxel"
+    "tag": {"open summer of code": [
+                "best-at", "rideaway"
+            ],"csv": [
+                "best-at"
+            ],"xml": [
+                "best-at"
+            ],"open data": [
+                "best-at", "covid-19-observables"
+            ],"fod bosa": [
+                "best-at"
+            ],"command line": [
+                "best-at", "interview-toolkit"
+            ],"biostatistics": [
+                "comp-bio"
+            ],"bioinformatics": [
+                "comp-bio"
+            ],"dna": [
+                "comp-bio"
+            ],"rna": [
+                "comp-bio"
+            ],"data science": [
+                "comp-bio"
+            ],"data visualization": [
+                "covid-19-observables"
+            ],"interactive": [
+                "covid-19-observables"
+            ],"covid-19": [
+                "covid-19-observables"
+            ],"observable": [
+                "covid-19-observables"
+            ],"machine learning": [
+                "dimdrop", "thesis"
+            ],"neural networks": [
+                "dimdrop"
+            ],"pip": [
+                "dimdrop"
+            ],"package": [
+                "dimdrop"
+            ],"game development": [
+                "game-io", "morituri-combonaturi", "perlin-noise", "spaxel"
+            ],"web": [
+                "game-io"
+            ],"workshop": [
+                "game-io"
+            ],"pixel art": [
+                "game-io", "spaxel"
+            ],"job": [
+                "interview-toolkit"
+            ],"resume": [
+                "interview-toolkit"
+            ],"generator": [
+                "interview-toolkit"
+            ],"latex": [
+                "interview-toolkit"
+            ],"lambda": [
+                "lambda-rs"
+            ],"functional programming": [
+                "lambda-rs"
+            ],"interpreter": [
+                "lambda-rs"
+            ],"game jam": [
+                "morituri-combonaturi"
+            ],"ludum dare": [
+                "morituri-combonaturi"
+            ],"48h": [
+                "morituri-combonaturi"
+            ],"random": [
+                "perlin-noise"
+            ],"noise": [
+                "perlin-noise"
+            ],"world generation": [
+                "perlin-noise"
+            ],"fractal": [
+                "perlin-noise"
+            ],"website": [
+                "personal-website"
+            ],"portfolio": [
+                "personal-website"
+            ],"static": [
+                "personal-website"
+            ],"github pages": [
+                "personal-website"
+            ],"cycling": [
+                "rideaway"
+            ],"brussels": [
+                "rideaway"
+            ],"navigation": [
+                "rideaway"
+            ],"network": [
+                "rideaway"
+            ],"frontend": [
+                "rideaway"
+            ],"backend": [
+                "rideaway"
             ],"opengl": [
                 "spaxel"
             ],"lwjgl": [
                 "spaxel"
             ],"space": [
                 "spaxel"
-            ],"pixel art": [
-                "spaxel"
+            ],"dimensionality reduction": [
+                "thesis"
+            ],"master": [
+                "thesis"
+            ],"autoencoder": [
+                "thesis"
             ]
     },
     "status": {"active": [
-                "spaxel"
+                "covid-19-observables", "dimdrop", "personal-website", "spaxel"
             ],"done": [
-                ""
+                "best-at", "comp-bio", "game-io", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "thesis"
             ],"cancelled": [
                 ""
             ]
     },
     "lang": {"java": ["perlin-noise", "spaxel"
-            ],"rust": [""
-            ],"python": ["comp-bio"
-            ],"javascript": [""
-            ],"csharp": [""
-            ],"ruby": [""
+            ],"rust": ["lambda-rs"
+            ],"python": ["best-at", "comp-bio", "dimdrop", "interview-toolkit", "thesis"
+            ],"javascript": ["covid-19-observables", "game-io", "morituri-combonaturi", "personal-website", "rideaway"
+            ],"csharp": ["rideaway"
+            ],"ruby": ["game-io", "personal-website"
             ],"cplusplus": [""
             ]
     }

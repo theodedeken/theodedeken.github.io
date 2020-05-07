@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-    <title>Perlin Noise</title>
+    <title>dimdrop</title>
     <link href="/favicon.ico" rel="shortcut icon">
     <link href="/favicon.ico" rel="icon" sizes="16x16 32x32 64x64">
     <link href="/favicon-192.png" rel="icon" sizes="196x196" type="image/png">
@@ -23,8 +23,8 @@
     <link href="/favicon-180.png" rel="apple-touch-icon" sizes="180x180">
     <meta content="#FFFFFF" name="msapplication-TileColor">
     <meta content="/favicon-144.png" name="msapplication-TileImage">
-    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Perlin Noise">
-<meta property="og:description" content="Generating perlin noise in java"><meta property="og:image" content="/assets/img/projects/perlin-noise.jpg"><meta property="og:url" content="/projects/perlin-noise">
+    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="dimdrop">
+<meta property="og:description" content="Python package to perform dimensionality reduction using neural networks"><meta property="og:image" content="/assets/img/projects/dimdrop.jpg"><meta property="og:url" content="/projects/dimdrop">
 <meta name="twitter:card" content="summary_large_image"><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link href="/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
     <script src="/semantic/dist/semantic.min.js"></script>
@@ -93,18 +93,18 @@
     <div class="ui inverted breadcrumb">
         <a class="section" href="/">Home</a>
         <i class="right angle icon divider"></i><a class="section" href="/projects/">projects</a>
-                <i class="right angle icon divider"></i><div class="active section">perlin-noise</div>
+                <i class="right angle icon divider"></i><div class="active section">dimdrop</div>
     </div>
 </div><div class="ui hidden divider"></div>
         <div class="ui stackable grid">
             <div class="twelve wide bottom aligned column">
                 <h1 class="ui inverted header">
-                    Perlin Noise
+                    dimdrop
 
                 </h1><div>
-                        <h2 class="ui orange sub header">Generating perlin noise in java</h2>
+                        <h2 class="ui orange sub header">Python package to perform dimensionality reduction using neural networks</h2>
                     </div></div>
-            <div class="ui four wide center aligned column"><img class="ui centered medium rounded image" src="/assets/img/projects/perlin-noise.jpg"></div>
+            <div class="ui four wide center aligned column"><img class="ui centered medium rounded image" src="/assets/img/projects/dimdrop.jpg"></div>
         </div>
     </div>
 </div></div>
@@ -140,35 +140,41 @@
             <div class="ui container">
     <div class="ui orange segment">
         <div class="ui stackable divided grid">
-            <div class="five wide column"><div class="ui primary ribbon label">
-                    Finished
+            <div class="five wide column"><div class="ui green ribbon label">
+                    Active
                 </div><div class="ui top right attached large orange label">
                     <i class="calendar icon"></i>
-                    December 2016
+                    2019
                     -
-                    February 2017
+                    2020
                 </div><div class="ui dividing sub header">Language</div>
-                <div class="ui horizontal list"><div class="ui item"><a class="ui large secondary label" href="/projects?lang=java">
-            <i class="java icon"></i>
-            Java
-        </a></div></div><div class="ui dividing sub header">Framework</div>
+                <div class="ui horizontal list"><div class="ui item"><a class="ui large secondary label" href="/projects?lang=python">
+            <i class="python icon"></i>
+            Python
+        </a></div></div><div class="ui dividing sub header">Frameworks</div>
                 <ul class="ui list"><li>
-                        JavaFX
-                    </li></ul><div class="ui dividing sub header">Link</div>
+                        keras
+                    </li><li>
+                        numpy
+                    </li><li>
+                        sklearn
+                    </li></ul><div class="ui dividing sub header">Links</div>
                 <div class="ui list"><div class="ui item"><i class="github icon"></i><div class="content">
-    <a href="https://github.com/theodedeken/perlin-noise" target="_blank">Source</a>
+    <a href="https://github.com/theodedeken/dimdrop" target="_blank">Source</a>
+</div></div><div class="ui item"><i class="book open icon"></i><div class="content">
+    <a href="https://www.theodedeken.xyz/dimdrop/" target="_blank">Documentation</a>
+</div></div><div class="ui item"><i class="globe icon"></i><div class="content">
+    <a href="https://pypi.org/project/dimdrop/" target="_blank">pip Package</a>
 </div></div></div><div class="ui dividing sub header">Tags</div>
 
-                <div class="ui horizontal selection list"><a class="ui item" href="/projects?tag=random">
-                        <div class="ui label">random</div>
-                    </a><a class="ui item" href="/projects?tag=noise">
-                        <div class="ui label">noise</div>
-                    </a><a class="ui item" href="/projects?tag=world generation">
-                        <div class="ui label">world generation</div>
-                    </a><a class="ui item" href="/projects?tag=game development">
-                        <div class="ui label">game development</div>
-                    </a><a class="ui item" href="/projects?tag=fractal">
-                        <div class="ui label">fractal</div>
+                <div class="ui horizontal selection list"><a class="ui item" href="/projects?tag=machine learning">
+                        <div class="ui label">machine learning</div>
+                    </a><a class="ui item" href="/projects?tag=neural networks">
+                        <div class="ui label">neural networks</div>
+                    </a><a class="ui item" href="/projects?tag=pip">
+                        <div class="ui label">pip</div>
+                    </a><a class="ui item" href="/projects?tag=package">
+                        <div class="ui label">package</div>
                     </a></div>
 
 
@@ -183,13 +189,67 @@
         <div class="ui massive primary label">About</div>
     </div>
     <div class="ui text container">
-        <p>Randomly generated worlds are being used more and more in game development.
-Most of these worlds are generated using some kind of noise.
-Out of interest I implemented a <a href="https://en.wikipedia.org/wiki/Perlin_noise">Perlin Noise</a> generater in Java.
-Then I extended it to generate fractal noise by combining multiple noise images with different scales.</p>
-
-<p>As a proof of concept I made a randomly generated world.</p>
-
+        <p>As a result of writing my thesis I had a lot of models for doing dimensionality reduction implemented in Python using <a href="https://keras.io/">keras</a>.
+I decided to bundle them into a Python package and to publish it on pip as open source.</p>
+<h2 class='ui header' id="models">
+      Models
+    </h2>
+<p>A few models for doing dimensionality reduction using neural networks (mostly autoencoders) are provided by the library</p>
+<h3 class='ui header' id="parametric-t-sne">
+      Parametric t-SNE
+    </h3>
+<p>Implementation of the parametric variant of t-distributed neighborhood embedding.
+Based on this paper:</p>
+<div class="ui floating compact message"><p>Laurens van der Maaten. Learning a parametric embedding by preserving local structure. In David van Dyk and Max Welling, editors, <em>Proceedings of the Twelth International Conference on Artificial Intelligence and Statistics</em>, volume 5 of <em>Proceedings of Machine Learning Research</em>, pages 384–391, Hilton Clearwater Beach Resort, Clearwater Beach, Florida USA, 16–18 Apr 2009. PMLR.</p>
+</div><h3 class='ui header' id="autoencoder">
+      Autoencoder
+    </h3>
+<p>A deep autoencoder model as baseline for other autoencoder based dimensionality reduction methods.
+The default parameters are based on this paper of Geoffrey Hinton:</p>
+<div class="ui floating compact message"><p>G E Hinton and R R Salakhutdinov. Reducing the dimensionality of data with neural networks. <em>Science</em>, 313(5786):504–507, July 2006.</p>
+</div><h3 class='ui header' id="dec">
+      DEC
+    </h3>
+<p>Deep Embedded Clustering model based on this paper:</p>
+<div class="ui floating compact message"><p>Junyuan Xie, Ross B. Girshick, and Ali Farhadi. Unsupervised deep embedding for clustering analysis. <em>CoRR</em>, abs/1511.06335, 2015.</p>
+</div><h3 class='ui header' id="deepcluster">
+      DeepCluster
+    </h3>
+<p>DeepCluster model based on this paper:</p>
+<div class="ui floating compact message"><p>Kai Tian, Shuigeng Zhou, and Jihong Guan. Deepcluster: A general clustering framework based on deep learning. In Michelangelo Ceci, Jaakko Hollmén, Ljupčo Todorovski, Celine Vens, and Sašo Džeroski, editors, <em>Machine Learning and Knowledge Discovery in Databases</em>, pages 809–825, Cham, 2017. Springer International Publishing.</p>
+</div><h3 class='ui header' id="vasc">
+      VASC
+    </h3>
+<p>VASC: variational autoencoder for scRNA-seq datasets based on this paper:</p>
+<div class="ui floating compact message"><p>Dongfang Wang and Jin Gu. Vasc: dimension reduction and visualization of single cell rna sequencing data by deep variational autoencoder. <em>bioRxiv</em>, 2017.</p>
+</div><div class="ui left rail" style="width:300px">
+      <div class="ui sticky">
+        <div class="ui segment">
+          <h3 class="ui header">Table of contents</h3>
+          <div class="ui list">
+            <div class="item">
+          <a href="#models">Models</a>
+          <div class="list"><div class="item">
+          <a href="#parametric-t-sne">Parametric t-SNE</a>
+          
+        </div><div class="item">
+          <a href="#autoencoder">Autoencoder</a>
+          
+        </div><div class="item">
+          <a href="#dec">DEC</a>
+          
+        </div><div class="item">
+          <a href="#deepcluster">DeepCluster</a>
+          
+        </div><div class="item">
+          <a href="#vasc">VASC</a>
+          
+        </div></div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 </div>
 

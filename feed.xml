@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-04T07:17:33-05:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Leveling up my resume</title><link href="/blog/2019/leveling-up-my-resume" rel="alternate" type="text/html" title="Leveling up my resume" /><published>2019-02-20T00:00:00-06:00</published><updated>2019-02-20T00:00:00-06:00</updated><id>/blog/2019/leveling-up-my-resume</id><content type="html" xml:base="/blog/2019/leveling-up-my-resume">&lt;p&gt;As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-05-07T07:42:20-05:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Leveling up my resume</title><link href="/blog/2019/leveling-up-my-resume" rel="alternate" type="text/html" title="Leveling up my resume" /><published>2019-02-20T00:00:00-06:00</published><updated>2019-02-20T00:00:00-06:00</updated><id>/blog/2019/leveling-up-my-resume</id><content type="html" xml:base="/blog/2019/leveling-up-my-resume">&lt;p&gt;As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.&lt;/p&gt;
 &lt;h2 class='ui header' id=&quot;making-my-own-template&quot;&gt;
       Making my own template
     &lt;/h2&gt;
@@ -56,7 +56,7 @@
     &lt;/h3&gt;
 &lt;p&gt;&lt;div class=&quot;ui center aligned segment&quot;&gt;
       &lt;div class=&quot;ui rounded image&quot;&gt;
-        &lt;img src=&quot;/assets/blog/init-2019/elm.png&quot; alt=&quot;Elm&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/assets/img/blog/init-2019/elm.png&quot; alt=&quot;Elm&quot; title=&quot;&quot;&gt;
       &lt;/div&gt;
       
     &lt;/div&gt;&lt;/p&gt;
@@ -69,7 +69,7 @@
     &lt;/h3&gt;
 &lt;p&gt;&lt;div class=&quot;ui center aligned segment&quot;&gt;
       &lt;div class=&quot;ui rounded image&quot;&gt;
-        &lt;img src=&quot;/assets/blog/init-2019/flutter.png&quot; alt=&quot;Flutter&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/assets/img/blog/init-2019/flutter.png&quot; alt=&quot;Flutter&quot; title=&quot;&quot;&gt;
       &lt;/div&gt;
       
     &lt;/div&gt;&lt;/p&gt;
@@ -80,7 +80,7 @@
     &lt;/h3&gt;
 &lt;p&gt;&lt;div class=&quot;ui center aligned segment&quot;&gt;
       &lt;div class=&quot;ui rounded image&quot;&gt;
-        &lt;img src=&quot;/assets/blog/init-2019/go.png&quot; alt=&quot;Go&quot; title=&quot;&quot;&gt;
+        &lt;img src=&quot;/assets/img/blog/init-2019/go.png&quot; alt=&quot;Go&quot; title=&quot;&quot;&gt;
       &lt;/div&gt;
       
     &lt;/div&gt;&lt;/p&gt;
