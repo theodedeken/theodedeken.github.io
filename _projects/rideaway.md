@@ -32,7 +32,7 @@ links:
       text: Routeplanner app 
     - type: web
       url: https://2017.summerofcode.be/
-      text: open Summer of code 2017
+      text: Open Summer of Code 2017
 tags: 
     - cycling
     - brussels

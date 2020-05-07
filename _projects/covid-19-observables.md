@@ -32,3 +32,21 @@ tags:
     - open data
     - observable
 ---
+While the work for my volunteership in Sweden was drying up due to the COVID-19 pandemic, I took advantage of the extra time by learning D3.
+Almost simultaneously Sciensano published the data of the outbreak in Belgium as [open data](https://epistat.wiv-isp.be/covid/).
+So I made some interactive visualizations of the data on [Observable](https://observablehq.com).
+
+They can be viewed [here](https://observablehq.com/collection/@theodedeken/covid-19-in-belgium).
+
+## COVID-19 Mortality in Belgium
+
+<div class="ui raised segment">
+<div id="observablehq-4f1219a9"></div>
+</div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@theodedeken/covid-19-mortality-in-belgium.js?v=3";
+const inspect = Inspector.into("#observablehq-4f1219a9");
+(new Runtime).module(define, name => (name === "main") && inspect());
+</script>
+

@@ -29,7 +29,7 @@ links:
       text: Overview
     - type: web
       url: https://2019.summerofcode.be/
-      text: open Summer of code 2019
+      text: Open Summer of Code 2019
 tags: 
     - open summer of code
     - csv
