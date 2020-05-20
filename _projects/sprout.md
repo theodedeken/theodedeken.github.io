@@ -10,7 +10,7 @@ description: >-
     A game jam where you get 48 hours to develop a game.
 time_format: "%-d %b %y, 3AM"
 started: 2015-12-11
-ended: 2015-12-13
+ended: 2015-12-14
 language: 
     - javascript:
         frameworks:
@@ -31,6 +31,7 @@ tags:
     - game development
     - game jam
     - ludum dare
+    - 48h
     - web
     - nature
     - growing
