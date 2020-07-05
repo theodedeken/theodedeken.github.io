@@ -24,4 +24,9 @@ links:
     url: https://github.com/theodedeken/fractal
     text: Source
 ---
-TODO
+Experimentation with a fractal-like generator.
+Built using JavaFX shapes.
+
+![fractal](/assets/img/projects/fractal.jpg)
+
+You can play around with different properties to generate different looking fractals.

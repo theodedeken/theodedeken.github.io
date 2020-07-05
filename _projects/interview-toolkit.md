@@ -28,4 +28,10 @@ tags:
     - command line
     - latex
 ---
-When starting to look for work, I noticed how the process of making a resume requires a lot of smal changes between resumes ... inefficient ... write a generator
+When starting to look for work, I noticed how the process of making a resume includes a lot of repetitive work.
+As a true computer scientist I looked into automating this process. 
+The first step was to write my own LaTeX template.
+Afterwards I wrote a simple Python script that can generate a resume or a cover letter based on a YAML file specifying the contents.
+Now making a resume requires me only to modify the content of the YAML file and then I can effortlessly generate a resume out of that.
+
+The code and template are all open source and can be found on [Github](https://github.com/theodedeken/interview-toolkit).

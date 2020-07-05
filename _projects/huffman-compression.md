@@ -24,4 +24,5 @@ links:
     url: https://github.com/theodedeken/huffman-compression
     text: Source
 ---
-TODO
+A university project where I had to implement an Huffman coder to compress files.
+Additionally I needed to implement a specialized compression scheme for a specific file format of numbers.
