@@ -1,3 +1,33 @@
+- company: Robovision
+  jobtitle: Solution Sofware Lead
+  description: >-
+    As a result of working cross-project for a while I became more and more a de facto technical lead in my team and others.
+    This recent role update highlights this evolution and the work I am doing bringing the overall software of the Solution Delivery group within Robovision up to a better standard.
+    I create a bridge with the engineering teams of our platform, making sure the direction is aligned to create greater value for our projects.
+    I take on a leadership role in software design and architecture as well as development practices.
+    I work together with other project engineers to transform POC and Pilot projects into scaleable and performant pieces of software.
+  started: March 2023
+  ended: October 2023
+  leveraged: Gaining experience in the design of large scale software systems, clean development practices and DevOps
+- company: Robovision
+  jobtitle: Software Engineer
+  description: >-
+    After working as a project engineer for a while I got the opportunity to switch to a Software Engineer role.
+    This role focused on cross-project developments for all projects of our main horticulture partner.
+    During this time I worked on installation and update management for our solutions, tooling for continuous integration, designing and developing generic components as well as defining better code standards.
+  started: February 2022
+  ended: March 2023
+  leveraged: Gained experience in software design, continuous integration and continuous deployment
+- company: Robovision
+  jobtitle: Project Engineer
+  description: >-
+    Started my career as a Project Engineer working on software for the horticulture industry. 
+    Our projects deliver machine learning inference and specialized post-processing to machines running in an industrial environment.
+    These machines are operating with a large vision setup of multiple cameras and with tight deadlines on delivering a result.
+    Our sofware is deployed on edge computing devices which communicate with our cloud platform to deliver a full end-to-end retraining cycle.
+  started: August 2020
+  ended: February 2022
+  leveraged: Gained experienced writing production grade code, developing multiple secondary skills in the fast-paced landscape of a scaleup
 - company: Young Innovation HUB Åmål, Sweden
   jobtitle: European Solidarity Corps volunteer
   description: >-
