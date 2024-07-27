@@ -22,6 +22,7 @@
       gems = pkgs.bundlerEnv {
         name = "gemset";
         inherit ruby;
+        gemConfig = pkgs.defaultGemConfig;
         gemfile = ./Gemfile;
         lockfile = ./Gemfile.lock;
         gemset = ./gemset.nix;
