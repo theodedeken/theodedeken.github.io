@@ -35,6 +35,7 @@
             gems
             ruby
             bundix
+            nodejs_18
           ];
         };
     });
