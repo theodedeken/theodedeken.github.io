@@ -13,12 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Build fomantic-ui
-        run: npm install fomantic-ui@^2.8.4
+        run: npm install
       - name: Build the site in the jekyll/builder container
         run: |
           docker run \
           -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          jekyll/builder:3.8.5 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+          jekyll/builder:3.10.0 /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
