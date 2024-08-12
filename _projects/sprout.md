@@ -23,7 +23,7 @@ links:
       url: http://www.theodedeken.xyz/sprout/
       text: Play the game
     - type: web 
-      url: http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=29977
+      url: https://web.archive.org/web/20200815161016/http://ludumdare.com/compo/ludum-dare-34/?action=preview&uid=29977
       text: Results
 featured: false
 status: done
@@ -36,3 +36,10 @@ tags:
     - nature
     - growing
 ---
+
+Got challenged when implementing some of the game's features
+
+- Growing mechanic
+- Zooming out to view the whole tree
+
+Really like how the concept turned out in the end. 
