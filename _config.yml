@@ -48,3 +48,7 @@ exclude:
   - package-lock.json
   - README.md
   - semantic.json
+  - flake.nix
+  - flake.lock
+  - gemset.nix
+  
