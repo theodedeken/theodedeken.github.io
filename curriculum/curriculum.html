@@ -8,10 +8,10 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 <div class="ui orange raised segment">
     <h1>Current occupation</h1>
     <div class="ui orange large label">
-        Looking for work, Learning new skills
+        Freelance DevOps Engineer
     </div>
     <i class="large at icon"></i>
-    <div class="ui secondary large label">Home</div>
+    <a class="ui secondary large label" href="https://robovision.ai/" target="_blank">Robovision</a>
 
 </div>
 
@@ -24,14 +24,50 @@ masthead_flair: <i class="graduation cap massive icon"></i>
     <div class="ui segment">
         <div class="ui relaxed divided list">
             {%- for edu in site.data.education -%}
-                <div class="item">
-                    <div class="right floated content">{{ edu.institution }}</div>
-                    <div class="header">{{ edu.degree }}</div>
-                    {{ edu.started }}
-                    -
-                    {{ edu.ended }}
+            <div class="item">
+                <div class="right floated content">{{ edu.institution }}</div>
+                <div class="header">{{ edu.degree }}</div>
+                {{ edu.started }}
+                -
+                {{ edu.ended }}
 
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
+
+<div class="ui horizontal section divider">
+    <div class="ui massive primary label">Publications</div>
+</div>
+
+<div class="ui text container">
+    <div class="ui segment">
+        <div class="ui divided items">
+            {%- for pub in site.data.publications -%}
+            <div class="item">
+                <div class="content">
+
+                    <div class="header">{{ pub.title }}</div>
+                    <div class="meta">
+                        <i class="calendar alternate outline icon"></i>
+                        {{ pub.date }}
+                    </div>
+                    <div class="description">
+                        <p>{{ pub.description | markdownify}}</p>
+                    </div>
+                    <div class="description">
+                        <a class="ui orange labeled button" href="{{ pub.link }}" target="_blank">
+                            <div class="ui orange button">Read it here</div>
+                            <div class="ui basic label">
+                                <i class="language icon"></i>
+                                {{ pub.language }}
+                            </div>
+                        </a>
+                        <div class="ui right floated secondary large label">{{ pub.type }}</div>
+                    </div>
                 </div>
+            </div>
             {%- endfor -%}
         </div>
     </div>
@@ -45,30 +81,31 @@ masthead_flair: <i class="graduation cap massive icon"></i>
     <div class="ui segment">
         <div class="ui divided items">
             {%- for exp in site.data.work_experience -%}
-                <div class="item">
-                    <div class="content">
-                        <div class="right floated content">
-                            <i class="map marker alternate icon"></i>
-                            {{ exp.company }}</div>
-                        <div class="header">{{ exp.jobtitle }}</div>
-                        <div class="meta">
-                            <i class="calendar alternate outline icon"></i>
-                            {{ exp.started }}
-                            -
-                            {{ exp.ended }}
-                        </div>
-                        <div class="description">
-                            <p>{{ exp.description | markdownify}}</p>
-                        </div>
-                        {%- if exp.leveraged -%}
-                            <div class="description">
-                                <strong>Leveraged knowledge:
-                                </strong>
-                                {{ exp.leveraged }}
-                            </div>
-                        {%- endif -%}
+            <div class="item">
+                <div class="content">
+                    <div class="right floated content">
+                        <i class="map marker alternate icon"></i>
+                        {{ exp.company }}
                     </div>
+                    <div class="header">{{ exp.jobtitle }}</div>
+                    <div class="meta">
+                        <i class="calendar alternate outline icon"></i>
+                        {{ exp.started }}
+                        -
+                        {{ exp.ended }}
+                    </div>
+                    <div class="description">
+                        <p>{{ exp.description | markdownify}}</p>
+                    </div>
+                    {%- if exp.leveraged -%}
+                    <div class="description">
+                        <strong>Leveraged knowledge:
+                        </strong>
+                        {{ exp.leveraged }}
+                    </div>
+                    {%- endif -%}
                 </div>
+            </div>
             {%- endfor -%}
         </div>
     </div>
@@ -82,14 +119,14 @@ masthead_flair: <i class="graduation cap massive icon"></i>
     <div class="ui top attached segment">
         <div class="ui divided items">
             {%- for exp in site.data.other_experience -%}
-                <div class="item">
-                    <div class="content">
-                        <div class="header">{{ exp.title }}</div>
-                        <div class="description">
-                            <p>{{ exp.description | markdownify}}</p>
-                        </div>
+            <div class="item">
+                <div class="content">
+                    <div class="header">{{ exp.title }}</div>
+                    <div class="description">
+                        <p>{{ exp.description | markdownify}}</p>
                     </div>
                 </div>
+            </div>
             {%- endfor -%}
 
         </div>
@@ -106,7 +143,7 @@ masthead_flair: <i class="graduation cap massive icon"></i>
 <div class="ui four doubling cards">
     {%- assign sorted = site.data.languages | sort: "grade" | reverse -%}
     {%- for skill in sorted -%}
-        {%- include language_card.html skill=skill -%}
+    {%- include language_card.html skill=skill -%}
     {%- endfor -%}
 </div>
 

@@ -40,7 +40,6 @@ https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-
 /rdoc/
 
 ## Environment normalization:
-/.bundle/
 /vendor/bundle
 /lib/bundler/man/
 

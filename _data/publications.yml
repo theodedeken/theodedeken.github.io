@@ -1,0 +1,16 @@
+- title: Research and Development of an Artificial Neural Network for Spectral Data
+  description: >-
+    Research into various neural networks to predict the state of storage containers of nuclear waste.
+    This is done by introducing vibrations in the containers and measuring the residual frequencies.
+    These get decomposed into frequency components which form the input of the researched models.
+  type: paper
+  date: 2020-06-30
+  link: https://acc-ern.tul.cz/archiv/PDF/ACC_2020_1_02.pdf
+  language: English
+- title: Visualisatie van Hoog-Dimensionale Data met Behulp van Autoencoders
+  description: >-
+    Research into deep autoencoders for dimensionality reduction so high-dimensional data can be visualized.
+  type: thesis
+  date: 2019
+  link: https://lib.ugent.be/nl/catalog/rug01:002787411
+  language: Dutch
