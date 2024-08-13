@@ -2,74 +2,27 @@
   key: java
   grade: 8
   icon: java icon
-  frameworks:
-    - Spring
-    - LWJGL
-    - Jackson
-    - Android Studio
-  projects:
-    - spaxel
-    - perlin-noise
 - language: Rust
   key: rust
   grade: 6
   icon: rust-icon
-  frameworks:
-    - wasm_bindgen
-    - pest
-  projects:
-    - lambda-rs
-    - webgl-rs
-    - warp-engine
 - language: Python
   key: python
   grade: 9
   icon: python icon
-  frameworks:
-    - keras
-    - numpy
-    - matplotlib
-    - pandas
-    - seaborn
-    - django
-  projects:
-    - thesis
-    - comp-bio
 - language: Javascript
   key: javascript
   grade: 7
   icon: devicon-javascript-plain
-  frameworks:
-    - Vue
-    - Angular
-    - Electron
-    - Webpack
-    - Phaser
-    - svelte
-  projects:
-    - steampicker
-    - sprout
-    - traffic-troubles
 - language: C#
   key: csharp
   grade: 5
   icon: devicon-csharp-plain
-  frameworks:
-    - ASP.NET
-  projects:
-    - rideaway
 - language: Ruby
   key: ruby
   grade: 5
   icon: devicon-ruby-plain
-  frameworks:
-    - Jekyll
-    - Ruby on Rails
-  projects:
-    - site
 - language: C, C++
   key: cplusplus
   grade: 5
   icon: devicon-c-plain
-  projects:
-    - huffman-coding

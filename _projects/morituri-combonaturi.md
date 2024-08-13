@@ -33,4 +33,6 @@ tags:
     - game jam
     - ludum dare
     - 48h
+    - gladiator
+    - arena
 ---

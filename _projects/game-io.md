@@ -9,8 +9,8 @@ description: >-
     A workshop I gave during my time in Sweden.
     It covers the basics of game development using Phaser.
 time_format: "%-d %b %Y"
-started: 2019-02-20
-ended: 2019-03-12
+started: 2020-02-20
+ended: 2020-03-12
 language: 
     - javascript:
         frameworks:

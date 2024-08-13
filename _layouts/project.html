@@ -4,7 +4,8 @@ layout: default
 <div class="ui container">
     <div class="ui orange segment">
         <div class="ui stackable divided grid">
-            <div class="five wide column">
+
+            <div class="eight wide column">
                 {%- if page.status == 'active' -%}
                 <div class="ui green ribbon label">
                     Active
@@ -18,13 +19,6 @@ layout: default
                     Cancelled
                 </div>
                 {%- endif -%}
-
-                <div class="ui top right attached large orange label">
-                    <i class="calendar icon"></i>
-                    {{ page.started | date: page.time_format }}
-                    -
-                    {{ page.ended | date: page.time_format }}
-                </div>
 
                 {%- include requests/languages_in_project.liquid project=page -%}
                 <div class="ui dividing sub header">
@@ -59,7 +53,15 @@ layout: default
                     {%- endfor -%}
                 </ul>
                 {%- endif -%}
+            </div>
 
+            <div class="eight wide column">
+                <div class="ui top right attached large orange label">
+                    <i class="calendar icon"></i>
+                    {{ page.started | date: page.time_format }}
+                    -
+                    {{ page.ended | date: page.time_format }}
+                </div>
                 {%- if page.links -%}
                 <div class="ui dividing sub header">
                     {%- if page.links.size > 1 -%}
@@ -90,13 +92,6 @@ layout: default
                         <div class="ui label">{{ tag }}</div>
                     </a>
                     {%- endfor -%}
-                </div>
-
-
-            </div>
-            <div class="eleven wide center aligned column">
-                <div class="ui huge secondary label">
-                    No project stats (yet)
                 </div>
             </div>
         </div>
