@@ -30,4 +30,4 @@ tags:
     - demo
 ---
 A demo of texture mapping and bump mapping with a moving light source. 
-Written in WebGL as part of an interactive lesson I gave in a cours in university.
+Written in WebGL as part of an interactive lesson I gave in a course in university.

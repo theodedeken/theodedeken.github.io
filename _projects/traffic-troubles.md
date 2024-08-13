@@ -37,3 +37,5 @@ tags:
     - traffic
     - congestion
 ---
+
+In this game you have to manage a road network for an ever growing demand. Connect every destination and upgrade your most used roads.

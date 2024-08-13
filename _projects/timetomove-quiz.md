@@ -29,6 +29,11 @@ links:
     text: Source
   - type: web
     url: https://hubben-amal.github.io/timetomove-quiz/
-    text: View quiz
+    text: Take the quiz
 ---
-TODO
+
+During my volunteering work in Sweden we participated in the [Time to Move](https://timetomove.eurodesk.eu/) event. 
+This event aims to inspire youths to travel within the EU as part of various programs such as Erasmus, European Solidarity corps and more.
+
+One of the activities we hosted was an online quiz. 
+Due to the prohibitive pricing of typeform and the lack of feature in google forms at the time I decided to implement the quiz as a custom [svelte](https://svelte.dev/) app.
