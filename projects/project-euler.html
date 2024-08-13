@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-    <title>Personal Website</title>
+    <title>Project Euler</title>
     <link href="/favicon.ico" rel="shortcut icon">
     <link href="/favicon.ico" rel="icon" sizes="16x16 32x32 64x64">
     <link href="/favicon-192.png" rel="icon" sizes="196x196" type="image/png">
@@ -23,8 +23,8 @@
     <link href="/favicon-180.png" rel="apple-touch-icon" sizes="180x180">
     <meta content="#FFFFFF" name="msapplication-TileColor">
     <meta content="/favicon-144.png" name="msapplication-TileImage">
-    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Personal Website">
-<meta property="og:description" content="What you are looking at"><meta property="og:image" content="/assets/img/default_thumb.jpg"><meta property="og:url" content="/projects/personal-website.html">
+    <meta content="/browserconfig.xml" name="msapplication-config"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Theo Dedeken" /><meta property="og:title" content="Project Euler">
+<meta property="og:description" content="Solving the problems of Project Euler"><meta property="og:image" content="/assets/img/projects/project-euler/project-euler.png"><meta property="og:url" content="/projects/project-euler.html">
 <meta name="twitter:card" content="summary_large_image"><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link href="/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
     <script src="/semantic/dist/semantic.min.js"></script>
@@ -93,18 +93,18 @@
     <div class="ui inverted breadcrumb">
         <a class="section" href="/">Home</a>
         <i class="right angle icon divider"></i><a class="section" href="/projects/">projects</a>
-                <i class="right angle icon divider"></i><div class="active section">personal-website.html</div>
+                <i class="right angle icon divider"></i><div class="active section">project-euler.html</div>
     </div>
 </div><div class="ui hidden divider"></div>
         <div class="ui stackable grid">
             <div class="twelve wide bottom aligned column">
                 <h1 class="ui inverted header">
-                    Personal Website
+                    Project Euler
 
                 </h1><div>
-                        <h2 class="ui orange sub header">What you are looking at</h2>
+                        <h2 class="ui orange sub header">Solving the problems of Project Euler</h2>
                     </div></div>
-            <div class="ui four wide center aligned column"><img class="ui centered medium rounded image" src="/assets/img/default_thumb.jpg"></div>
+            <div class="ui four wide center aligned column"><img class="ui centered medium rounded image" src="/assets/img/projects/project-euler/project-euler.png"></div>
         </div>
     </div>
 </div></div>
@@ -143,25 +143,11 @@
 
             <div class="eight wide column"><div class="ui green ribbon label">
                     Active
-                </div><div class="ui dividing sub header">Languages</div>
-                <div class="ui horizontal list"><div class="ui item"><a class="ui large secondary label" href="/projects?lang=ruby">
-            <i class="devicon-ruby-plain"></i>
-            Ruby
-        </a></div><div class="ui item"><a class="ui large secondary label" href="/projects?lang=javascript">
-            <i class="devicon-javascript-plain"></i>
-            Javascript
-        </a></div><div class="ui item"></div><div class="ui item"></div></div><div class="ui dividing sub header">Frameworks</div>
-                <ul class="ui list"><li>
-                        Jekyll
-                    </li><li>
-                        Rouge
-                    </li><li>
-                        jQuery
-                    </li><li>
-                        Liquid
-                    </li><li>
-                        Fomantic UI
-                    </li></ul></div>
+                </div><div class="ui dividing sub header">Language</div>
+                <div class="ui horizontal list"><div class="ui item"><a class="ui large secondary label" href="/projects?lang=rust">
+            <i class="rust-icon"></i>
+            Rust
+        </a></div></div></div>
 
             <div class="eight wide column">
                 <div class="ui top right attached large orange label">
@@ -169,21 +155,17 @@
                     2019
                     -
                     2024
-                </div><div class="ui dividing sub header">Links</div>
-                <div class="ui list"><div class="ui item"><i class="github icon"></i><div class="content">
-    <a href="https://github.com/theodedeken/theodedeken.github.io/tree/source" target="_blank">Source</a>
-</div></div><div class="ui item"><i class="globe icon"></i><div class="content">
-    <a href="https://www.theodedeken.xyz" target="_blank">Loophole</a>
+                </div><div class="ui dividing sub header">Link</div>
+                <div class="ui list"><div class="ui item"><i class="globe icon"></i><div class="content">
+    <a href="https://projecteuler.net" target="_blank">Project Euler</a>
 </div></div></div><div class="ui dividing sub header">Tags</div>
 
-                <div class="ui horizontal selection list"><a class="ui item" href="/projects?tag=website">
-                        <div class="ui label">website</div>
-                    </a><a class="ui item" href="/projects?tag=portfolio">
-                        <div class="ui label">portfolio</div>
-                    </a><a class="ui item" href="/projects?tag=static">
-                        <div class="ui label">static</div>
-                    </a><a class="ui item" href="/projects?tag=github pages">
-                        <div class="ui label">github pages</div>
+                <div class="ui horizontal selection list"><a class="ui item" href="/projects?tag=mathematics">
+                        <div class="ui label">mathematics</div>
+                    </a><a class="ui item" href="/projects?tag=euler">
+                        <div class="ui label">euler</div>
+                    </a><a class="ui item" href="/projects?tag=algorithms">
+                        <div class="ui label">algorithms</div>
                     </a></div>
             </div>
         </div>
@@ -191,7 +173,55 @@
         <div class="ui massive primary label">About</div>
     </div>
     <div class="ui text container">
-        
+        <p>Project Euler is a problem solving challenge website where new problems are posted each week.
+A problem is often mathematically inspired and the answer is always a single number.
+To find this number you need to write an efficient algorithm.</p>
+
+<p>I have currently solved this many problems:
+<div class="ui center aligned segment">
+      <div class="ui rounded image">
+        <img src="https://projecteuler.net/profile/TheoDedeken.png" alt="badge" title="">
+      </div>
+      
+    </div>
+Which puts me in the <strong>top 1%</strong> of all users on the website.</p>
+<h2 class='ui header' id="benchmarks">
+      Benchmarks
+    </h2>
+<p>I have benchmarked my solutions in both time and memory.
+Project Euler states that each problem is solvable in less than a minute with the right algorithm.
+As you can see most of my problems fulfill this requirement, with only a few problematic problems.</p>
+<h3 class='ui header' id="timing-benchmarks">
+      Timing benchmarks
+    </h3>
+<p><object data="/assets/img/projects/project-euler/time.svg" type="image/svg+xml">
+  Timing benchmarks
+</object></p>
+<h3 class='ui header' id="memory-benchmarks">
+      Memory benchmarks
+    </h3>
+<p><object data="/assets/img/projects/project-euler/memory.svg" type="image/svg+xml">
+  Memory benchmarks
+</object></p>
+<div class="ui left rail" style="width:300px">
+      <div class="ui sticky">
+        <div class="ui segment">
+          <h3 class="ui header">Table of contents</h3>
+          <div class="ui list">
+            <div class="item">
+          <a href="#benchmarks">Benchmarks</a>
+          <div class="list"><div class="item">
+          <a href="#timing-benchmarks">Timing benchmarks</a>
+          
+        </div><div class="item">
+          <a href="#memory-benchmarks">Memory benchmarks</a>
+          
+        </div></div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 </div>
 

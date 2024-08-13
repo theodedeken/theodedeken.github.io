@@ -1,4 +1,179 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-08-12T14:35:32+00:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Leveling up my resume</title><link href="/blog/2019/leveling-up-my-resume" rel="alternate" type="text/html" title="Leveling up my resume" /><published>2019-02-20T00:00:00+00:00</published><updated>2019-02-20T00:00:00+00:00</updated><id>/blog/2019/leveling-up-my-resume</id><content type="html" xml:base="/blog/2019/leveling-up-my-resume"><![CDATA[<p>As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-08-13T18:05:56+00:00</updated><id>/feed.xml</id><title type="html">Theo Dedeken</title><subtitle>Get more information about me, my curriculum and personal projects.</subtitle><entry><title type="html">Ludum Dare 46: Post Mortem</title><link href="/blog/2020/ld46-post-mortem" rel="alternate" type="text/html" title="Ludum Dare 46: Post Mortem" /><published>2020-04-23T00:00:00+00:00</published><updated>2020-04-23T00:00:00+00:00</updated><id>/blog/2020/ld46-post-mortem</id><content type="html" xml:base="/blog/2020/ld46-post-mortem"><![CDATA[<p>Last weekend I participated in the 46th edition of <a href="https://ldjam.com/">Ludum Dare</a>, a game jam where you get 48 hours to create a game from scratch (using tools and engines is allowed).
+I had previously participated in other editions with my games <a href="/projects/traffic-troubles">Traffic Troubles</a> and <a href="/projects/sprout">Sprout</a>.
+And just like those entries I was again going to implement my game using the <a href="https://phaser.io/">Phaser game engine</a>.
+This is my post mortem on the things that went right and mostly wrong during the 48 hours of development.</p>
+<h2 class='ui header' id="saturday">
+      Saturday
+    </h2>
+<p>The theme, <strong>Keep It Alive</strong>, was announced at 3 AM in my local time, so instead of staying up until then I went for an early sleep and got up quite early on Saturday morning.</p>
+<h3 class='ui header' id="morning---43h-left">
+      Morning - 43h left
+    </h3>
+<p>Most of my Saturday morning was spent brainstorming game ideas.
+Some of my early ideas were:</p>
+<div class="ui bulleted list">
+      <div class="item">Nature themed, keeping plants or flowers alive.
+</div><div class="item">Air tower simulator, keeping passengers alive guiding planes to runways.
+</div><div class="item">Keep a village alive, defending from invaders/monsters.
+</div>
+    </div>
+<p>In the end the idea of keeping a combo alive came to me.
+Inspired by old the old Flash games <a href="https://armorgames.com/play/6677/epic-combo">Epic Combo</a> and <a href="https://armorgames.com/play/13256/epic-combo-redux">Epic Combo Redux</a>, the idea of making a game where the aim is to create a bigger and bigger combo really sounded great. 
+Now I just needed to find the right setting and I did: <strong>Gladiators in an arena</strong>. </p>
+
+<p>At this point I still was thinking of letting the player control a gladiator (or executioner) in the arena going around hitting enemies to create a big combo.
+This evolved over the day to creating combos by launching a gladiator into an arena filled with objects and other gladiators to interact with.</p>
+<h3 class='ui header' id="afternoon---38h-left">
+      Afternoon - 38h left
+    </h3>
+<p>Now with my idea and theme set I started exploring the technical side of things.
+I quickly set up some colliding circles using the arcade physics engine and got things bouncing off eachother.
+Then I ran into a limitation of the arcade engine, it only supports rectangular and circular colliders.
+But for my arena to work I had to figure out a way to get the gladiators to bounce of the insides of an ellips.</p>
+
+<p>So I started to research some of the properties of an ellips and quickly found a way to calculate the two focal points of an ellips of any size.
+These focal points are important for the collision as another property of an ellips is that the tangent line of a point on the ellips is the outer bisector of the angle formed by the point and the two focal points.
+This tangent determines the direction an object will bounce off when it collides with the ellips. 
+Now I just needed to do some vector math to calculate the collision and reflection vector and after some debugging I had working elliptical collision!
+However, most of my afternoon was gone.</p>
+
+<p><div class="ui center aligned segment">
+      <div class="ui rounded image">
+        <img src="/assets/img/blog/ld46-post-mortem/screenshot-0.jpg" alt="elliptical collision" title="Just got elliptical collision working">
+      </div>
+      <div class='ui divider'></div>
+    <div class="content">
+        <h5 class="ui header">Just got elliptical collision working</h5>
+    </div>
+    </div></p>
+<h3 class='ui header' id="evening---33h-left">
+      Evening - 33h left
+    </h3>
+<p>In the evening I started on blocking the game out using circles and rectangles.
+Afterwards I got the launch mechanic to work.
+Towards the end of my day I noticed that Phaser 3 does not have a built in UI system anymore, I should have researched this more beforehand.
+I could not really find a quick library to fit in my existing project so I just pulled the trigger and built something really simple just to cover my needs for the jam.
+Then I went to sleep.</p>
+
+<p><div class="ui center aligned segment">
+      <div class="ui rounded image">
+        <img src="/assets/img/blog/ld46-post-mortem/screenshot-2.jpg" alt="blocked out game" title="Blocked out the game using rectangles and circles">
+      </div>
+      <div class='ui divider'></div>
+    <div class="content">
+        <h5 class="ui header">Blocked out the game using rectangles and circles</h5>
+    </div>
+    </div></p>
+<h2 class='ui header' id="sunday">
+      Sunday
+    </h2>
+<p>A new day, over halfway, with not much of a game yet.
+I really had to step up to make something finished out of what I had.</p>
+<h3 class='ui header' id="morning---19h-left">
+      Morning - 19h left
+    </h3>
+<p>Now that I had a basic UI system I drew up a state diagram on how the player could move through the game and started on implementing it.
+The end result would have two screens an arena screen and an upgrade screen.
+I added buttons to move back and forth and added UI for the different purchases of the upgrade screen.</p>
+
+<p>Then I took a break from coding and created the first art of the game, the gladiator sprite.
+I was thinking of doing vector graphics for the game instead of my usual pixel art.
+But it had been years since I did any of that, so I still had to install software.
+I checked out <a href="https://inkscape.org/">Inkscape</a>, but got overwhelmed by its complexity and searched for a simpler alternative.
+I ended up with <a href="https://vectr.com/">Vectr</a>, a very basic drawing tool but ideal to learn quickly and powerful enough to create decent art.</p>
+<h3 class='ui header' id="afternoon---14h-left">
+      Afternoon - 14h left
+    </h3>
+<p>I added my gladiator sprite and moved on to implement the placing logic.
+I needed the player to be able to buy placeables from the upgrade screen and to put them into the arena.
+Then I also needed to save the state of the arena so that the placeables were kept inbetween rounds.
+Simultaneously I added the concept of a <em>round</em>, which would last until the combo timed out.
+Naturally I added the combo mechanic too and a basic gold mechanic which would add gold based on your previous combo.</p>
+
+<p>At the end I could make the placeables have a certain cost to them.
+This I implemented using exponential functions as the more you buy the easier it would be to generate gold.
+I punched in some numbers which seemed reasonable and left it.</p>
+<h3 class='ui header' id="evening---9h-left">
+      Evening - 9h left
+    </h3>
+<p>Then it was really necessary to start making art, I still only had the gladiator sprite so I needed a bunch more to make my game look polished.
+I made all the sprites from placeables to arena to UI in one big go.
+I also made the sound effects.
+This time I went for recorded sounds instead of generating them with <a href="https://www.bfxr.net/">bfxr</a>.
+I quickly recorded some effects using my voice and shitty laptop microphone in <a href="https://www.audacityteam.org/">Audacity</a>, threw some filters over it (I have no idea how to do any of this sound stuff) until they sounded ok and cut them out.
+Now time was really ticking, I added all art and sound to the game.</p>
+<h3 class='ui header' id="night---4h-left">
+      Night - 4h left
+    </h3>
+<p>I needed to make choices, my initial plan was to have multiple placeables and upgrades to be bought in the upgrade screen.
+But now only the gladiator placeable was implemented.
+I guessed that I would not have the time to implement the behaviors of the other placeables and set out to at least implement some basic things to be upgraded.
+These upgrades were just changing a single value in the code so they were fairly easy to add.
+For their cost I also just put some values into my exponential cost function without thinking too much about it.</p>
+
+<p>At the end of this I just had less than two hours left before the deadline so I just polished the code and fixed bugs were I could.</p>
+
+<p>Now for submission hour, I published my game on Github pages for the first time (play it <a href="http://www.theodedeken.xyz/morituri-combonaturi/">here</a>).
+Luckily I had been playing around with Github actions the last few weeks so I got a deploy action set up in little time.
+Then I just had to add my entry on the website and that was it for this event.
+Now off to sleep and back tomorrow to start playing and rating games.</p>
+<h2 class='ui header' id="conclusion">
+      Conclusion
+    </h2>
+<p>When thinking about my run this year there are some obvious things I could have done better.</p>
+
+<p>Firstly I could have prepared way more.
+Now I just had the idea of what game engine to use but little to no idea about all the rest.
+I could have done some tryouts of art and sound software, so i would not have had to spend time learning these things during the event.</p>
+
+<p>Secondly I could have put less emphasis on creating perfect elliptical collision and maybe have found a quicker workaround.
+It would have allowed to get way more work done on the first day.</p>
+
+<p>Lastly I am not happy about the balancing of the game.
+The cost of the upgrades don&#39;t really make that much sense and the game plays really slow at the beginning and then ramps up massively to the point of breaking near the end.
+I guess games like these are notoriously hard to balance and need a lot of playtesting, which is not ideal in a jam setting</p>
+
+<p>Overall I am still happy with what I achieved and I am looking forward to see my results.</p>
+<div class="ui left rail" style="width:300px">
+      <div class="ui sticky">
+        <div class="ui segment">
+          <h3 class="ui header">Table of contents</h3>
+          <div class="ui list">
+            <div class="item">
+          <a href="#saturday">Saturday</a>
+          <div class="list"><div class="item">
+          <a href="#morning---43h-left">Morning - 43h left</a>
+          
+        </div><div class="item">
+          <a href="#afternoon---38h-left">Afternoon - 38h left</a>
+          
+        </div><div class="item">
+          <a href="#evening---33h-left">Evening - 33h left</a>
+          
+        </div></div>
+        </div><div class="item">
+          <a href="#sunday">Sunday</a>
+          <div class="list"><div class="item">
+          <a href="#morning---19h-left">Morning - 19h left</a>
+          
+        </div><div class="item">
+          <a href="#afternoon---14h-left">Afternoon - 14h left</a>
+          
+        </div><div class="item">
+          <a href="#evening---9h-left">Evening - 9h left</a>
+          
+        </div><div class="item">
+          <a href="#night---4h-left">Night - 4h left</a>
+          
+        </div></div>
+        </div><div class="item">
+          <a href="#conclusion">Conclusion</a>
+          
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>]]></content><author><name>Theo Dedeken</name></author><category term="game development" /><category term="post mortem" /><category term="game jam" /><category term="ludum dare" /><category term="48h" /><summary type="html"><![CDATA[Last weekend I participated in the 46th edition of Ludum Dare. This is my post mortem on the things that went right and mostly wrong during the 48 hours of development.]]></summary></entry><entry><title type="html">Leveling up my resume</title><link href="/blog/2019/leveling-up-my-resume" rel="alternate" type="text/html" title="Leveling up my resume" /><published>2019-02-20T00:00:00+00:00</published><updated>2019-02-20T00:00:00+00:00</updated><id>/blog/2019/leveling-up-my-resume</id><content type="html" xml:base="/blog/2019/leveling-up-my-resume"><![CDATA[<p>As my time studying is coming to an end, it is becoming time to start looking towards what is next in my future. Internship, job or volunteering, they all need a resume and a cover letter. As a true scientist my previous resumes and cover letters were all written in Latex. While Latex is fantastic in many aspects, some difficulties do arise when you try to use it in a context of a resume which likely will have a very distinct style. So for this round of applications I wanted to upgrade my process of constructing my resume and cover letter.</p>
 <h2 class='ui header' id="making-my-own-template">
       Making my own template
     </h2>

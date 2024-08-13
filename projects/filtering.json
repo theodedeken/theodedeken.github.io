@@ -1,6 +1,6 @@
 {
     "all": [
-        "best-at", "comp-bio", "covid-19-observables", "dimdrop", "game-io", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "personal-website", "rideaway", "spaxel", "thesis"
+        "best-at", "comp-bio", "computer-graphics-demo", "covid-19-observables", "dimdrop", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "personal-website", "project-euler", "rideaway", "spaxel", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
     ],
     "tag": {"open summer of code": [
                 "best-at", "rideaway"
@@ -24,6 +24,14 @@
                 "comp-bio"
             ],"data science": [
                 "comp-bio"
+            ],"web": [
+                "computer-graphics-demo", "game-io", "sprout", "timetomove-quiz", "traffic-troubles"
+            ],"graphics": [
+                "computer-graphics-demo"
+            ],"3d": [
+                "computer-graphics-demo"
+            ],"demo": [
+                "computer-graphics-demo"
             ],"data visualization": [
                 "covid-19-observables"
             ],"interactive": [
@@ -40,14 +48,22 @@
                 "dimdrop"
             ],"package": [
                 "dimdrop"
+            ],"fractal": [
+                "fractal", "perlin-noise"
+            ],"generation": [
+                "fractal"
             ],"game development": [
-                "game-io", "morituri-combonaturi", "perlin-noise", "spaxel"
-            ],"web": [
-                "game-io"
+                "game-io", "morituri-combonaturi", "perlin-noise", "spaxel", "sprout", "traffic-troubles"
             ],"workshop": [
                 "game-io"
             ],"pixel art": [
                 "game-io", "spaxel"
+            ],"compression": [
+                "huffman-compression"
+            ],"huffman": [
+                "huffman-compression"
+            ],"zip": [
+                "huffman-compression"
             ],"job": [
                 "interview-toolkit"
             ],"resume": [
@@ -63,18 +79,20 @@
             ],"interpreter": [
                 "lambda-rs"
             ],"game jam": [
-                "morituri-combonaturi"
+                "morituri-combonaturi", "sprout", "traffic-troubles"
             ],"ludum dare": [
-                "morituri-combonaturi"
+                "morituri-combonaturi", "sprout", "traffic-troubles"
             ],"48h": [
+                "morituri-combonaturi", "sprout", "traffic-troubles"
+            ],"gladiator": [
+                "morituri-combonaturi"
+            ],"arena": [
                 "morituri-combonaturi"
             ],"random": [
                 "perlin-noise"
             ],"noise": [
                 "perlin-noise"
             ],"world generation": [
-                "perlin-noise"
-            ],"fractal": [
                 "perlin-noise"
             ],"website": [
                 "personal-website"
@@ -84,6 +102,12 @@
                 "personal-website"
             ],"github pages": [
                 "personal-website"
+            ],"mathematics": [
+                "project-euler"
+            ],"euler": [
+                "project-euler"
+            ],"algorithms": [
+                "project-euler"
             ],"cycling": [
                 "rideaway"
             ],"brussels": [
@@ -102,29 +126,41 @@
                 "spaxel"
             ],"space": [
                 "spaxel"
+            ],"nature": [
+                "sprout"
+            ],"growing": [
+                "sprout"
             ],"dimensionality reduction": [
                 "thesis"
             ],"master": [
                 "thesis"
             ],"autoencoder": [
                 "thesis"
+            ],"quiz": [
+                "timetomove-quiz"
+            ],"european union": [
+                "timetomove-quiz"
+            ],"traffic": [
+                "traffic-troubles"
+            ],"congestion": [
+                "traffic-troubles"
             ]
     },
     "status": {"active": [
-                "covid-19-observables", "dimdrop", "personal-website", "spaxel"
+                "covid-19-observables", "dimdrop", "personal-website", "project-euler", "spaxel"
             ],"done": [
-                "best-at", "comp-bio", "game-io", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "thesis"
+                "best-at", "comp-bio", "computer-graphics-demo", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
             ],"cancelled": [
                 ""
             ]
     },
-    "lang": {"java": ["perlin-noise", "spaxel"
-            ],"rust": ["lambda-rs"
+    "lang": {"java": ["fractal", "perlin-noise", "spaxel"
+            ],"rust": ["lambda-rs", "project-euler"
             ],"python": ["best-at", "comp-bio", "dimdrop", "interview-toolkit", "thesis"
-            ],"javascript": ["covid-19-observables", "game-io", "morituri-combonaturi", "personal-website", "rideaway"
+            ],"javascript": ["computer-graphics-demo", "covid-19-observables", "game-io", "morituri-combonaturi", "personal-website", "rideaway", "sprout", "timetomove-quiz", "traffic-troubles"
             ],"csharp": ["rideaway"
             ],"ruby": ["game-io", "personal-website"
-            ],"cplusplus": [""
+            ],"cplusplus": ["huffman-compression"
             ]
     }
 }
