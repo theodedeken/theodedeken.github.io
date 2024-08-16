@@ -200,23 +200,23 @@
             Game I/O
         </div>
     </div>
-</a><a class="ui special centered inverted card featured-project" href="/projects/thesis">
+</a><a class="ui special centered inverted card featured-project" href="/projects/morituri-combonaturi">
 
     <div class="blurring dimmable image">
         <div class="ui dimmer">
             <div class="content">
                 <div class="center">
-                    <span class="ui large text">My master thesis which completed my degree in Computer Science.  It concerns research into dimensionality reduction and visualization techniques for high-dimensional data using autoencoders.</span>
+                    <span class="ui large text">My game for the 46th edition of Ludum Dare. A game jam where you get 48 hours to develop a game.</span>
 
                 </div>
             </div>
         </div>
-        <img src="/assets/img/projects/thesis.jpg">
+        <img src="/assets/img/projects/morituri-combonaturi.jpg">
     </div>
 
     <div class="content">
         <div class="header">
-            Masterthesis
+            Morituri Combonaturi (#LD46)
         </div>
     </div>
 </a></div>
@@ -257,12 +257,12 @@
                 </div>
             </div>
             <div class="field">
-                <label>Filter by language</label>
+                <label>Filter by skill</label>
                 <div class="ui selection scrolling dropdown" id="lang">
                     <input name="lang" type="hidden">
                     <i class="dropdown icon"></i>
-                    <div class="default text">Language</div>
-                    <div class="menu"><div class="item" data-value="java">Java</div><div class="item" data-value="rust">Rust</div><div class="item" data-value="python">Python</div><div class="item" data-value="javascript">Javascript</div><div class="item" data-value="csharp">C#</div><div class="item" data-value="ruby">Ruby</div><div class="item" data-value="cplusplus">C, C++</div></div>
+                    <div class="default text">Skill</div>
+                    <div class="menu"><div class="item" data-value="java">Java</div><div class="item" data-value="rust">Rust</div><div class="item" data-value="python">Python</div><div class="item" data-value="javascript">Javascript</div><div class="item" data-value="csharp">C#</div><div class="item" data-value="ruby">Ruby</div><div class="item" data-value="cplusplus">C, C++</div><div class="item" data-value="devops">DevOps</div></div>
                 </div>
             </div>
             <div class="field">
@@ -1087,7 +1087,7 @@
                 }
 
                 let filtered = tags.filter(el => langs.includes(el) && stats.includes(el));
-                let others = all.filter(el => ! filtered.includes(el));
+                let others = all.filter(el => !filtered.includes(el));
 
                 $("div.ui.two.stackable.centered.cards a.ui.special.card")
                     .filter((index, el) => others.includes(el.id))
