@@ -1,0 +1,28 @@
+{%- for skill in site.data.skills -%}
+{%- if include.skill == skill.key -%}
+<div class="card">
+    <div class="content">
+        <span class="right floated">
+            <i style="font-size: 2rem" class="{{ skill.icon }}"></i>
+        </span>
+        <a class="header" href="/projects?lang={{ include.skill }}">
+            {{ skill.name }}
+        </a>
+    </div>
+    {%- assign skill_topics = include.page.skills[include.skill] -%}
+    {%- if skill_topics -%}
+    <div class="content">
+
+        <ul class="ui list">
+            {%- for topic in skill_topics -%}
+            <li>
+                {{ topic[0] }}
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    {%- endif -%}
+
+</div>
+{%- endif -%}
+{%- endfor -%}

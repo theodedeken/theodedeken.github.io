@@ -31,15 +31,15 @@
         {{ stats | slice: 0, size }}
     },
     "lang": {
-        {%- capture langs -%}
-        {%- for lang in site.data.languages -%}
-            "{{ lang.key }}": [
-                {%- include requests/projects_in_lang.liquid lang=lang.key -%}
+        {%- capture skills -%}
+        {%- for skill in site.data.skills -%}
+            "{{ skill.key }}": [
+                {%- include requests/projects_with_skill.liquid skill=skill.key -%}
                 "{{ result | join: '", "' }}"
             ],
         {%- endfor -%}
         {%- endcapture -%}
-        {%- assign size = langs | size | minus: 1 -%}
-        {{ langs | slice: 0, size }}
+        {%- assign size = skills | size | minus: 1 -%}
+        {{ skills | slice: 0, size }}
     }
 }

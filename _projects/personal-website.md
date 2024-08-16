@@ -11,20 +11,19 @@ started: 2019-01-01
 ended: now
 featured: false
 status: active
-language: 
-    - ruby:
-        frameworks:
-            - Jekyll
-            - Rouge 
-    - javascript:
-        frameworks:
-            - jQuery 
-    - html:
-        frameworks:
-            - Liquid 
-    - css:
-        frameworks:
-            - Fomantic UI 
+skills:
+    devops:
+        Github Actions:
+        Nix:
+    ruby:
+        Jekyll:
+        Rouge:
+    javascript:
+        JQuery:
+    html:
+        Liquid:
+    css:
+        Fomantic UI:
 links:
     - type: github
       url: https://github.com/theodedeken/theodedeken.github.io/tree/source

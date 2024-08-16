@@ -11,9 +11,8 @@ description: >-
 time_format: "%Y"
 started: 2019-02-01
 ended: now
-language: 
-    - rust:
-        frameworks:
+skills:
+  rust:
 links: 
     - type: web
       url: https://projecteuler.net

@@ -5,10 +5,9 @@ key: fractal
 subtitle: Generating fractal like structures in java
 thumb: /assets/img/projects/fractal.jpg
 permalink: /projects/fractal
-language: 
-    - java:
-        frameworks:
-          - JavaFX
+skills:
+    java:
+        JavaFX
 time_format: "%B %Y"
 started: 2016-07-01
 ended: 2016-08-01

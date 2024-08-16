@@ -10,14 +10,14 @@ description: >-
 time_format: "%-d %b %Y"
 started: 2017-07-03
 ended: 2017-07-28
-language: 
-    - csharp:
-        frameworks:
-            - Itinero
-            - ASP.NET
-    - javascript:  
-        frameworks: 
-            - Mapbox
+skills:
+    devops:
+        Red Hat:
+    csharp:
+        Itinero:
+        ASP.NET:
+    javascript:
+        Mapbox:
 featured: false
 status: done
 links: 

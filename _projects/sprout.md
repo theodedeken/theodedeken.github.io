@@ -11,10 +11,9 @@ description: >-
 time_format: "%-d %b %y, 3AM"
 started: 2015-12-11
 ended: 2015-12-14
-language: 
-    - javascript:
-        frameworks:
-            - Phaser
+skills:
+    javascript:
+        Phaser:
 links: 
     - type: github
       url: https://github.com/theodedeken/sprout

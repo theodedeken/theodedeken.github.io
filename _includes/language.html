@@ -1,8 +1,0 @@
-{%- for lang in site.data.languages -%}
-    {%- if include.lang == lang.key -%}
-        <a class="ui large secondary label" href="/projects?lang={{ include.lang }}">
-            <i class="{{ lang.icon }}"></i>
-            {{ lang.language }}
-        </a>
-    {%- endif -%}
-{%- endfor -%}

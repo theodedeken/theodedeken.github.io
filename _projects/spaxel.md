@@ -10,11 +10,10 @@ description: >-
 time_format: "%Y"
 started: 2014-01-01
 ended: now
-language: 
-    - java:
-        frameworks:
-            - LWJGL
-            - Jackson
+skills:
+    java:
+        LWJGL:
+        Jackson:
 links: 
     - type: github
       url: https://github.com/theodedeken/Spaxel

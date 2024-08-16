@@ -11,10 +11,9 @@ description: >-
 time_format: "%B %Y"
 started: 2018-02-01
 ended: 2018-06-01
-language: 
-    - python:
-        frameworks:
-          - numpy
+skills:
+    python:
+        numpy:
 featured: false
 status: done
 tags: 

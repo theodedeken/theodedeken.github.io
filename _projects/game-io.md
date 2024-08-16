@@ -11,13 +11,11 @@ description: >-
 time_format: "%-d %b %Y"
 started: 2020-02-20
 ended: 2020-03-12
-language: 
-    - javascript:
-        frameworks:
-            - Phaser
-    - ruby:
-        frameworks:
-            - Jekyll
+skills:
+    javascript:
+        Phaser:
+    ruby:
+        Jekyll:
 featured: true
 status: done
 links: 

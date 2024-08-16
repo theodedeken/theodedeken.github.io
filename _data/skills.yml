@@ -1,28 +1,32 @@
-- language: Java
+- name: Java
   key: java
-  grade: 8
-  icon: java icon
-- language: Rust
-  key: rust
   grade: 6
+  icon: java icon
+- name: Rust
+  key: rust
+  grade: 7
   icon: rust-icon
-- language: Python
+- name: Python
   key: python
   grade: 9
   icon: python icon
-- language: Javascript
+- name: Javascript
   key: javascript
   grade: 7
   icon: devicon-javascript-plain
-- language: C#
+- name: C#
   key: csharp
   grade: 5
   icon: devicon-csharp-plain
-- language: Ruby
+- name: Ruby
   key: ruby
   grade: 5
   icon: devicon-ruby-plain
-- language: C, C++
+- name: C, C++
   key: cplusplus
   grade: 5
   icon: devicon-c-plain
+- name: DevOps
+  key: devops
+  grade: 7
+  icon: 

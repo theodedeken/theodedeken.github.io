@@ -1,0 +1,20 @@
+{%- comment -%}
+Lists all projects that used the given skill
+
+Arguments:
+- skill: the given skill
+
+Returns:
+- result: a collection of project keys
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for project in site.projects -%}
+        {%- for skill in project.skills -%}
+            {%- if skill[0] == include.skill -%}
+                {{ project.key }},
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

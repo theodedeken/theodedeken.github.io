@@ -11,16 +11,15 @@ description: >-
 time_format: "%B %Y"
 started: 2018-09-01
 ended: 2019-06-01
-language: 
-    - python:
-        frameworks:
-            - pandas
-            - Jupyter
-            - keras
-            - dimdrop 
-            - numpy
-            - seaborn
-            - matplotlib
+skills:
+    python:
+        pandas:
+        Jupyter:
+        keras:
+        dimdrop: 
+        numpy:
+        seaborn:
+        matplotlib:
 links: 
     - type: web
       url: /assets/pdfs/thesis_abstract.pdf
@@ -31,7 +30,7 @@ links:
     - type: github
       url: https://github.com/theodedeken/dimdrop
       text: dimdrop
-featured: true
+featured: false
 status: done
 tags:
     - machine learning

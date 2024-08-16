@@ -11,13 +11,12 @@ description: >-
 time_format: "%-d %b %Y"
 started: 2019-07-01
 ended: 2019-07-26
-language: 
-    - python:
-        frameworks:
-            - bokeh
-            - pandas
-            - numpy
-            - datashader  
+skills:
+    python:
+        bokeh:
+        pandas:
+        numpy:
+        datashader:  
 featured: true
 status: done
 links: 

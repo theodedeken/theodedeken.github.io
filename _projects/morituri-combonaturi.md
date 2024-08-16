@@ -11,12 +11,11 @@ description: >-
 time_format: "%-d %b %y, 3AM"
 started: 2020-04-18 
 ended: 2020-04-20
-language: 
-    - javascript:
-        frameworks:
-            - Phaser
-            - Webpack
-featured: false
+skills:
+    javascript:
+        Phaser:
+        Webpack:
+featured: true
 status: done
 links:
     - type: github

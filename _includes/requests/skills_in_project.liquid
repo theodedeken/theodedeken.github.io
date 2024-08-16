@@ -1,0 +1,16 @@
+{%- comment -%}
+List all skills of a project 
+
+Arguments:
+- project: the project to list skills from
+
+Returns:
+- result: a collection of skills
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for skill in include.project.skills -%}
+        {{ skill[0] }},
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' -%}

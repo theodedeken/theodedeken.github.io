@@ -11,11 +11,10 @@ description: >-
 time_format: "%-d %b %y, 3AM"
 started: 2017-12-02
 ended: 2017-12-05
-language: 
-    - javascript:
-        frameworks:
-            - Webpack
-            - Phaser
+skills:
+    javascript:
+        Webpack:
+        Phaser:
 links: 
     - type: github
       url: https://github.com/theodedeken/traffic-troubles

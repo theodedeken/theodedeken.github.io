@@ -5,9 +5,8 @@ key: huffman-compression
 subtitle: Compressing files using Huffman Coding
 thumb: /assets/img/projects/huffman-compression.jpg
 permalink: /projects/huffman-compression
-language: 
-    - cplusplus:
-        frameworks:
+skills:
+    cplusplus:
 time_format: "%B %Y"
 started: 2016-10-01
 ended: 2016-12-01

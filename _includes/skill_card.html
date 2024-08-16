@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="content">
+        <span class="right floated">
+            <i style="font-size: 2rem" class="{{ include.skill.icon }}"></i>
+        </span>
+        <div class="header">
+            {{ include.skill.name }}
+        </div>
+        <div class="extra">
+            {%- for i in (1..5) -%}
+            {%- assign dif = i | times: 2 | minus: include.skill.grade -%}
+            {%- if dif == 1 -%}
+            <i class="ui orange star half alternate icon"></i>
+            {%- elsif dif > 1 -%}
+            <i class="ui orange star outline icon"></i>
+            {%- else -%}
+            <i class="ui orange star icon"></i>
+            {%- endif -%}
+            {%- endfor -%}
+
+        </div>
+    </div>
+    <div class="content">
+        {%- include requests/topics_in_skill.liquid skill=skill.key -%}
+        {%- if result.size > 0 -%}
+        <div class="ui sub header">Topics</div>
+        <ul class="ui list">
+            {%- for topic in result -%}
+            <li>
+                {{ topic }}
+            </li>
+            {%- endfor -%}
+        </ul>
+        {%- endif -%}
+        {%- include requests/projects_with_skill.liquid skill=skill.key -%}
+        {%- if result.size > 0 -%}
+        <div class="ui sub header">Projects</div>
+        <div class="ui horizontal selection list">
+            {%- for project in result -%}
+            <div class="ui item">
+                <a class="header" href="{{ site.base_url }}/projects{{ project | relative_url }}">
+                    {{ project }}
+                </a>
+            </div>
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
+    </div>
+</div>

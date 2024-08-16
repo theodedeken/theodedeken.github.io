@@ -5,10 +5,9 @@ key: perlin-noise
 subtitle: Generating perlin noise in java
 thumb: /assets/img/projects/perlin-noise.jpg
 permalink: /projects/perlin-noise
-language: 
-    - java:
-        frameworks:
-          - JavaFX
+skills:
+    java:
+        JavaFX:
 time_format: "%B %Y"
 started: 2016-12-01
 ended: 2017-02-01

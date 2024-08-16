@@ -10,12 +10,11 @@ description: >-
 time_format: "%Y"
 started: 2019-01-01
 ended: now
-language: 
-    - python:
-        frameworks:
-            - keras
-            - numpy
-            - sklearn 
+skills:
+    python:
+        keras:
+        numpy:
+        sklearn:
 featured: false
 status: done
 links: 

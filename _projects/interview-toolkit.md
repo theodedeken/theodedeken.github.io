@@ -10,11 +10,9 @@ description: >-
 time_format: "%B %Y"
 started: 2019-02-01
 ended: 2020-04-14
-language: 
-    - python:
-        frameworks: []
-    - tex:
-        frameworks: []
+skills:
+    python:
+    tex:
 featured: false
 status: done
 links: 

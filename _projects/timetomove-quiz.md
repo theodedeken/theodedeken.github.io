@@ -5,13 +5,11 @@ key: timetomove-quiz
 subtitle: A quick quiz implemented with svelte
 thumb: /assets/img/projects/timetomove-quiz.jpg
 permalink: /projects/timetomove-quiz
-language: 
-    - javascript:
-        frameworks:
-          - svelte
-    - css:
-        frameworks:
-          - Semantic UI 
+skills:
+    javascript:
+        svelte:
+    css:
+        Semantic UI:
 time_format: "%B %Y"
 started: 2019-10-01
 ended: 2019-11-01

@@ -11,11 +11,10 @@ description: >-
 time_format: "%B %Y"
 started: 2020-04-01
 ended: now
-language: 
-    - javascript:
-        frameworks:
-            - D3
-            - topojson 
+skills:
+    javascript:
+        D3:
+        topojson:
 featured: true
 status: done
 links: 

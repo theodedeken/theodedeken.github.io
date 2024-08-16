@@ -10,10 +10,9 @@ description: >-
 time_format: "%B %Y"
 started: 2019-04-01
 ended: 2019-05-01
-language: 
-    - javascript:
-        frameworks:
-            - WebGL
+skills:
+    javascript:
+        WebGL:
 links: 
     - type: github
       url: https://github.com/theodedeken/computer-graphics-demo 

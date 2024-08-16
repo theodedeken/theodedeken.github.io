@@ -12,10 +12,9 @@ links:
 time_format: "%B %Y"
 started: 2018-07-01
 ended: 2018-08-01
-language: 
-    - rust:
-        frameworks:
-            - pest
+skills:
+    rust:
+        pest:
 status: done
 tags:
     - lambda
