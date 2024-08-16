@@ -17,7 +17,7 @@ language:
             - D3
             - topojson 
 featured: true
-status: active
+status: done
 links: 
     - type: web
       url: https://observablehq.com/@theodedeken/covid-19-in-belgium

@@ -17,7 +17,7 @@ language:
             - numpy
             - sklearn 
 featured: false
-status: active
+status: done
 links: 
     - type: github
       url: https://github.com/theodedeken/dimdrop
