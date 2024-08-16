@@ -147,9 +147,9 @@
             ]
     },
     "status": {"active": [
-                "covid-19-observables", "dimdrop", "personal-website", "project-euler", "spaxel"
+                "personal-website", "project-euler", "spaxel"
             ],"done": [
-                "best-at", "comp-bio", "computer-graphics-demo", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
+                "best-at", "comp-bio", "computer-graphics-demo", "covid-19-observables", "dimdrop", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
             ],"cancelled": [
                 ""
             ]
