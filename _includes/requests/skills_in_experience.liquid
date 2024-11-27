@@ -1,0 +1,18 @@
+{%- comment -%}
+List all skills of an experience 
+
+Arguments:
+- experience: the experience to list skills from
+
+Returns:
+- result: a collection of skills
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for bullet in include.experience.bullets -%}
+        {%- for skill in bullet.skills -%}
+            {{ skill[0] }},
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' | uniq -%}

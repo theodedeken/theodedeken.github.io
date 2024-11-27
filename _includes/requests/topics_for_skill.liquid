@@ -1,0 +1,19 @@
+{%- comment -%}
+List all unique topics a skill from experience bullets
+
+Arguments:
+- bullets: The experience bullets
+- skill: The skill to collect
+
+Returns:
+- result: a collection of topics
+{%- endcomment -%}
+{%- capture raw -%}
+    {%- for bullet in include.bullets -%}
+        {%- for topic in bullet.skills[skill] -%}
+            {{ topic[0] }},
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign size = raw | size | minus: 1 -%}
+{%- assign result = raw | slice: 0, size | split: ',' | uniq -%}

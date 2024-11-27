@@ -9,14 +9,14 @@
             {{ skill.name }}
         </a>
     </div>
-    {%- assign skill_topics = include.page.skills[include.skill] -%}
+    {%- assign skill_topics = include.topics -%}
     {%- if skill_topics -%}
     <div class="content">
 
         <ul class="ui list">
             {%- for topic in skill_topics -%}
             <li>
-                {{ topic[0] }}
+                {{ topic[0] | default: topic }}
             </li>
             {%- endfor -%}
         </ul>

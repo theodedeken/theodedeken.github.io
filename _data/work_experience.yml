@@ -1,4 +1,15 @@
 - company: Robovision
+  jobtitle: Freelance DevOps Engineer
+  bullets:
+    - skills: 
+        devops:
+          zfs:
+          Linux:
+          Kubernetes:
+      line: Worked on provisioning servers with our platform software to run on premise at customers.
+  started: December 2023
+  ended: now
+- company: Robovision
   jobtitle: Solution Sofware Lead
   description: >-
     As a result of working cross-project for a while I became more and more a de facto technical lead in my team and others.
@@ -8,7 +19,7 @@
     I work together with other project engineers to transform POC and Pilot projects into scaleable and performant pieces of software.
   started: March 2023
   ended: October 2023
-  leveraged: Gaining experience in the design of large scale software systems, clean development practices and DevOps
+  leveraged: Gained experience in the design of large scale software systems, clean development practices and DevOps
 - company: Robovision
   jobtitle: Software Engineer
   description: >-

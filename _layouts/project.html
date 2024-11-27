@@ -23,7 +23,9 @@ layout: default
                 {%- include requests/skills_in_project.liquid project=page -%}
                 <div class="ui two doubling cards">
                     {%- for skill in result -%}
-                    {%- include skill.html skill=skill page=page -%}
+                    {%- assign skill_topics = page.skills[skill] -%}
+
+                    {%- include skill.html skill=skill topics=skill_topics -%}
                     {%- endfor -%}
                 </div>
             </div>
