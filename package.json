@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/theodedeken/theodedeken.github.io#readme",
   "dependencies": {
-    "fomantic-ui": "^2.8.7"
+    "fomantic-ui": "^2.9.3"
   },
   "devDependencies": {
     "gulp": "^5.0.0"
