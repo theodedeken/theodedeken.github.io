@@ -15,7 +15,7 @@ skills:
     javascript:
         D3:
         topojson:
-featured: true
+featured: false
 status: done
 links: 
     - type: web
@@ -48,4 +48,3 @@ import define from "https://api.observablehq.com/@theodedeken/covid-19-mortality
 const inspect = Inspector.into("#observablehq-4f1219a9");
 (new Runtime).module(define, name => (name === "main") && inspect());
 </script>
-
