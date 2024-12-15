@@ -1,6 +1,6 @@
 {
     "all": [
-        "best-at", "comp-bio", "computer-graphics-demo", "covid-19-observables", "dimdrop", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "personal-website", "project-euler", "rideaway", "spaxel", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
+        "best-at", "comp-bio", "computer-graphics-demo", "covid-19-observables", "dimdrop", "february-visualisations", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "personal-website", "project-euler", "rideaway", "spaxel", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
     ],
     "tag": {"open summer of code": [
                 "best-at", "rideaway"
@@ -9,7 +9,7 @@
             ],"xml": [
                 "best-at"
             ],"open data": [
-                "best-at", "covid-19-observables"
+                "best-at", "covid-19-observables", "february-visualisations"
             ],"fod bosa": [
                 "best-at"
             ],"command line": [
@@ -33,13 +33,13 @@
             ],"demo": [
                 "computer-graphics-demo"
             ],"data visualization": [
-                "covid-19-observables"
+                "covid-19-observables", "february-visualisations"
             ],"interactive": [
-                "covid-19-observables"
+                "covid-19-observables", "february-visualisations"
             ],"covid-19": [
                 "covid-19-observables"
             ],"observable": [
-                "covid-19-observables"
+                "covid-19-observables", "february-visualisations"
             ],"machine learning": [
                 "dimdrop", "thesis"
             ],"neural networks": [
@@ -149,7 +149,7 @@
     "status": {"active": [
                 "personal-website", "project-euler", "spaxel"
             ],"done": [
-                "best-at", "comp-bio", "computer-graphics-demo", "covid-19-observables", "dimdrop", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
+                "best-at", "comp-bio", "computer-graphics-demo", "covid-19-observables", "dimdrop", "february-visualisations", "fractal", "game-io", "huffman-compression", "interview-toolkit", "lambda-rs", "morituri-combonaturi", "perlin-noise", "rideaway", "sprout", "thesis", "timetomove-quiz", "traffic-troubles"
             ],"cancelled": [
                 ""
             ]
@@ -157,7 +157,7 @@
     "lang": {"java": ["fractal", "perlin-noise", "spaxel"
             ],"rust": ["lambda-rs", "project-euler"
             ],"python": ["best-at", "comp-bio", "dimdrop", "interview-toolkit", "thesis"
-            ],"javascript": ["computer-graphics-demo", "covid-19-observables", "game-io", "morituri-combonaturi", "personal-website", "rideaway", "sprout", "timetomove-quiz", "traffic-troubles"
+            ],"javascript": ["computer-graphics-demo", "covid-19-observables", "february-visualisations", "game-io", "morituri-combonaturi", "personal-website", "rideaway", "sprout", "timetomove-quiz", "traffic-troubles"
             ],"csharp": ["rideaway"
             ],"ruby": ["game-io", "personal-website"
             ],"cplusplus": ["huffman-compression"
