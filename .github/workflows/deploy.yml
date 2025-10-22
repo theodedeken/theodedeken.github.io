@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v1
       - name: Build fomantic-ui
         run: npm install
-      - uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1  
+      - uses: ruby/setup-ruby@v1
       - name: Install dependencies
         run: bundle install
       - name: Build website
