@@ -1,13 +1,35 @@
 - company: Robovision
-  jobtitle: Freelance DevOps Engineer
+  jobtitle: Solution Software Lead
   bullets:
-    - skills: 
+    - skills:
         devops:
           zfs:
           Linux:
           Kubernetes:
       line: Provisioned servers to run our platform software on premise at customers.
-  started: December 2023
+    - skills:
+        devops:
+          Kubernetes:
+          GCP:
+          AWS:
+      line: Configured kubernetes clusters on multiple cloud providers to deploy the Robovision AI platform.
+    - skills:
+        other:
+          Technical leadership:
+          Software architecture:
+        python:
+          numpy:
+          tensorflow:
+          pytorch:
+          openCV:
+        cplusplus:
+          openMP:
+      line: Principal engineer for a number of projects delivering high performance machine vision servers.
+    - skills:
+        other:
+          Agile:
+      line: Operated in a scrum team with an Agile way of working
+  started: March 2023
   ended: now
 - company: Robovision
   jobtitle: Solution Sofware Lead
@@ -32,7 +54,7 @@
 - company: Robovision
   jobtitle: Project Engineer
   description: >-
-    Started my career as a Project Engineer working on software for the horticulture industry. 
+    Started my career as a Project Engineer working on software for the horticulture industry.
     Our projects deliver machine learning inference and specialized post-processing to machines running in an industrial environment.
     These machines are operating with a large vision setup of multiple cameras and with tight deadlines on delivering a result.
     Our sofware is deployed on edge computing devices which communicate with our cloud platform to deliver a full end-to-end retraining cycle.
@@ -53,7 +75,7 @@
 - company: Open Knowledge Belgium
   jobtitle: Summer job Open Summer of Code 2019
   description: >-
-    [Open Summer of Code](https://2019.summerofcode.be/) is a project where several teams of students work on real life open innovation projects. 
+    [Open Summer of Code](https://2019.summerofcode.be/) is a project where several teams of students work on real life open innovation projects.
     This year I was assigned to the Best@ project.
     This project was issued by the Digital Transformation department of the federal government.
     The aim was to develop a toolbox of useful scripts to allow the recently published dataset of addresses in Belgium to be used more easily.
@@ -65,10 +87,10 @@
 - company: Hochschule Zittau/Görlitz, Germany
   jobtitle: Research Intern
   description: >-
-    In the summer of 2018 I did my internship as part of my education. 
-    I chose to do an internship abroad to get more international experience and to challenge myself by putting myself in an unfamiliar environment. 
-    The internship took place at the [University of Applied Sciences](https://www.hszg.de/en) in Zittau, Germany. 
-    As an intern I did research into machine learning solutions for the monitoring of nuclear waste containers by analysing the vibrations of these structures. 
+    In the summer of 2018 I did my internship as part of my education.
+    I chose to do an internship abroad to get more international experience and to challenge myself by putting myself in an unfamiliar environment.
+    The internship took place at the [University of Applied Sciences](https://www.hszg.de/en) in Zittau, Germany.
+    As an intern I did research into machine learning solutions for the monitoring of nuclear waste containers by analysing the vibrations of these structures.
     At the end of my internship I wrote a [paper](/assets/pdfs/zittau_report.pdf) about my research which will be published in the [ACC Journal](https://acc-ern.tul.cz/en/acc-journal) in the Summer of 2020.
   started: July 2018
   ended: September 2018
@@ -76,9 +98,9 @@
 - company: Open Knowledge Belgium
   jobtitle: Summer job Open Summer of Code 2017
   description: >-
-    [Open Summer of Code](https://2017.summerofcode.be/) is a project where several teams of students work on real life open innovation projects. 
-    I was tasked to develop the backend of a bicycle navigation application commissioned by Brussels Mobility. The following year more funding 
-    for the project was acquired. A new team extended the application, I couldn't participate because of an internship. The current application 
+    [Open Summer of Code](https://2017.summerofcode.be/) is a project where several teams of students work on real life open innovation projects.
+    I was tasked to develop the backend of a bicycle navigation application commissioned by Brussels Mobility. The following year more funding
+    for the project was acquired. A new team extended the application, I couldn't participate because of an internship. The current application
     can be found [here](https://routeplanner.bike.brussels/). View the [project page](/projects/rideaway) for more info.
   started: July 2017
   ended: August 2017

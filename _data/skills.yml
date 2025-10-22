@@ -29,4 +29,8 @@
 - name: DevOps
   key: devops
   grade: 7
-  icon: 
+  icon:
+- name:
+  key: other
+  grade: 0
+  icon:
