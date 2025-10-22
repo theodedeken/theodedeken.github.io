@@ -14,7 +14,7 @@ skills:
     java:
         LWJGL:
         Jackson:
-links: 
+links:
     - type: github
       url: https://github.com/theodedeken/Spaxel
       text: Source
@@ -41,7 +41,7 @@ As the first version of my game was based on code of a tutorial of a simple game
 This became a problem as I began to think about adding more visual effects like particles, blur and distortion.
 Early tests by implementing these things in the current engine showed that adding them would reduce the game to a slideshow.
 
-I decided to rework the whole rendering system of the engine and to switch over to LWJGL. 
+I decided to rework the whole rendering system of the engine and to switch over to LWJGL.
 This also required me to learn some OpenGL and GLSL.
 I ultimately set up an instanced rendering system where all sprites are first buffered together and subsequently rendered all in one render call.
 
@@ -55,6 +55,6 @@ Currently the game is at a reasonably playable state and it has quite an interes
 As the engine evolved over the years some notable systems have been implemented.
 These include:
 
-- An UI system with a very slimmed down version of cascading stylesheets
+- A UI system with a very slimmed down version of cascading stylesheets
 - An OpenGL rendering system with sprite buffering, different layers, texture packing, postprocessing steps...
 - Separation of the game's content from the code by use of json property files
