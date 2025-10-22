@@ -2,6 +2,29 @@
   jobtitle: Solution Software Lead
   bullets:
     - skills:
+        other:
+          Technical leadership:
+          Software architecture:
+      line: Go to person for technical questions and advice on software design
+    - skills:
+        other:
+          Technical leadership:
+          Software architecture:
+        python:
+          numpy:
+          tensorflow:
+          pytorch:
+          openCV:
+        cplusplus:
+          openMP:
+      line: I worked as lead engineer on various solutions, managing the implementation and delivery of multiple releases while coaching other contributors through code reviews and knowledge transfers.
+    - skills:
+        devops:
+          Gitlab CI:
+          Ansible:
+          helm:
+      line: Leading role in optimizing our CI/CD pipelines allowing for automated releases, increased testing and streamlined deployment tools.
+    - skills:
         devops:
           zfs:
           Linux:
@@ -15,33 +38,14 @@
       line: Configured kubernetes clusters on multiple cloud providers to deploy the Robovision AI platform.
     - skills:
         other:
-          Technical leadership:
-          Software architecture:
-        python:
-          numpy:
-          tensorflow:
-          pytorch:
-          openCV:
-        cplusplus:
-          openMP:
-      line: Principal engineer for a number of projects delivering high performance machine vision servers.
-    - skills:
-        other:
           Agile:
       line: Operated in a scrum team with an Agile way of working
+    - skills:
+        other:
+          Roadmap management:
+      line: I create a bridge with the engineering teams of our platform, making sure the direction is aligned to create greater value for our projects.
   started: March 2023
   ended: now
-- company: Robovision
-  jobtitle: Solution Sofware Lead
-  description: >-
-    As a result of working cross-project for a while I became more and more a de facto technical lead in my team and others.
-    This recent role update highlights this evolution and the work I am doing bringing the overall software of the Solution Delivery group within Robovision up to a better standard.
-    I create a bridge with the engineering teams of our platform, making sure the direction is aligned to create greater value for our projects.
-    I take on a leadership role in software design and architecture as well as development practices.
-    I work together with other project engineers to transform POC and Pilot projects into scaleable and performant pieces of software.
-  started: March 2023
-  ended: October 2023
-  leveraged: Gained experience in the design of large scale software systems, clean development practices and DevOps
 - company: Robovision
   jobtitle: Software Engineer
   description: >-
