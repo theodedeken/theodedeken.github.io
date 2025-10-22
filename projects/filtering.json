@@ -162,6 +162,7 @@
             ],"ruby": ["game-io", "personal-website"
             ],"cplusplus": ["huffman-compression"
             ],"devops": ["personal-website", "rideaway"
+            ],"other": [""
             ]
     }
 }
